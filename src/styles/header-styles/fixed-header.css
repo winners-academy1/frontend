@@ -1,0 +1,119 @@
+.fixed-header {
+  background-color: black;
+  position: fixed;
+  height: 2rem;
+  width: 100%;
+  color: var(--main-color-alt);
+  z-index: 4;
+}
+/* very small */
+@media (max-width: 399px) {
+  .fixed-header {
+    height: 2rem;
+  }
+}
+
+/* small phones */
+@media (max-width: 530px) {
+  .fixed-header {
+    /* height: 4rem; */
+  }
+}
+
+/* phones */
+@media (min-width: 531px) and (max-width: 652px) {
+  .fixed-header {
+    height: 3rem;
+  }
+}
+
+.fixed-header .lamar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+}
+
+/* very small */
+@media (max-width: 399px) {
+  .fixed-header .lamar-container {
+    height: 2rem;
+  }
+}
+
+/* small phones */
+@media (max-width: 530px) {
+  .fixed-header .lamar-container {
+    /* height: 4rem; */
+  }
+}
+
+/* phones */
+@media (min-width: 531px) and (max-width: 652px) {
+  .fixed-header .lamar-container {
+    height: 3rem;
+  }
+}
+
+.fixed-header .lamar-container .contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+/* small phones */
+@media (max-width: 530px) {
+  .fixed-header .lamar-container .contact-container {
+    gap: 5px;
+  }
+}
+
+/* phones */
+@media (min-width: 531px) and (max-width: 710px) {
+  .fixed-header .lamar-container .contact-container {
+    gap: 5px;
+  }
+}
+
+.fixed-header .lamar-container .contact-container .contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+/* small phones */
+@media (max-width: 530px) {
+  .fixed-header .lamar-container .contact-container .contact-info.location {
+    display: none;
+  }
+}
+/* small phones */
+@media (max-width: 530px) {
+  .fixed-header .lamar-container .contact-container .contact-info.email {
+    display: none;
+  }
+}
+
+.fixed-header .lamar-container .contact-container .contact-info .contact-text {
+  margin: auto;
+  font-size: 14px;
+}
+
+.fixed-header .icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+}
+.fixed-header .icons-container .icons {
+color: var(--main-color-alt);
+}
+.fixed-header .icons-container .icons i{
+  cursor: pointer;
+}

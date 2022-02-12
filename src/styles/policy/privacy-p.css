@@ -1,0 +1,58 @@
+.privacy{
+    padding: 200px 0 100px;
+    width: 100%;
+    background-color: var(--main-color-alt2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media(max-width:530px){
+    .privacy{
+      padding: 150px 0 100px; 
+    }
+  }
+
+.privacy .lamar-container {
+    padding-bottom:10px;
+}
+
+@media(max-width:767px){
+    .privacy .lamar-container {
+        width: 100%;
+    }
+}
+
+.privacy  .lamar-container .path{
+    text-align: left;
+}
+.privacy .lamar-container .path i {
+    font-size: 22px;
+    margin-right: 10px;
+    color: var(--main-color-alt);
+}
+.privacy  .lamar-container .path span{
+    font-size: 20px;
+    cursor: auto;
+    font-weight: 600;
+}
+.privacy  .lamar-container ol > li {
+    font-weight: 600;
+    padding-left:  5px;
+    margin-bottom: 10px;
+}
+
+.privacy  .lamar-container ol  ul li {
+    list-style: disc;
+
+}
+
+.privacy  .lamar-container p span {
+    font-weight: bold;
+}
+.privacy  .lamar-container p {
+    word-spacing: 1.8px;
+}
+.privacy  .lamar-container:nth-child(2) p{
+    margin-top: 10px;
+}

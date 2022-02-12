@@ -1,0 +1,177 @@
+.feedback{
+    background-color:  var(--main-color-alt2);
+    position: relative;
+    height: 650px;
+  
+}
+.feedback .big-container{
+    background-color:#f3ed9e ;
+    background-color:var(--main-color-alt) ;
+    padding: 20px 100px;
+    width: 70%;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px;
+}
+
+@media(max-width:767px){
+    .feedback{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        position: relative;
+        height: auto;
+    }
+    .feedback .big-container{
+        width: 100%;
+        position: relative;
+        height: 100%;
+        background-color: transparent;
+        padding: 0 15px;
+    } 
+    .feedback .big-container .lamar-container{
+    width: 100%;
+    gap: 15px;
+    }
+    .feedback .big-container .lamar-container .box{
+        width: 75%;
+        margin: 10px auto;
+    }
+   
+}
+@media(min-width:768px ) and (max-width:991px){
+    .feedback .big-container{
+        width: 90%;
+        margin: 0 auto;
+    } 
+    .feedback  .big-container .lamar-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+       padding: 10px 0;  
+       gap: 5px;
+        margin: 0 auto;
+       width: 100%;
+    }
+    .feedback  .big-container .lamar-container .box{
+        height: 300px;
+    }
+    .feedback .big-container .lamar-container .box .box-profile .name-person{
+        font-size: 13px;
+    }
+    .feedback .big-container .lamar-container .box .person-text {
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+}
+@media (min-width: 992px) and (max-width:1199px) {
+    .feedback .big-container{
+        width: 76%;
+        margin: 0 auto;
+    } 
+    .feedback  .big-container .lamar-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+       padding: 10px 0;  
+       gap: 5px;
+        margin: 0 auto;
+       width: 100%;
+    }
+    .feedback  .big-container .lamar-container .box{
+        height: 300px;
+    }
+    .feedback .big-container .lamar-container .box .box-profile .name-person{
+        font-size: 13px;
+    }
+    .feedback .big-container .lamar-container .box .person-text {
+        font-size: 11px;
+        line-height: 15px;
+    }
+  }
+.feedback .lamar-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+   padding: 10px 0;  
+   gap: 10px;
+    margin: 0 auto;
+   width: 100%;
+}
+.feedback .box{
+    width: 100%;
+    position: relative;
+    height:320px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 12px rgb(0,0,0,0.1);
+    background-color: var(--main-color-alt2);
+    overflow: hidden;
+    transition: transform 0.6s , box-shadow 0.3s;
+    margin: auto;
+}
+.feedback .box:hover{
+    transform: translateY(-10px);
+    box-shadow: 2px 2px 12px rgb(0,0,0,0.25);
+}
+.feedback .box .box-profile{
+    height: 30%;
+    width: 100%;
+    background-color: var(--main-color-alt);
+    position: absolute;
+    bottom: 0;
+    border-radius: 85% 68px 0 0;
+}
+
+.feedback .box .box-profile img{
+    width: 25%;
+    border: 8px solid var(--main-color-alt2);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: content-box;
+}
+.feedback .box .box-profile .name-person{
+    position: absolute;
+    bottom:28px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    font-size:20px;
+    text-transform:capitalize;
+
+}
+.feedback .box .box-profile .info-person{
+    position: absolute;
+    bottom:5px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--text-color);
+    font-size: 15px;
+    text-transform:capitalize;
+}
+.feedback .box .person-text{
+    padding: 0 20px;
+    position: absolute;
+    top: 30px;
+    font-size: 13px;
+    color:var(--text-color);
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+
+}
+.feedback .box .fa-quote-left{
+    position: absolute;
+    top:5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 100px;
+    color: var(--main-color-alt);
+}
