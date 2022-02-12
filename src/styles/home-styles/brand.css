@@ -1,284 +1,305 @@
-.brand{
-    background-color:var(--main-color-alt);
-    padding-bottom: var(--main-padding-bottom);
-    padding-top: var(--main-padding-top);
-    position: relative;
-    border-top: black dashed 5px;
+.brand {
+	background-color: var(--main-color-alt);
+	padding-bottom: var(--main-padding-bottom);
+	padding-top: var(--main-padding-top);
+	position: relative;
 }
-.brand .custom-shape-divider-top-1638712956 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-  }
-  
-  .brand .custom-shape-divider-top-1638712956 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 90px;
-    transform: rotateY(180deg);
-  }
-  
-  .brand .custom-shape-divider-top-1638712956 .shape-fill {
-    fill: rgba(0, 0, 0, 0.89);
-  }
 
-.brand .lamar-container{
-    display: grid;
-    grid-template-areas:
-    'lamar lamar montaha montaha nero nero'
-    'lamar lamar shera shera shera shera';
-  grid-gap: 10px;
-  height: 500px;
+.clinic {
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+	padding: 20px;
+}
+
+.clinic .part {
+	margin: 10px;
+	width: 25%;
+}
+.clinic .part h3 {
+	font-size: 20px;
+	font-weight: bold;
+}
+.clinic .part p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+	color: #777;
+	line-height: 1.7;
+	font-size: 16px;
+}
+.clinic i {
+	font-size: 50px;
+	color: var(--main-color-alt2);
+	margin-bottom: 20px;
+}
+
+.brand .custom-shape-divider-top-1638712956 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.brand .custom-shape-divider-top-1638712956 svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 90px;
+	transform: rotateY(180deg);
+}
+
+.brand .custom-shape-divider-top-1638712956 .shape-fill {
+	fill: rgba(0, 0, 0, 0.89);
+}
+
+.brand .lamar-container {
+	display: grid;
+	grid-template-areas:
+		"lamar lamar montaha montaha nero nero"
+		"lamar lamar shera shera shera shera";
+	grid-gap: 10px;
+	height: 500px;
 }
 @media (max-width: 767px) {
-    .brand .lamar-container{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        gap: 30px;
-        width: 100%;
-        height: 600px;
-    } 
+	.brand .lamar-container {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		gap: 30px;
+		width: 100%;
+		height: 600px;
+	}
+}
 
-  }
-
-.item1 { grid-area: lamar; }
-.item2 { grid-area: montaha; }
-.item3 { grid-area: nero; }
-.item4 { grid-area: shera; }
+.item1 {
+	grid-area: lamar;
+}
+.item2 {
+	grid-area: montaha;
+}
+.item3 {
+	grid-area: nero;
+}
+.item4 {
+	grid-area: shera;
+}
 .brand .lamar-container > div {
-    padding:10px;
-    position: relative;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
-    height: 100%;
-    transition: transform 0.5s , box-shadow 0.5s;
-    cursor: pointer;
-  }
-  @media (max-width: 767px) {
-    .brand .lamar-container > div{
-        padding:5px;
-        position: relative;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.2);
-        transition: transform 0.5s , box-shadow 0.5s;
-        height: 700px;
-        width: 80%;
-        margin: 0 auto;
-    } 
-
-  } 
+	padding: 10px;
+	position: relative;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+	height: 100%;
+	transition: transform 0.5s, box-shadow 0.5s;
+	cursor: pointer;
+}
+@media (max-width: 767px) {
+	.brand .lamar-container > div {
+		padding: 5px;
+		position: relative;
+		box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+		transition: transform 0.5s, box-shadow 0.5s;
+		height: 700px;
+		width: 80%;
+		margin: 0 auto;
+	}
+}
 
 /* start item one ----------- */
-.brand .item1{ 
-    background-color: var(--main-color-alt2);
+.brand .item1 {
+	background-color: var(--main-color-alt2);
 }
 .brand .item1:hover {
-    transform: translateY(-10px);
-    box-shadow:0 2px 12px rgba(0,0,0,0.4) ;
+	transform: translateY(-10px);
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 .brand .item1 .image {
-    position: absolute;
-    left: -60px;
-    bottom: 0;
-    height: 110%;
-    width: 100%;
-    
+	position: absolute;
+	left: -60px;
+	bottom: 0;
+	height: 110%;
+	width: 100%;
 }
-.brand .item1 .image img{
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
+.brand .item1 .image img {
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
 }
-.brand .item1 h3{
-    position: absolute;
-    top: 10px;
-    right: 30px;
-    font-size: 40px;
-    text-transform: capitalize;
-    font-weight: 700;
+.brand .item1 h3 {
+	position: absolute;
+	top: 10px;
+	right: 30px;
+	font-size: 40px;
+	text-transform: capitalize;
+	font-weight: 700;
 }
 
 @media (max-width: 767px) {
-    .brand .lamar-container .item1 .image {
-        position: absolute;
-        left: -10px;
-        bottom: 0;
-        height: 120%;
-        width: 40%;
-    } 
-    .brand .lamar-container .item1 h3 {
-        position: absolute;
-        top: 50%;
-        right: 30%;
-        transform: translate(50%,-50%);
-        font-size: 35px;
-        text-transform: capitalize;
-        font-weight: 700;
-    } 
-
-  } 
+	.brand .lamar-container .item1 .image {
+		position: absolute;
+		left: -10px;
+		bottom: 0;
+		height: 120%;
+		width: 40%;
+	}
+	.brand .lamar-container .item1 h3 {
+		position: absolute;
+		top: 50%;
+		right: 30%;
+		transform: translate(50%, -50%);
+		font-size: 35px;
+		text-transform: capitalize;
+		font-weight: 700;
+	}
+}
 /* end item one  */
 
 /* start item tow -------- */
-.brand .item2{
-    background-color: #ffd369;
+.brand .item2 {
+	background-color: #ffd369;
 }
 .brand .item2:hover {
-    transform: translateY(-10px);
-    box-shadow:0 2px 12px rgba(0,0,0,0.4) ;
+	transform: translateY(-10px);
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 .brand .item2 .image {
-    position: absolute;
-    right: -35px;
-    bottom: 0;
-    height: 128%;
-    width: 65%;
-    
+	position: absolute;
+	right: -35px;
+	bottom: 0;
+	height: 128%;
+	width: 65%;
 }
-.brand .item2 .image img{
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
+.brand .item2 .image img {
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
 }
-.brand .item2 h3{
-    position: absolute;
-    bottom: 35px;
-    left: 20px;
-    color: var(--main-color-alt2);
-    font-size: 40px;
-    text-transform: capitalize;
-    font-weight: 700;
-    
+.brand .item2 h3 {
+	position: absolute;
+	bottom: 35px;
+	left: 20px;
+	color: var(--main-color-alt2);
+	font-size: 40px;
+	text-transform: capitalize;
+	font-weight: 700;
 }
 
 @media (max-width: 767px) {
-    .brand .lamar-container .item2 .image {
-        position: absolute;
-        right: 10px;
-        bottom: 0;
-        height: 120%;
-        width: 40%;
-    } 
-    .brand .lamar-container .item2 h3 {
-        position: absolute;
-        bottom: 14px;
-        left: 22px;
-        color: var(--main-color-alt2);
-        font-size: 35px;
-        text-transform: capitalize;
-        font-weight: 700;
-    } 
-
-  } 
+	.brand .lamar-container .item2 .image {
+		position: absolute;
+		right: 10px;
+		bottom: 0;
+		height: 120%;
+		width: 40%;
+	}
+	.brand .lamar-container .item2 h3 {
+		position: absolute;
+		bottom: 14px;
+		left: 22px;
+		color: var(--main-color-alt2);
+		font-size: 35px;
+		text-transform: capitalize;
+		font-weight: 700;
+	}
+}
 /* end item tow  */
 /* start item three------------  */
-.brand .item3{
-    background-color: #d7385e;
+.brand .item3 {
+	background-color: #d7385e;
 }
 .brand .item3:hover {
-    transform: translatex(10px);
-    box-shadow:0 2px 12px rgba(0,0,0,0.4) ;
+	transform: translatex(10px);
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 .brand .item3 .image {
-    position: absolute;
-    left: -35px;
-    bottom: 0;
-    height: 113%;
-    width: 65%;
+	position: absolute;
+	left: -35px;
+	bottom: 0;
+	height: 113%;
+	width: 65%;
 }
-.brand .item3 .image img{
-   width: 100%;
-   height: 100%;
-   cursor: pointer;
+.brand .item3 .image img {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
 }
-.brand .item3 h3{
-    position: absolute;
-    bottom: 35px;
-    right: 20px;
-    color: var(--main-color-alt2);
-    font-size: 40px;
-    text-transform: capitalize;
-    font-weight: 700;
-    
+.brand .item3 h3 {
+	position: absolute;
+	bottom: 35px;
+	right: 20px;
+	color: var(--main-color-alt2);
+	font-size: 40px;
+	text-transform: capitalize;
+	font-weight: 700;
 }
 @media (max-width: 767px) {
-    .brand .lamar-container .item3 .image {
-        position: absolute;
-        left: -10px;
-        bottom: 0;
-        height: 120%;
-        width: 54%;
-    } 
-    .brand .lamar-container .item3 h3 {
-        position: absolute;
-        bottom: 16px;
-        right: 43px;
-        /* transform: translate(50%,-50%); */
-        font-size: 35px;
-        text-transform: capitalize;
-        font-weight: 700;
-    } 
-
-  } 
+	.brand .lamar-container .item3 .image {
+		position: absolute;
+		left: -10px;
+		bottom: 0;
+		height: 120%;
+		width: 54%;
+	}
+	.brand .lamar-container .item3 h3 {
+		position: absolute;
+		bottom: 16px;
+		right: 43px;
+		/* transform: translate(50%,-50%); */
+		font-size: 35px;
+		text-transform: capitalize;
+		font-weight: 700;
+	}
+}
 /* end item three------------  */
 /* start item four------------  */
-.brand .item4{
-    background-color: #41584b;
+.brand .item4 {
+	background-color: #41584b;
 }
 .brand .item4:hover {
-    transform: translatex(10px);
-    box-shadow:0 2px 12px rgba(0,0,0,0.4) ;
+	transform: translatex(10px);
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
 .brand .item4 .image {
-    position: absolute;
-    right: 90px;
-    bottom: 0;
-    height: 106%;
-    width: 30%;
-   
+	position: absolute;
+	right: 90px;
+	bottom: 0;
+	height: 106%;
+	width: 30%;
 }
-.brand .item4 .image img{
-    cursor: pointer;
-    height: 100%;
-    width: 100%;
-   
+.brand .item4 .image img {
+	cursor: pointer;
+	height: 100%;
+	width: 100%;
 }
 
-.brand .item4 h3{
-position: absolute;
-font-size: 40px;
-font-weight: 600;
-top: 50%;
-transform: translateY(-50%);
-left: 100px;
-color: var(--main-color-alt2);
-text-transform: capitalize;
-  
+.brand .item4 h3 {
+	position: absolute;
+	font-size: 40px;
+	font-weight: 600;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 100px;
+	color: var(--main-color-alt2);
+	text-transform: capitalize;
 }
 @media (max-width: 767px) {
-    .brand .lamar-container .item4 .image {
-        position: absolute;
-        right: 20px;
-        bottom: 0;
-        height: 100%;
-        width: 30%;
-    } 
-    .brand .lamar-container .item4 h3 {
-        position: absolute;
-        bottom:5px;
-        left: 20px;
-        color: var(--main-color-alt2);
-        font-size: 30px;
-        text-transform: capitalize;
-        font-weight: 700;
-    } 
-
-  } 
+	.brand .lamar-container .item4 .image {
+		position: absolute;
+		right: 20px;
+		bottom: 0;
+		height: 100%;
+		width: 30%;
+	}
+	.brand .lamar-container .item4 h3 {
+		position: absolute;
+		bottom: 5px;
+		left: 20px;
+		color: var(--main-color-alt2);
+		font-size: 30px;
+		text-transform: capitalize;
+		font-weight: 700;
+	}
+}
 /* end item four------------  */
-
-
-

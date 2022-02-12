@@ -1,258 +1,262 @@
 .shop {
-  background-image: url(https://www.almotahajiba.com/pub/media/wysiwyg/smartwave/porto/homepage/15/slider/parallax_img_new.jpg);
-  /* background-image: url(../../images/shop/shop3.jpg); */
-  /* background-image: url(https://firebasestorage.googleapis.com/v0/b/lamar-fashion.appspot.com/o/home-shop%2Fshop5.jpeg?alt=media&token=8705dc05-216b-403f-b64b-c80df640cd4e); */
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: scroll;
-  background-size: cover;
-  height: 80vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	/* background-image: url(https://www.almotahajiba.com/pub/media/wysiwyg/smartwave/porto/homepage/15/slider/parallax_img_new.jpg); */
+	/* background-image: url(../../images/shop/shop3.jpg); */
+	/* background-image: url(https://firebasestorage.googleapis.com/v0/b/lamar-fashion.appspot.com/o/home-shop%2Fshop5.jpeg?alt=media&token=8705dc05-216b-403f-b64b-c80df640cd4e); */
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+	background-size: cover;
+	height: 80vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .shop .lamar-container {
-  height: 55vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
-  background-color: var(--main-color-alt2);
-  border-radius: 10px;
-  box-shadow: 0 2px 12px rgb(0, 0, 0, 0.2);
+	height: 55vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	padding: 20px;
+	background-color: var(--main-color-alt2);
+	border-radius: 10px;
+	box-shadow: 0 2px 12px rgb(0, 0, 0, 0.2);
+}
+
+.shop .rightSection .image {
+	width: 90%;
 }
 @media (max-width: 529px) {
-  .shop .lamar-container {
-    gap: 10px;
-    flex-direction: column;
-    width: 90%;
-    height: 50vh;
-  }
+	.shop .lamar-container {
+		gap: 10px;
+		flex-direction: column;
+		width: 90%;
+		height: 50vh;
+	}
 }
 @media (min-width: 530px) and (max-width: 768px) {
-  .shop .lamar-container {
-    gap: 10px;
-    flex-direction: column;
-    width: 95%;
-  }
+	.shop .lamar-container {
+		gap: 10px;
+		flex-direction: column;
+		width: 95%;
+	}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .shop .lamar-container {
-    gap: 20px;
-  }
+	.shop .lamar-container {
+		gap: 20px;
+	}
 }
 
 .shop .leftSection {
-  width: 50%;
-  position: relative;
+	width: 50%;
+	position: relative;
 }
 @media (max-width: 529px) {
-  .shop .lamar-container .leftSection {
-    width: 100%;
-  }
+	.shop .lamar-container .leftSection {
+		width: 100%;
+	}
 }
 @media (min-width: 530px) and (max-width: 768px) {
-  .shop .lamar-container .leftSection {
-    width: 100%;
-    position: relative;
-  }
+	.shop .lamar-container .leftSection {
+		width: 100%;
+		position: relative;
+	}
 }
 @media (min-width: 769px) and (max-width: 991px) {
-  .shop .lamar-container .leftSection {
-    width: 40%;
-    position: relative;
-  }
+	.shop .lamar-container .leftSection {
+		width: 40%;
+		position: relative;
+	}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .shop .lamar-container .leftSection {
-    width: 42%;
-  }
+	.shop .lamar-container .leftSection {
+		width: 42%;
+	}
 }
 .shop .leftSection .shop-title {
-  /* color: var(--main-color-alt); */
-  font-size: 20px;
-  font-weight: bold;
-  color: var(--main-color-alt);
+	/* color: var(--main-color-alt); */
+	font-size: 20px;
+	font-weight: bold;
+	color: var(--main-color-alt);
 }
 .shop .leftSection .text {
-  font-size: 26px;
-  font-weight: 500;
-  color: var(--text-color);
+	font-size: 26px;
+	font-weight: 500;
+	color: var(--text-color);
 }
 @media (max-width: 529px) {
-  .shop .lamar-container .leftSection .shop-title {
-    /* color: var(--main-color-alt); */
-    font-size: 15px;
-    font-weight: bold;
-    color: var(--main-color-alt);
-  }
-  .shop .lamar-container .leftSection .text {
-    font-size: 19px;
-    font-weight: 500;
-    color: var(--text-color);
-  }
+	.shop .lamar-container .leftSection .shop-title {
+		/* color: var(--main-color-alt); */
+		font-size: 15px;
+		font-weight: bold;
+		color: var(--main-color-alt);
+	}
+	.shop .lamar-container .leftSection .text {
+		font-size: 19px;
+		font-weight: 500;
+		color: var(--text-color);
+	}
 }
 
 @media (min-width: 530px) and (max-width: 768px) {
-  .shop .lamar-container .leftSection .shop-title {
-    /* color: var(--main-color-alt); */
-    font-size: 17px;
-    font-weight: bold;
-    color: var(--main-color-alt);
-  }
-  .shop .lamar-container .leftSection .text {
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--text-color);
-  }
+	.shop .lamar-container .leftSection .shop-title {
+		/* color: var(--main-color-alt); */
+		font-size: 17px;
+		font-weight: bold;
+		color: var(--main-color-alt);
+	}
+	.shop .lamar-container .leftSection .text {
+		font-size: 20px;
+		font-weight: 500;
+		color: var(--text-color);
+	}
 }
 @media (min-width: 769px) and (max-width: 991px) {
-  .shop .lamar-container .leftSection .shop-title {
-    /* color: var(--main-color-alt); */
-    font-size: 20px;
-    font-weight: bold;
-    color: var(--main-color-alt);
-  }
-  .shop .lamar-container .leftSection .text {
-    font-size: 22px;
-    font-weight: 500;
-    color: var(--text-color);
-  }
+	.shop .lamar-container .leftSection .shop-title {
+		/* color: var(--main-color-alt); */
+		font-size: 20px;
+		font-weight: bold;
+		color: var(--main-color-alt);
+	}
+	.shop .lamar-container .leftSection .text {
+		font-size: 22px;
+		font-weight: 500;
+		color: var(--text-color);
+	}
 }
 .shop .rightSection {
-  position: relative;
-  flex: 1;
-  height: 100%;
+	position: relative;
+	flex: 1;
+	height: 100%;
 }
 
 .shop .shopImg {
-  position: absolute;
-  padding: 4px;
-  background-color: var(--main-color-alt);
+	position: absolute;
+	padding: 4px;
+	background-color: var(--main-color-alt);
 }
 
 .shop .rightSection .image1 {
-  height: 220px;
-  width: 180px;
-  top: 45px;
-  left: 15px;
-  transform: rotate(-10deg);
+	height: 220px;
+	width: 180px;
+	top: 45px;
+	left: 15px;
+	transform: rotate(-10deg);
 }
 .shop .rightSection .image1 img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
 @media (max-width: 529px) {
-  .shop .lamar-container .rightSection .image1 {
-    height: 150px;
-    width: 120px;
-    top: 0px;
-    left: -150px;
-    transform: rotate(-6deg);
-  }
+	.shop .lamar-container .rightSection .image1 {
+		height: 150px;
+		width: 120px;
+		top: 0px;
+		left: -150px;
+		transform: rotate(-6deg);
+	}
 }
 @media (min-width: 530px) and (max-width: 768px) {
-  .shop .lamar-container .rightSection .image1 {
-    height: 140px;
-    width: 130px;
-    top: -45px;
-    left: -70px;
-    transform: rotate(-10deg);
-  }
+	.shop .lamar-container .rightSection .image1 {
+		height: 140px;
+		width: 130px;
+		top: -45px;
+		left: -70px;
+		transform: rotate(-10deg);
+	}
 }
 @media (min-width: 769px) and (max-width: 991px) {
-  .shop .lamar-container .rightSection .image1 {
-    height: 200px;
-    width: 160px;
-    top: 35px;
-    left: 15px;
-    transform: rotate(-10deg);
-  }
+	.shop .lamar-container .rightSection .image1 {
+		height: 200px;
+		width: 160px;
+		top: 35px;
+		left: 15px;
+		transform: rotate(-10deg);
+	}
 }
 
 .shop .rightSection .image2 {
-  height: 230px;
-  width: 190px;
-  top: 60px;
-  left: 160px;
-  transform: rotate(1.5deg);
+	height: 230px;
+	width: 190px;
+	top: 60px;
+	left: 160px;
+	transform: rotate(1.5deg);
 }
 .shop .rightSection .image2 img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
 @media (max-width: 529px) {
-  .shop .lamar-container .rightSection .image2 {
-    height: 160px;
-    width: 130px;
-    top: 15px;
-    left: -54px;
-    transform: rotate(1.5deg);
-  }
+	.shop .lamar-container .rightSection .image2 {
+		height: 160px;
+		width: 130px;
+		top: 15px;
+		left: -54px;
+		transform: rotate(1.5deg);
+	}
 }
 @media (min-width: 530px) and (max-width: 768px) {
-  .shop .lamar-container .rightSection .image2 {
-    height: 160px;
-    width: 130px;
-    top: -55px;
-    left: 25px;
-    transform: rotate(1.5deg);
-  }
+	.shop .lamar-container .rightSection .image2 {
+		height: 160px;
+		width: 130px;
+		top: -55px;
+		left: 25px;
+		transform: rotate(1.5deg);
+	}
 }
 @media (min-width: 769px) and (max-width: 991px) {
-  .shop .lamar-container .rightSection .image2 {
-    height: 210px;
-    width: 170px;
-    top: 45px;
-    left: 135px;
-    transform: rotate(1.5deg);
-  }
+	.shop .lamar-container .rightSection .image2 {
+		height: 210px;
+		width: 170px;
+		top: 45px;
+		left: 135px;
+		transform: rotate(1.5deg);
+	}
 }
 
 .shop .rightSection .image3 {
-  height: 210px;
-  width: 160px;
-  top: 45px;
-  right: 60px;
-  transform: rotate(-5deg);
+	height: 210px;
+	width: 160px;
+	top: 45px;
+	right: 60px;
+	transform: rotate(-5deg);
 }
 .shop .rightSection .image3 img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
 @media (max-width: 529px) {
-  .shop .lamar-container .rightSection .image3 {
-    height: 150px;
-    width: 120px;
-    top: -2px;
-    left: 39px;
-    transform: rotate(-5deg);
-  }
+	.shop .lamar-container .rightSection .image3 {
+		height: 150px;
+		width: 120px;
+		top: -2px;
+		left: 39px;
+		transform: rotate(-5deg);
+	}
 }
 @media (min-width: 530px) and (max-width: 768px) {
-  .shop .lamar-container .rightSection .image3 {
-    height: 150px;
-    width: 120px;
-    top: -55px;
-    left: 122px;
-    transform: rotate(-5deg);
-  }
+	.shop .lamar-container .rightSection .image3 {
+		height: 150px;
+		width: 120px;
+		top: -55px;
+		left: 122px;
+		transform: rotate(-5deg);
+	}
 }
 @media (min-width: 769px) and (max-width: 991px) {
-  .shop .lamar-container .rightSection .image3 {
-    height: 190px;
-    width: 150px;
-    top: 35px;
-    right: 10px;
-    transform: rotate(-5deg);
-  }
+	.shop .lamar-container .rightSection .image3 {
+		height: 190px;
+		width: 150px;
+		top: 35px;
+		right: 10px;
+		transform: rotate(-5deg);
+	}
 }
 
 /* .shop  .rightSection .image4 {
@@ -268,6 +272,6 @@
 } */
 
 .shop .text {
-  margin-bottom: 1rem;
-  font-weight: lighter;
+	margin-bottom: 1rem;
+	font-weight: lighter;
 }
