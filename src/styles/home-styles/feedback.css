@@ -1,9 +1,10 @@
 .feedback {
-	background-color: var(--main-color-alt2);
+	background-color: var(--background-color);
 	position: relative;
 	padding-top: 40px;
 	padding-bottom: 40px;
-	height: 365px;
+	height: 290px;
+	color: var(--text-color);
 }
 
 .slide-container {

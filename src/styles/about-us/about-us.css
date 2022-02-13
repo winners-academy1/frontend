@@ -1,46 +1,47 @@
-.about-us{
-    padding: 200px 0 100px;
-    width: 100%;
-    background-color: var(--main-color-alt2);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.about-us {
+	padding: 200px 0 100px;
+	width: 100%;
+	background-color: var(--main-color-alt2);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	color: var(--background-color);
 }
-@media(max-width:530px){
-    .about-us{
-      padding: 150px 0 100px; 
-    }
-  }
+@media (max-width: 530px) {
+	.about-us {
+		padding: 150px 0 100px;
+	}
+}
 .about-us .lamar-container {
-    padding-bottom:10px;
+	padding-bottom: 10px;
 }
-@media(max-width:767px){
-    .about-us .lamar-container {
-        width: 100%;
-    }
+@media (max-width: 767px) {
+	.about-us .lamar-container {
+		width: 100%;
+	}
 }
-.about-us .path{
-    text-align: left;
+.about-us .path {
+	text-align: left;
 }
 .about-us .path i {
-    font-size: 22px;
-    margin-right: 10px;
-    color: var(--main-color-alt);
+	font-size: 22px;
+	margin-right: 10px;
+	color: var(--background-color);
 }
-.about-us .path span{
-    font-size: 20px;
-    cursor: auto;
-    font-weight: 600;
+.about-us .path span {
+	font-size: 20px;
+	cursor: auto;
+	font-weight: 600;
 }
-.about-us .lamar-container > ul  {
-    list-style: disc;
-    padding: 10px 20px !important;
-    margin:  10px  !important;
+.about-us .lamar-container > ul {
+	list-style: disc;
+	padding: 10px 20px !important;
+	margin: 10px !important;
 }
 .about-us .lamar-container > ul > li {
-    margin: 10px auto;
+	margin: 10px auto;
 }
 .about-us .lamar-container > ul > li span {
-    font-weight: bold;
+	font-weight: bold;
 }

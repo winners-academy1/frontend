@@ -13,15 +13,15 @@ function ContactUs() {
 							<h5>by Email: </h5>
 							<i className="far fa-paper-plane fa-fw"></i>
 
-							<a href="mailto:Info@lamarfashion.qa" target="_blank">
-								Info@lamarfashion.qa
+							<a href="mailto:Info@maritta.qa" target="_blank">
+								Info@marietta.qa
 							</a>
 						</div>
 						<div className="email">
 							<h5>by WhatsApp: </h5>
 							<i className="fab fa-whatsapp fa-fw"></i>
 							<a href="http://wa.me/+97466881109" target="_blank">
-								+974 66881109
+								+974 6688555
 							</a>
 						</div>
 					</form>

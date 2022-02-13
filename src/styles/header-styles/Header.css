@@ -32,8 +32,15 @@
 		height: 70px;
 		width: 90px;
 		margin: 0;
+		display: flex;
 	}
-
+	.header .lamar-container .image.image-scroll a {
+		display: flex;
+	}
+	.header .lamar-container .image.image-scroll a h4 {
+		margin-bottom: 0;
+		color: var(--background-color);
+	}
 	.header .lamar-container .main-nav.main-nav-scroll {
 		height: 5rem;
 	}
@@ -419,8 +426,8 @@
 }
 
 .header .lamar-container .image .logo {
-	width: 350px;
-	height: 275px;
+	width: 100px;
+	height: 50px;
 	position: absolute;
 	left: 50%;
 	top: -55px;
@@ -429,8 +436,8 @@
 	transition: 1s linear;
 }
 .header .lamar-container .image .small-logo {
-	width: 200px;
-	height: 150px;
+	width: 75px;
+	height: 64px;
 	transition: 1s linear;
 	/* position: absolute;
   left: 50%;
@@ -469,13 +476,14 @@
 	justify-content: center;
 	align-items: center;
 	height: 5rem;
-	color: black;
+	color: var(--background-color);
 	width: 100%;
 	overflow: hidden;
 	font-size: 18px;
 	transition: var(--main-transition);
 	cursor: pointer;
 	text-transform: uppercase;
+	font-weight: bold;
 }
 .header .lamar-container .main-nav > li > a > a:hover {
 	font-weight: bold;
@@ -783,4 +791,5 @@
 .right-nav .fab {
 	font-size: 24px;
 	cursor: pointer;
+	color: var(--background-color);
 }

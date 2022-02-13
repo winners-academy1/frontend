@@ -1,9 +1,10 @@
 .contact-us {
 	padding: 220px 0 100px;
-	background-color: var(--main-color-alt);
+	background-color: var(--main-color-alt2);
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	color: var(--background-color);
 }
 @media (max-width: 530px) {
 	.contact-us {
@@ -31,11 +32,11 @@
 
 .contact-us .left-nav .i-home {
 	font-size: 18px;
-	color: black;
+	/* color: black; */
 	font-weight: 600;
 }
 .contact-us .nav-info span {
-	color: black;
+	/* color: black; */
 	font-size: 18px;
 	font-weight: 600;
 	text-transform: capitalize;
@@ -50,8 +51,9 @@
 	text-transform: uppercase;
 	font-size: 24px;
 	font-weight: 600;
-	color: black;
+	/* color: black; */
 	position: relative;
+	text-align: center;
 }
 .contact-us .lamar-container h2::before {
 	content: "";
@@ -61,11 +63,27 @@
 	bottom: -10px;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color: black;
+	background-color: var(--background-color);
 	border-radius: 20px;
 }
 @media (max-width: 767px) {
 	.contact-us .lamar-container h2 {
 		font-size: 20px;
 	}
+}
+
+.contact-us .lamar-container .email {
+	display: flex;
+	margin: 35px;
+}
+
+.contact-us .lamar-container .email h5 {
+	margin-right: 10px;
+}
+
+.contact-us .lamar-container .email a {
+	margin-left: 10px;
+	cursor: pointer;
+	text-decoration: none;
+	color: var(--background-color);
 }

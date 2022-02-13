@@ -2,7 +2,7 @@
 import { React, useState, useEffect } from "react";
 import "../../styles/header-styles/Header.css";
 // import logo from "../../images/header/lamar-logo-small.png";
-import logo from "../../images/header/Marietta-Logo-HD.png";
+import logo from "../../images/header/Marietta-Logo-HD2.png";
 import { BsCartFill, BsFillHeartFill, BsPersonCircle } from "react-icons/bs";
 import { Link } from "react-router-dom";
 function Header() {
@@ -174,6 +174,7 @@ function Header() {
 								alt="logo"
 								className={y > 0 ? "small-logo" : "logo"}
 							/>
+							<h4>Enterprise Marietta</h4>
 						</Link>
 					</div>
 					<section

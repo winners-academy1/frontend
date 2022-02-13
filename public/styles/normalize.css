@@ -65,30 +65,24 @@ ul {
 	bottom: 40px;
 	width: 40px;
 	height: 40px;
-	background-image: linear-gradient(
-		to right,
-		var(--main-color-alt2),
-		var(--main-color-alt)
-	);
+	background-image: #ccc;
 	border-radius: 25% 50%;
 	cursor: pointer;
 	transition: 1s;
-	border: 1px solid var(--main-color);
+	border: 1px solid var(--background-color);
 	z-index: 2;
 	cursor: pointer;
 }
 
 .go-up i {
 	font-size: 30px;
-	color: var(--text-color);
+	color: var(--background-color);
 	cursor: pointer;
 }
 .go-up:hover {
-	background-image: linear-gradient(
-		to right,
-		var(--text-color),
-		var(--main-color-alt)
-	);
+	background-color: var(--background-color);
+	color: #fff;
+	border: 1px solid #fff;
 }
 .go-up:hover i {
 	color: var(--main-color-alt);

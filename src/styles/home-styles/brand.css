@@ -1,8 +1,12 @@
 .brand {
-	background-color: var(--main-color-alt);
+	background-color: var(--background-color);
 	padding-bottom: var(--main-padding-bottom);
 	padding-top: var(--main-padding-top);
 	position: relative;
+}
+
+.brand .mainTitle {
+	color: var(--text-color);
 }
 
 .clinic {
@@ -19,18 +23,19 @@
 .clinic .part h3 {
 	font-size: 20px;
 	font-weight: bold;
+	color: var(--text-color);
 }
 .clinic .part p {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	letter-spacing: 1px;
-	color: #777;
+	color: var(--text-color);
 	line-height: 1.7;
 	font-size: 16px;
 }
 .clinic i {
 	font-size: 50px;
-	color: var(--main-color-alt2);
+	color: var(--text-color);
 	margin-bottom: 20px;
 }
 
@@ -89,7 +94,7 @@
 .brand .lamar-container > div {
 	padding: 10px;
 	position: relative;
-	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 12px var(--text-color);
 	height: 100%;
 	transition: transform 0.5s, box-shadow 0.5s;
 	cursor: pointer;

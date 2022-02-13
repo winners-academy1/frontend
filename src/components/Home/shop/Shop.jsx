@@ -8,7 +8,7 @@ function Shop() {
 			<section className="shop" id="whatwedo">
 				<div className="lamar-container">
 					<section className="leftSection">
-						<h2 className="shoptitle">What We Do?</h2>
+						<h2 className="shop-title">What We Do?</h2>
 						<h3 className="text">
 							It starts with the conception and ends with the completion of
 							something extraordinary. Our dedicated, experienced and skilled

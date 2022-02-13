@@ -8,22 +8,19 @@ function Brand() {
 				<div class="custom-shape-divider-top-1638712956"></div>
 				<div className="title-section">
 					<h2 className="mainTitle">Specialties</h2>
-					<p>
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-						Repellendus illum vel cupiditate dolorum laborum!
-					</p>
 				</div>
 				<div className="lamar-container">
 					<div class="clinic">
 						<div class="part">
 							<h3>
-								<i class="fas fa-user-md"></i>
+								<i class="fas fa-solid fa-pencil"></i>
 							</h3>
-							<h3>More experience</h3>
+							<h3>Archetictural Engineering</h3>
 							<p>
-								Every year, more than a million people come to Mayo Clinic for
-								care. Our highly specialized experts are deeply experienced in
-								treating rare and complex conditions.
+								We design buildings and homes with high quality and draw the
+								plans required for implementation. We also design 3D plans and
+								interior design services with very high quality and implement
+								and design all architectural requirements
 							</p>
 						</div>
 
@@ -31,35 +28,35 @@ function Brand() {
 							<h3>
 								<i class="fas fa-user-check"></i>
 							</h3>
-							<h3>The right answers</h3>
+							<h3>Civil Engingeering</h3>
 							<p>
-								Successful treatment starts with an accurate diagnosis, and our
-								experts take the time to get it right. A team of specialists
-								will listen to your needs and evaluate your condition from every
-								angle to make the very best plan for you.
+								We design and implement building related services Structure,
+								including calculation of material quantities Required, number of
+								columns and concrete in buildings and Roofs and all services
+								related to the building structure.
 							</p>
 						</div>
 						<div class="part">
 							<h3>
 								<i class="fab fa-creative-commons-sa"></i>
 							</h3>
-							<h3>Seamless care</h3>
+							<h3>Mechanical Engineerin</h3>
 							<p>
-								At Midical Clinic, every aspect of your care is coordinated and
-								teams of experts work togethe to provide exactly the care you
-								need. What might take months elsewhere can often be done in days
-								here.
+								We design and supervise mechanical services for buildings with
+								the best quality and performance, including water, sewage, air
+								conditioning, refrigeration, firefighting and other mechanical
+								services.
 							</p>
 						</div>
 						<div class="part">
 							<h3>
 								<i class="fas fa-flask"></i>
 							</h3>
-							<h3>Unparalleled expertise</h3>
+							<h3>Electrical Engineering</h3>
 							<p>
-								Midical Clinic experts are some of the best in the world. In the
-								U.S. News & World Report rankings of top hospitals, Mayo Clinic
-								is consistently ranked among the top hospitals in the nation.
+								We design and implement electrical services, including internal
+								and external lighting services, and electrical power
+								calculations for all electrical devices used in buildings.
 							</p>
 						</div>
 					</div>
