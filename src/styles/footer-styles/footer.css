@@ -114,6 +114,7 @@
 .footer .box .line .info {
 	line-height: 1.7;
 	flex: 1;
+	color: var(--background-color);
 }
 .footer .box .line .info span {
 	display: block;

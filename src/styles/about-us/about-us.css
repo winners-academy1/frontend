@@ -16,6 +16,14 @@
 .about-us .lamar-container {
 	padding-bottom: 10px;
 }
+
+.about-us .lamar-container .experience div {
+	margin-top: 40px;
+}
+
+.about-us .lamar-container .eductation {
+	margin-top: 40px;
+}
 @media (max-width: 767px) {
 	.about-us .lamar-container {
 		width: 100%;

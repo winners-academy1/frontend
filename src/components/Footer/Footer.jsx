@@ -14,7 +14,7 @@ function Footer() {
 						<ul className="social">
 							<li>
 								<a
-									href="https://m.facebook.com/Lamar-Fashion-Qatar-100896018825886/"
+									href="https://www.facebook.com/monty.ramzi"
 									className="facebook"
 									target="_blank"
 								>
@@ -23,7 +23,7 @@ function Footer() {
 							</li>
 							<li>
 								<a
-									href="https://www.instagram.com/lamarfashion.qa?utm_medium=copy_link"
+									href="https://www.instagram.com/mariettamontreal2022/?utm_medium=copy_link"
 									className="instagram"
 									target="_blank"
 								>
@@ -32,11 +32,11 @@ function Footer() {
 							</li>
 							<li>
 								<a
-									href="https://m.facebook.com/Lamar-Fashion-Qatar-100896018825886/"
+									href="Mariettamontreal@gmail.com"
 									className="twitter"
 									target="_blank"
 								>
-									<i className="fab fa-twitter"></i>
+									<i className="fab fa-google"></i>
 								</a>
 							</li>
 						</ul>
@@ -107,16 +107,20 @@ function Footer() {
 					<div className="box">
 						<div className="line">
 							<i className="fas fa-map-marker-alt fa-fw"></i>
-							<div className="info">Canada</div>
+							<a href="https://www.google.com/maps/place/9390+Av.+De+Chateaubriand,+Montr%C3%A9al,+QC+H2M+1Y1,+Canada/@45.5518999,-73.650547,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc918c471200d33:0x970dd2eb53689bc5!8m2!3d45.5518999!4d-73.6483583">
+								<div className="info">
+									9390 Av. De Chateaubriand, Montreal,QC, H2M 1Y1
+								</div>
+							</a>
 						</div>
 						<div className="line">
-							<i className="far fa-clock fa-fw"></i>
-							<div className="info">Business Hours: From 09:00 To 22:00</div>
+							<i className="fab fa-google fa-fw"></i>
+							<div className="info">Mariettamontreal@gmail.com</div>
 						</div>
 						<div className="line">
 							<i className="fas fa-phone-volume fa-fw"></i>
 							<div className="info">
-								<span>+999955554444</span>
+								<span>+1 (438) 921-0654</span>
 							</div>
 						</div>
 					</div>

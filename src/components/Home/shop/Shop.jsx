@@ -9,14 +9,14 @@ function Shop() {
 				<div className="lamar-container">
 					<section className="leftSection">
 						<h2 className="shop-title">What We Do?</h2>
-						<h3 className="text">
+						<p className="text">
 							It starts with the conception and ends with the completion of
 							something extraordinary. Our dedicated, experienced and skilled
 							team of architects, engineers, project managers, and talented
 							executives make our clients’ needs their top priority. Our years
 							of experience have taught us how to use our time wisely to exceed
 							expectations and master excellence.
-						</h3>
+						</p>
 						{/* <button className="button shopBtn">Shop Now</button> */}
 					</section>
 					<section className="rightSection">

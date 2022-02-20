@@ -11,17 +11,17 @@ function ContactUs() {
 
 						<div className="email">
 							<h5>by Email: </h5>
-							<i className="far fa-paper-plane fa-fw"></i>
+							<i className="fab fa-google fa-fw"></i>
 
-							<a href="mailto:Info@maritta.qa" target="_blank">
-								Info@marietta.qa
+							<a href="Mariettamontreal@gmail.com" target="_blank">
+								Mariettamontreal@gmail.com
 							</a>
 						</div>
 						<div className="email">
 							<h5>by WhatsApp: </h5>
-							<i className="fab fa-whatsapp fa-fw"></i>
-							<a href="http://wa.me/+97466881109" target="_blank">
-								+974 6688555
+							<i className="fas fa-phone fa-fw"></i>
+							<a href="http://wa.me/+14389210654" target="_blank">
+								+1 (438) 921-0654
 							</a>
 						</div>
 					</form>
