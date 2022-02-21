@@ -18,7 +18,8 @@
   --main-padding-bottom: 80px;
   /* --main-color-alt2:whitesmoke; */
   --main-color-alt2: #e4e1e8;
-  --text-color: #ccc;
+  /* --text-color: #ccc; */
+  --text-color: navajowhite;
   --background-color: #ff7600;
 }
 html {

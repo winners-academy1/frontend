@@ -84,7 +84,7 @@
 }
 @media (min-width: 531px) and (max-width: 768px) {
   .header.header-scroll {
-    background-color: #ececec;
+    background-color: #fff;
     box-shadow: 0px 2px 2px var(--background-color);
     border-bottom: var(--background-color) 2px solid;
     top: 0;
@@ -106,7 +106,7 @@
   }
 
   .header.header-scroll {
-    background-color: #ececec;
+    background-color: #fff;
     box-shadow: 0px 2px 2px var(--background-color);
     border-bottom: var(--background-color) 2px solid;
     top: 0;
@@ -533,7 +533,7 @@
 .header .lamar-container .main-nav .drop-ul-home-scroll a {
   display: flex;
   align-items: center;
-  color: black;
+  color: var(--background-color);
   font-size: 15px;
   height: 30px;
   transition: 0.3s;
