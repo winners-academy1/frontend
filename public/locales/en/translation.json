@@ -1,10 +1,80 @@
 {
-  "home.label": "Home",
-  "specialties.label": "Specialties",
-  "whatwedo.label": "What We Do",
-  "aboutus.label": "About Us",
-  "contactus.label": "Contact Us",
+	"home.label": "Home",
+	"specialties.label": "Specialties",
+	"whatwedo.label": "What We Do",
 
-  "archetictTitle.label": "Contact Us",
-  "archetictDesc.label": "Contact Us"
+	"aboutus.label": "About Us",
+	"contactus.label": "Contact Us",
+
+	"archetictTitle.label": "Archetictural Engineering",
+	"archetictDesc.label": "We design buildings and homes with high quality and draw the plans required for implementation. We also design 3D plans and interior design services with very high quality andimplement and design all architectural requirements",
+
+	"civilTitle.label": "Civil Engingeering",
+	"civilDesc.label": "We design and implement building related services Structure, including calculation of material quantities Required, number of columns and concrete in buildings and Roofs and allservices related to the building structure.",
+
+	"mechanicalTitle.label": "Mechanical Engineerin",
+	"mechanicalDesc.label": "We design and supervise mechanical services for buildings with the best quality and performance, including water, sewage, air conditioning, refrigeration, firefighting and other mechanical services.",
+
+	"electricalTitle.label": "Electrical Engineering",
+	"electricalDesc.label": "We design and implement electrical services, including internal and external lighting services, and electrical powercalculations for all electrical devices used in buildings.",
+
+	"whatwedoDesc.label": "It starts with the conception and ends with the completion of something extraordinary. Our dedicated, experienced and skilled team of architects, engineers, project managers, and talented executives make our clients’ needs their top priority. Our years of experience have taught us how to use our time wisely to exceed expectations and master excellence.",
+
+	"ourAims.label": "Our Aims",
+	"ourAimsDEsc.label": "A technologically green ecosystem",
+	"ourAimsDesc2.label": "To inspire humanity with greener, more sustainable designs through building platforms of efficiency and standards for our future cities.",
+
+	"ethis.label": "Ethics and values",
+	"ethicDesc.label": "Honesty and fairness are the success factor we have always built on.",
+	"ethicDesc2.label": "We are committed to operating at the highest ethical standards. By creating a humane organisation, we guarantee honourable dealings that render an exemplary output to our clients and society. Our quality of work is a direct result of our values and ethics.",
+
+	"mission.label": "The mission",
+	"missionDesc.label": "The engineering firm of the modern era.",
+	"missionDesc2.label": "Streamlining the industry with our engineering and value engineering expertise, through the heavy deployment of technology for cost efficient and sustainable designs that focus on the operating and maintenance factor of each building.",
+
+	"welcome.label": "Welcome to our website do not hesitate to reach us.",
+	"powered.label": "Powerd By A.A 💻",
+
+	"byemail.label": "by Email:",
+	"bywhatsapp.label": "by WhatsApp:",
+
+	"summary.label": "Mechanical Engineer with more than 19 years of experience planning, developing and implementing Facility Managment,Budgeting ,cost control, technical requirements . Experienced manager with excellent client and project management skills. Action-oriented with strong ability to communicate effectively with technology, executive, and business audiences. Skilled Mechanical Engineer with experience in the Elecrto-Mechanical industry. Familiar with maintaining and rehabitation of Buildings HVAC/Electrical Power/Fire fighting systems.",
+
+	"experienceTitle.label": "Experience",
+	"to.label": "to",
+	"emarat.label": "U.A.E,Abu Dhabi",
+	"jordan.label": "Jordan, Amman",
+	"jobTitle1.label": "Mechanical /Facility Engineer KHIDMAH L.L.C",
+
+	"jobDesc1part1.label": "- Ensuring smooth implementation of administrative activities like maintenance of office equipments,transport,house keeping and maintenance of office and record keeping of Electromechanical Equipments.",
+	"jobDesc1part2.label": "- Formulating & enforcing EHS policies,procedures,programs and standards to ensure saftey of the workers/Employees.",
+	"jobDesc1part3.label": "- Leading efforts for streamlining processes and generating cost saving in the perations;interacting with departments for executing maintenance of equipment and enhancing overall efficiency.",
+
+	"jobTitle2.label": "Head Of Maintenance & Property Department Private Buildings Est.",
+
+	"jobDesc2part1.label": "- Shouldered the responsibility of administering the real estate & maintenance work of electrical, mechanical and civil in different high rise towers, buildings and villas located in Abu Dhabi, Dubai & Al Ain.",
+	"jobDesc2part2.label": "- Overseeing the planning of preventive maintenance and compiling the list of suggestions",
+	"jobDesc2part3.label": "- Responsible for providing technical coordination to management for scope and cost estimate for the capital improvement programs.",
+	"jobDesc2part4.label": "- Establishing project review, monitoring and status reporting procedures to accurately report progress of the project to the seniors.",
+
+	"jobTitle3.label": "Maintenance Manager CASSELLES Group ",
+
+	"jobDesc3part1.label": "- Overseeing the planning of preventive maintenance in advance and compiling the list of suggestions.",
+	"jobDesc3part2.label": "- Developing plans,budgets,specifications and cost estimation for assigned projects.",
+	"jobDesc3part3.label": "- Entrusted with the task of attending any emergency call particularly after office hours regarding any problem related to the maintenance of electromechanical equipments.",
+	"jobDesc3part4.label": "",
+
+	"jobTitle4.label": "Mechanical Engineer Juma Al Majid Group",
+
+	"jobDesc4part1.label": "- Inspection field sites to observe and evaluate conditions and operability of facilities and structures.",
+	"jobDesc4part2.label": "- Accountable for advicing and studying specifications,tender documents,technical submittals related to the electrical and Mechanical works.",
+
+	"jobTitle5.label": "Head Of Maintenance Department Arab Business Cooperation",
+
+	"jobDesc5part1.label": "- Ensuring maintenance of Al Basher Governmental Hospital including infrastructure,buildings,HVAC,power systems,AMCs,etc.",
+	"jobDesc5part2.label": "- Inspection field sites to observe and evaluate conditions and operability of facilities and structures.",
+
+	"education.label": "EDUCATION",
+	"educationTitle1.label": "2012 MBA:Bussiness Administration University Of Atlanta - UAE",
+	"educationTitle2.label": "UAE 1998 Bachelor Of Science: Mechanical of Engineering University Of JordanEDUCATION"
 }

@@ -1,10 +1,78 @@
 {
-  "home.label": "Home fr",
-  "specialties.label": "Specialties fr",
-  "whatwedo.label": "What We Do fr ",
-  "aboutus.label": "About Us fr",
-  "contactus.label": "Contact Us fr",
+	"home.label": "Maison",
+	"specialties.label": "Spécialités",
+	"whatwedo.label": "Ce que nous faisons",
+	"aboutus.label": "À propos de nous",
+	"contactus.label": "Nous contacter",
 
-  "archetictTitle.label": "Contact Us",
-  "archetictDesc.label": "Contact Us"
+	"archetictTitle.label": "Génie architectural",
+	"archetictDesc.label": "Nous concevons des bâtiments et des maisons de haute qualité et dessinons les plans nécessaires à la mise en œuvre. Nous concevons également des plans 3D et des services de design d'intérieur de très haute qualité et mettons en œuvre et concevons toutes les exigences architecturales",
+
+	"civilTitle.label": "Travaux publics",
+	"civilDesc.label": "Nous concevons et mettons en œuvre des services liés au bâtiment Structure, y compris le calcul des quantités de matériaux nécessaires, le nombre de colonnes et de béton dans les bâtiments et les toits et tous les services liés à la structure du bâtiment.",
+
+	"mechanicalTitle.label": "Génie mécanique",
+	"mechanicalDesc.label": "Nous concevons et supervisons les services mécaniques pour les bâtiments avec la meilleure qualité et performance, y compris l'eau, les égouts, la climatisation, la réfrigération, la lutte contre les incendies et d'autres services mécaniques.",
+
+	"electricalTitle.label": "Ingénierie électrique",
+	"electricalDesc.label": "Nous concevons et réalisons des services électriques, y compris des services d'éclairage intérieur et extérieur, et des calculs de puissance électrique pour tous les appareils électriques utilisés dans les bâtiments.",
+
+	"whatwedoDesc.label": "Cela commence par la conception et se termine par la réalisation de quelque chose d'extraordinaire. Notre équipe dévouée, expérimentée et qualifiée d'architectes, d'ingénieurs, de chefs de projet et de cadres talentueux fait des besoins de nos clients leur priorité absolue. Nos années d'expérience nous ont appris à utiliser judicieusement notre temps pour dépasser les attentes et maîtriser l'excellence.",
+
+	"ourAims.label": "Nos objectifs",
+	"ourAimsDEsc.label": "Un écosystème technologiquement vert",
+	"ourAimsDesc2.label": "Inspirer l'humanité avec des conceptions plus vertes et plus durables en construisant des plateformes d'efficacité et de normes pour nos futures villes.",
+
+	"ethis.label": "Éthique et valeurs",
+	"ethicDesc.label": "L'honnêteté et l'équité sont les facteurs de succès sur lesquels nous avons toujours bâti.",
+	"ethicDesc2.label": "Nous nous engageons à opérer selon les normes éthiques les plus élevées. En créant une organisation humaine, nous garantissons des relations honorables qui rendent un rendement exemplaire à nos clients et à la société. La qualité de notre travail découle directement de nos valeurs et de notre éthique.",
+
+	"mission.label": "La mission",
+	"missionDesc.label": "La firme d'ingénierie de l'ère moderne.",
+	"missionDesc2.label": "Rationalisation de l'industrie grâce à notre expertise en ingénierie et en ingénierie de la valeur, grâce au déploiement massif de technologies pour des conceptions rentables et durables qui se concentrent sur le facteur d'exploitation et d'entretien de chaque bâtiment.",
+
+	"welcome.label": "Bienvenue sur notre site n'hésitez pas à nous joindre.",
+	"powered.label": "Propulsé par A.A 💻",
+
+	"byemail.label": "par email:",
+	"bywhatsapp.label": "par Whatsapp:",
+
+	"summary.label": "Ingénieur en mécanique avec plus de 19 ans d'expérience dans la planification, le développement et la mise en œuvre de la gestion des installations, de la budgétisation, du contrôle des coûts et des exigences techniques. Gestionnaire expérimenté avec d'excellentes compétences en gestion de clients et de projets. Orienté vers l'action avec une forte capacité à communiquer efficacement avec les technologies, les cadres et les entreprises. Ingénieur mécanique qualifié avec expérience dans l'industrie électro-mécanique. Familier avec l'entretien et la remise en état des systèmes de CVC / d'alimentation électrique / de lutte contre l'incendie des bâtiments.",
+
+	"experienceTitle.label": "Expérience",
+	"to.label": "pour",
+	"emarat.label": "Émirats arabes unis, Abu Dhabi",
+	"jordan.label": "Jordanie, Amman",
+	"jobTitle1.label": "Ingénieur Mécanique / Installations KHIDMAH L.L.C",
+
+	"jobDesc1part1.label": "- Assurer la bonne mise en œuvre des activités administratives telles que l'entretien des équipements de bureau, le transport, l'entretien ménager et l'entretien des bureaux et la tenue des registres des équipements électromécaniques.",
+	"jobDesc1part2.label": "- Formuler et appliquer les politiques, procédures, programmes et normes WHS pour assurer la sécurité des travailleurs/employés.",
+	"jobDesc1part3.label": "- Diriger les efforts pour rationaliser les processus et générer des économies de coûts dans les opérations; interagir avec les départements pour exécuter la maintenance de l'équipement et améliorer l'efficacité globale.",
+
+	"jobTitle2.label": "Chef De Département Maintenance & Immobilier Bâtiments Privés Est.",
+
+	"jobDesc2part1.label": "- Assumé la responsabilité d'administrer les travaux immobiliers et de maintenance des équipements électriques, mécaniques et civils dans différentes tours, bâtiments et villas de grande hauteur situés à Abu Dhabi, Dubaï et Al Ain.",
+	"jobDesc2part2.label": "- Superviser la planification de la maintenance préventive et compiler la liste des suggestions",
+	"jobDesc2part3.label": "- Responsable de fournir une coordination technique à la direction pour la portée et l'estimation des coûts des programmes d'amélioration des immobilisations.",
+	"jobDesc2part4.label": "- Établir des procédures d'examen, de suivi et de rapport d'état du projet pour rendre compte avec précision de l'avancement du projet aux seniors.",
+
+	"jobTitle3.label": "Responsable Maintenance Groupe CASSELLES",
+
+	"jobDesc3part1.label": "- Superviser la planification de la maintenance préventive à l'avance et compiler la liste des suggestions.",
+	"jobDesc3part2.label": "- Élaborer des plans, des budgets, des spécifications et des estimations de coûts pour les projets assignés.",
+	"jobDesc3part3.label": "- Chargé de répondre à tout appel d'urgence particulièrement après les heures de bureau concernant tout problème lié à l'entretien des équipements électromécaniques..",
+
+	"jobTitle4.label": "Ingénieur Mécanique Groupe Juma Al Majid",
+
+	"jobDesc4part1.label": "- Inspection des sites sur le terrain pour observer et évaluer les conditions et l'opérabilité des installations et des structures.",
+	"jobDesc4part2.label": "- Responsable de conseiller et d'étudier les spécifications, les documents d'appel d'offres, les soumissions techniques liées aux travaux électriques et mécaniques.",
+
+	"jobTitle5.label": "Chef du département de maintenance Coopération commerciale arabe",
+
+	"jobDesc5part1.label": "- Assurer la maintenance de l'hôpital gouvernemental Al Basher, y compris l'infrastructure, les bâtiments, le CVC, les systèmes d'alimentation, les AMC, etc.",
+	"jobDesc5part2.label": "- Inspection des sites sur le terrain pour observer et évaluer les conditions et l'opérabilité des installations et des structures.",
+
+	"education.label": "ÉDUCATION",
+	"educationTitle1.label": "2012 MBA : Université d'administration des affaires d'Atlanta - EAU",
+	"educationTitle2.label": "Émirats Arabes Unis 1998 Baccalauréat ès sciences: Mécanique de l'ingénierie Université de Jordanie"
 }
