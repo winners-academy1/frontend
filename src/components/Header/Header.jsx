@@ -16,7 +16,8 @@ function Header() {
 	const [dropDown, setDropDown] = useState(false);
 	const [dropDownA, setDropDownA] = useState(false);
 	const [y, setY] = useState(1);
-	// const [lan, setLan] = useState("en");
+	const langKey = "language";
+	const [lan, setLan] = useState("En");
 
 	function navigateHandler() {
 		if (location.pathname !== "/") {
@@ -28,7 +29,11 @@ function Header() {
 	//   }
 
 	useEffect(() => {
-		i18n.changeLanguage("en");
+		const lang = localStorage.getItem("lang");
+		if (lang) {
+			setLan(lang);
+		}
+		i18n.changeLanguage(lang ? lang : "En");
 		// window.addEventListener('scroll', scrollHandler, true);
 	}, []);
 
@@ -175,16 +180,19 @@ function Header() {
 								<a>
 									<select
 										onChange={(e) => {
+											setLan(e.target.value);
+											localStorage.setItem("lang", e.target.value);
 											i18n.changeLanguage(e.target.value);
 										}}
+										value={lan}
 										class="selectpicker"
 										data-width="fit"
 									>
 										<option data-content='<span class="flag-icon flag-icon-us"></span> English'>
-											en
+											En
 										</option>
 										<option data-content='<span class="flag-icon flag-icon-mx"></span> Español'>
-											fr
+											Fr
 										</option>
 									</select>
 								</a>
