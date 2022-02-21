@@ -1,14 +1,28 @@
 .feedback {
-	background-color: var(--background-color);
-	position: relative;
-	padding-top: 40px;
-	padding-bottom: 40px;
-	height: 290px;
-	color: var(--text-color);
+  background-color: var(--background-color);
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 290px;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 490px) {
+  .feedback {
+    height: 430px;
+  }
 }
 
+@media (max-width: 490px) {
+  .feedback .lamar-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .slide-container {
-	text-align: center;
-	width: 70%;
-	margin: auto;
+  text-align: center;
+  width: 70%;
+  margin: auto;
 }

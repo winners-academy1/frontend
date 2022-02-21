@@ -1,89 +1,91 @@
 .contact-us {
-	padding: 220px 0 100px;
-	background-color: var(--main-color-alt2);
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	color: var(--background-color);
+  padding: 220px 0 100px;
+  background-color: var(--main-color-alt2);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: var(--background-color);
 }
 @media (max-width: 530px) {
-	.contact-us {
-		padding: 125px 0;
-	}
+  .contact-us {
+    padding: 125px 0;
+  }
 }
 @media (min-width: 530px) and (max-width: 767px) {
-	.contact-us {
-		padding: 145px 0;
-	}
+  .contact-us {
+    padding: 145px 0;
+  }
 }
 .contact-us .nav-info {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 30px;
-	width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
 }
 .contact-us .nav-info i {
-	font-size: 16px;
-	color: black;
-	font-weight: 500;
-	margin-right: 10px;
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
+  margin-right: 10px;
 }
 
 .contact-us .left-nav .i-home {
-	font-size: 18px;
-	/* color: black; */
-	font-weight: 600;
+  font-size: 18px;
+  /* color: black; */
+  font-weight: 600;
 }
 .contact-us .nav-info span {
-	/* color: black; */
-	font-size: 18px;
-	font-weight: 600;
-	text-transform: capitalize;
+  /* color: black; */
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
 .contact-us .lamar-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .contact-us .lamar-container h2 {
-	text-transform: uppercase;
-	font-size: 24px;
-	font-weight: 600;
-	/* color: black; */
-	position: relative;
-	text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+  /* color: black; */
+  position: relative;
+  text-align: center;
 }
 .contact-us .lamar-container h2::before {
-	content: "";
-	position: absolute;
-	height: 5px;
-	width: 50%;
-	bottom: -10px;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-color: var(--background-color);
-	border-radius: 20px;
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 50%;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--background-color);
+  border-radius: 20px;
 }
 @media (max-width: 767px) {
-	.contact-us .lamar-container h2 {
-		font-size: 20px;
-	}
+  .contact-us .lamar-container h2 {
+    font-size: 20px;
+  }
 }
 
 .contact-us .lamar-container .email {
-	display: flex;
-	margin: 35px;
+  display: flex;
+  margin: 35px;
+  align-items: center;
 }
 
 .contact-us .lamar-container .email h5 {
-	margin-right: 10px;
+  margin-right: 10px;
+  color: gray;
 }
 
 .contact-us .lamar-container .email a {
-	margin-left: 10px;
-	cursor: pointer;
-	text-decoration: none;
-	color: var(--background-color);
+  margin-left: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--background-color);
 }
