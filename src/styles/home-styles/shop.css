@@ -116,7 +116,8 @@
   color: var(--text-color);
 }
 .shop .leftSection .text {
-  font-size: 17px;
+  font-size: 21px;
+  /* font-weight: 550; */
   color: var(--text-color);
 }
 /* @media (max-width: 529px) {

@@ -33,7 +33,13 @@
 @media (max-width: 768px) {
   .header .lamar-container.lamar-container-scroll {
     display: grid;
-    grid-template-columns: 60% 20% 20%;
+    grid-template-columns: 47% 35% 20%;
+  }
+}
+@media (max-width: 324px) {
+  .header .lamar-container.lamar-container-scroll {
+    display: grid;
+    grid-template-columns: 51% 32% 20%;
   }
 }
 .header .lamar-container .image.image-scroll {
@@ -52,10 +58,23 @@
   position: relative;
   top: 4px;
 }
+@media (max-width: 450px) {
+  .header .lamar-container .image.image-scroll a div {
+    width: 5rem;
+    position: relative;
+    top: 8px;
+  }
+}
 .header .lamar-container .image.image-scroll a div h4 {
   margin: auto;
   color: var(--background-color);
   line-height: 0.9;
+}
+
+@media (max-width: 450px) {
+  .header .lamar-container .image.image-scroll a div h4 {
+    font-size: 18px;
+  }
 }
 .header .lamar-container .image.image-scroll a div h4:nth-child(2) {
   letter-spacing: 3px;
@@ -429,6 +448,12 @@
   height: 50px;
   transition: 1s linear;
 }
+@media (max-width: 450px) {
+  .header .lamar-container .image .small-logo {
+    width: 45px;
+    height: 45px;
+  }
+}
 
 /* left side*/
 .header .lamar-container .main-nav {
@@ -778,4 +803,20 @@
   font-size: 24px;
   cursor: pointer;
   color: var(--background-color);
+}
+@media (max-width: 324px) {
+  .right-nav .fab {
+    font-size: 20px;
+  }
+}
+/* language slect styles */
+.header .selectpicker {
+  width: 45px;
+  color: var(--background-color);
+}
+@media (max-width: 324px) {
+  .header .selectpicker {
+    width: 41px;
+    font-size: 14px;
+  }
 }

@@ -151,10 +151,12 @@ function Header() {
             <div></div>
             <ul className='right-nav'>
               <li>
-                <select class='selectpicker' data-width='fit'>
-                  <option data-content='<span class="flag-icon flag-icon-us"></span> English'>En</option>
-                  <option data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
-                </select>
+                <a>
+                  <select class='selectpicker' data-width='fit'>
+                    <option data-content='<span class="flag-icon flag-icon-us"></span> English'>En</option>
+                    <option data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
+                  </select>
+                </a>
               </li>
               <li>
                 <a href='http://wa.me/+14389210654' target='_blank' rel='noreferrer'>
