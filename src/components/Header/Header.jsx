@@ -1,11 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { React, useState, useEffect } from 'react';
 import '../../styles/header-styles/Header.css';
+import { useTranslation } from 'react-i18next';
 // import logo from "../../images/header/lamar-logo-small.png";
 import logo from '../../images/header/Enterprise_Marietta_orange-small.png';
 import { BsCartFill, BsFillHeartFill, BsPersonCircle } from 'react-icons/bs';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 function Header() {
+  const { t, i18n } = useTranslation();
   const location = useLocation();
   const navigate = useNavigate();
   const [showVerticalNav, setshowVerticalNav] = useState(false);
@@ -25,6 +27,7 @@ function Header() {
   //   }
 
   useEffect(() => {
+    i18n.changeLanguage('fr');
     // window.addEventListener('scroll', scrollHandler, true);
   }, []);
 
@@ -92,7 +95,8 @@ function Header() {
                 }}
               >
                 <a>
-                  Home<i class='fas fa-angle-down'></i>
+                  {t('home.label')}
+                  <i class='fas fa-angle-down'></i>
                 </a>
               </Link>
               <ul className={y > 0 ? 'drop-ul-home-scroll' : 'drop-ul-home'}>
@@ -146,6 +150,12 @@ function Header() {
             </div> */}
             <div></div>
             <ul className='right-nav'>
+              <li>
+                <select class='selectpicker' data-width='fit'>
+                  <option data-content='<span class="flag-icon flag-icon-us"></span> English'>En</option>
+                  <option data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
+                </select>
+              </li>
               <li>
                 <a href='http://wa.me/+14389210654' target='_blank' rel='noreferrer'>
                   <a>
