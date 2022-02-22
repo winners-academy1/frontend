@@ -76,5 +76,10 @@
 
 	"education.label": "EDUCATION",
 	"educationTitle1.label": "2012 MBA:Bussiness Administration University Of Atlanta - UAE",
-	"educationTitle2.label": "UAE 1998 Bachelor Of Science: Mechanical of Engineering University Of JordanEDUCATION"
+	"educationTitle2.label": "UAE 1998 Bachelor Of Science: Mechanical of Engineering University Of JordanEDUCATION",
+
+	"AFFILIATIONS.label": "MEMBERSHIPS",
+	"AFFILIATIONSDesc1.label": "- Order of Engineers of Quebec,Candidate to the engineering profession #5086058",
+	"AFFILIATIONSDesc2.label": "- The Canadian Society for Mechanical Engineering, Membership #2017003",
+	"AFFILIATIONSDesc3.label": "- Jordan Engineers Association (JEA) , Membership #308353"
 }

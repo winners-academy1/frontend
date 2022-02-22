@@ -84,6 +84,16 @@ function AboutUs() {
 							</ul>
 						</div>
 					</section>
+					<section className="eductation">
+						<h2>{t("AFFILIATIONS.label")}</h2>
+						<div>
+							<ul>
+								<li>{t("AFFILIATIONSDesc1.label")}</li>
+								<li>{t("AFFILIATIONSDesc2.label")}</li>
+								<li>{t("AFFILIATIONSDesc3.label")}</li>
+							</ul>
+						</div>
+					</section>
 				</div>
 			</section>
 		</>

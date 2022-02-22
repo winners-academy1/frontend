@@ -12,6 +12,7 @@ function Footer() {
 				<div className="lamar-container">
 					<div className="box">
 						<h3>Marietta</h3>
+						<p>9449 - 4713 Québec inc</p>
 						<ul className="social">
 							<li>
 								<a
