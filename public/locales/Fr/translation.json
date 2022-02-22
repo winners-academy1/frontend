@@ -74,5 +74,10 @@
 
 	"education.label": "ÉDUCATION",
 	"educationTitle1.label": "2012 MBA : Université d'administration des affaires d'Atlanta - EAU",
-	"educationTitle2.label": "Émirats Arabes Unis 1998 Baccalauréat ès sciences: Mécanique de l'ingénierie Université de Jordanie"
+	"educationTitle2.label": "Émirats Arabes Unis 1998 Baccalauréat ès sciences: Mécanique de l'ingénierie Université de Jordanie",
+
+	"AFFILIATIONS.label": "AFFILIATIONS",
+	"AFFILIATIONSDesc1.label": "- Ordre des Ingénieurs du Québec, Candidat à la profession d'ingénieur #5086058",
+	"AFFILIATIONSDesc2.label": "- La Société canadienne de génie mécanique, numéro de membre 2017003,",
+	"AFFILIATIONSDesc3.label": "- Association jordanienne des ingénieurs (JEA), adhésion # 308353"
 }
