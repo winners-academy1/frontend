@@ -10,8 +10,8 @@ function Hero() {
         <Carousel className='carousel' fade controls={false} indicators={false} pause={false}>
           <Carousel.Item className='item1'></Carousel.Item>
 
-          <Carousel.Item className='item2'></Carousel.Item>
-          <Carousel.Item className='item3'></Carousel.Item>
+          {/* <Carousel.Item className='item2'></Carousel.Item>
+          <Carousel.Item className='item3'></Carousel.Item> */}
         </Carousel>
       </div>
     </>

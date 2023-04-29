@@ -1,9 +1,9 @@
 .feedback {
   background-color: var(--background-color);
   position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  height: 290px;
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
+  height: 540px;
   color: var(--text-color);
   display: flex;
   justify-content: center;
@@ -21,8 +21,17 @@
     padding-right: 0;
   }
 }
-.slide-container {
+.feedback div {
+  height: 100% !important;
+}
+
+.feedback .slide-container {
   text-align: center;
-  width: 70%;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.feedback .slide-container img {
+  /* transform: scale(0.5); */
 }

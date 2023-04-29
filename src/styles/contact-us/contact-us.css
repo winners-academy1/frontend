@@ -1,10 +1,11 @@
 .contact-us {
   padding: 220px 0 100px;
-  background-color: var(--main-color-alt2);
   width: 100%;
   display: flex;
   flex-direction: column;
-  color: var(--background-color);
+  background-color: var(--text-color);
+  color: var(--main-color-alt3);
+  border-bottom: 2px solid var(--main-color-alt3);
 }
 @media (max-width: 530px) {
   .contact-us {
@@ -54,6 +55,7 @@
   /* color: black; */
   position: relative;
   text-align: center;
+  margin-bottom: 35px;
 }
 .contact-us .lamar-container h2::before {
   content: '';
@@ -63,7 +65,7 @@
   bottom: -10px;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--background-color);
+  background-color: var(--main-color-alt3);
   border-radius: 20px;
 }
 @media (max-width: 767px) {
@@ -74,18 +76,20 @@
 
 .contact-us .lamar-container .email {
   display: flex;
-  margin: 35px;
+  margin: 5px;
   align-items: center;
 }
 
 .contact-us .lamar-container .email h5 {
+  margin: 0;
   margin-right: 10px;
   color: gray;
+  font-size: 16px;
 }
 
 .contact-us .lamar-container .email a {
   margin-left: 10px;
   cursor: pointer;
   text-decoration: none;
-  color: var(--background-color);
+  color: var(--main-color-alt3);
 }

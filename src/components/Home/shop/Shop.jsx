@@ -1,7 +1,7 @@
 import React from "react";
 import "../../../styles/home-styles/shop.css";
 import { t } from "i18next";
-import engineer from "../../../images/shop/engineers.png";
+import pte from "../../../images/shop/pte2.png";
 function Shop() {
 	return (
 		<>
@@ -13,7 +13,7 @@ function Shop() {
 						{/* <button className="button shopBtn">Shop Now</button> */}
 					</section>
 					<section className="rightSection">
-						<img className="image" src={engineer} alt="image1" />
+						<img className="image" src={pte} alt="image1" />
 					</section>
 				</div>
 			</section>

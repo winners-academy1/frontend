@@ -1,12 +1,13 @@
 .about-us {
 	padding: 200px 0 100px;
 	width: 100%;
-	background-color: var(--main-color-alt2);
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	color: var(--background-color);
+	background-color: var(--text-color);
+	color: var(--main-color-alt3);
+	border-bottom: 2px solid var(--main-color-alt3);
 }
 @media (max-width: 530px) {
 	.about-us {
@@ -35,7 +36,7 @@
 .about-us .path i {
 	font-size: 22px;
 	margin-right: 10px;
-	color: var(--background-color);
+	color: var(--main-color-alt3);
 }
 .about-us .path span {
 	font-size: 20px;

@@ -9,18 +9,15 @@
   padding: 0;
 }
 :root {
-  /* --main-color-alt: #5fd4da; */
-  /* --main-color-alt: #e4e1e8; */
   --main-color-alt: #fff;
-  /* --main-color-alt: #f3ed9ec4; */
   --main-transition: 0.5s;
   --main-padding-top: 80px;
   --main-padding-bottom: 80px;
-  /* --main-color-alt2:whitesmoke; */
   --main-color-alt2: #e4e1e8;
+  --main-color-alt3: #8bc801;
   /* --text-color: #ccc; */
-  --text-color: navajowhite;
-  --background-color: #ff7600;
+  --text-color: #fff;
+  --background-color: #037fa2;
 }
 html {
   scroll-behavior: smooth;
@@ -66,11 +63,11 @@ ul {
   bottom: 40px;
   width: 40px;
   height: 40px;
-  background-image: linear-gradient(45deg, whitesmoke, var(--background-color));
+  background-image: linear-gradient(45deg, whitesmoke, var(--main-color-alt3));
   border-radius: 25% 50%;
   cursor: pointer;
   transition: 1s;
-  border: 1px solid linear-gradient(45deg, whitesmoke, var(--background-color));
+  border: 1px solid linear-gradient(45deg, whitesmoke, var(--main-color-alt3));
   z-index: 2;
   cursor: pointer;
 }
@@ -83,7 +80,7 @@ ul {
 }
 .go-up i {
   font-size: 30px;
-  color: var(--background-color);
+  color: var(--main-color-alt3);
   cursor: pointer;
 }
 .go-up:hover {

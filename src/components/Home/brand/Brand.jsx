@@ -6,10 +6,10 @@ function Brand() {
 	const { t, i18n } = useTranslation();
 	return (
 		<>
-			<section className="brand" id="Specialties">
+			<section className="brand" id="Courses">
 				<div className="custom-shape-divider-top-1638712956"></div>
 				<div className="title-section">
-					<h2 className="mainTitle">{t("specialties.label")}</h2>
+					<h2 className="mainTitle">{t("courses.label")}</h2>
 				</div>
 				<div className="lamar-container">
 					<div className="clinic">

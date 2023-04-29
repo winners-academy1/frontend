@@ -15,15 +15,15 @@ function ContactUs() {
               <h5>{t('byemail.label')}</h5>
               <i className='far fa-envelope icon'></i>
 
-              <a href='mailto:info@enterprisemarietta.com' target='_blank' rel='noreferrer'>
-                info@enterprisemarietta.com
+              <a href='mailto:winnersacademy.pte@gmail.com' target='_blank' rel='noreferrer'>
+                winnersacademy.pte@gmail.com
               </a>
             </div>
             <div className='email'>
               <h5>{t('bywhatsapp.label')}</h5>
               <i className='fab fa-whatsapp fa-fw icon'></i>
-              <a href='http://wa.me/+14389210654' target='_blank' rel='noreferrer'>
-                +1 (438) 921-0654
+              <a href='http://wa.me/+962786305843' target='_blank' rel='noreferrer'>
+                +962786305843
               </a>
             </div>
           </form>

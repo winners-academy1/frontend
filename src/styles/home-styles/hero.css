@@ -16,18 +16,24 @@
 .hero .carousel .carousel-inner {
   height: 100%;
   width: 100%;
+  background: var(--background-color);
+  border-bottom: var(--main-color-alt3) 25px solid;
+  border-top: var(--main-color-alt3) 25px solid;
 }
 .hero .carousel .item1 {
   width: 100%;
-  background-image: url(../../images/hero/civil.jpg);
+  background-image: url(../../images/hero/cover.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   height: 100%;
+  /* background-color: var(--background-color);
+  box-shadow: 0px 2px 2px var(--main-color-alt3); */
 }
+
 .hero .carousel .item2 {
   width: 100%;
-  background-image: url(../../images/hero/plan.jpg);
+  background-image: url(../../images/hero/winners-cover.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -36,7 +42,7 @@
 }
 .hero .carousel .item3 {
   width: 100%;
-  background-image: url(../../images/hero/architecture.jpg);
+  background-image: url(../../images/hero/winners-cover.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

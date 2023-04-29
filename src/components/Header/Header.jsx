@@ -3,7 +3,7 @@ import { React, useState, useEffect } from "react";
 import "../../styles/header-styles/Header.css";
 import { useTranslation } from "react-i18next";
 // import logo from "../../images/header/lamar-logo-small.png";
-import logo from "../../images/header/Enterprise_Marietta_orange-small.png";
+import logo from "../../images/header/winners-logo2.png";
 import { BsCartFill, BsFillHeartFill, BsPersonCircle } from "react-icons/bs";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 function Header() {
@@ -79,8 +79,8 @@ function Header() {
 								</ul>
 							</li>
 							<li>
-								<a href="#Specialties" onClick={navigateHandler}>
-									<a>{t("specialties.label")}</a>
+								<a href="#Courses" onClick={navigateHandler}>
+									<a>{t("courses.label")}</a>
 								</a>
 							</li>
 							<li>
@@ -127,8 +127,8 @@ function Header() {
 							</ul>
 						</li>
 						<li>
-							<a href="#Specialties" onClick={navigateHandler}>
-								<a>{t("specialties.label")}</a>
+							<a href="#Courses" onClick={navigateHandler}>
+								<a>{t("courses.label")}</a>
 							</a>
 						</li>
 						<li>
@@ -157,8 +157,8 @@ function Header() {
 								className={y > 0 ? "small-logo" : "logo"}
 							/>
 							<div>
-								<h4>Enterprise</h4>
-								<h4>Marietta</h4>
+								<h4>Winners Academy</h4>
+								{/* <h4>Academy</h4> */}
 							</div>
 						</Link>
 					</div>
@@ -199,7 +199,7 @@ function Header() {
 							</li>
 							<li>
 								<a
-									href="http://wa.me/+14389210654"
+									href="http://wa.me/+962786305843"
 									target="_blank"
 									rel="noreferrer"
 								>
@@ -210,7 +210,7 @@ function Header() {
 							</li>
 							<li>
 								<a
-									href="https://www.instagram.com/mariettamontreal2022/?utm_medium=copy_link"
+									href="https://www.instagram.com/winners.academy.pte/?igshid=YmMyMTA2M2Y"
 									target="_blank"
 									rel="noreferrer"
 								>
@@ -221,7 +221,7 @@ function Header() {
 							</li>
 							<li>
 								<a
-									href="https://www.facebook.com/monty.ramzi"
+									href="https://www.facebook.com/PTEWinners"
 									target="_blank"
 									rel="noreferrer"
 								>
