@@ -180,9 +180,9 @@ function Header() {
 								<a>
 									<select
 										onChange={(e) => {
-											setLan(e.target.value);
-											localStorage.setItem("lang", e.target.value);
-											i18n.changeLanguage(e.target.value);
+											// setLan(e.target.value);
+											// localStorage.setItem("lang", e.target.value);
+											// i18n.changeLanguage(e.target.value);
 										}}
 										value={lan}
 										class="selectpicker"
@@ -192,7 +192,7 @@ function Header() {
 											En
 										</option>
 										<option data-content='<span class="flag-icon flag-icon-mx"></span> Español'>
-											Fr
+											Ar
 										</option>
 									</select>
 								</a>

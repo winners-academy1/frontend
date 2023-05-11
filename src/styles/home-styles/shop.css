@@ -113,7 +113,8 @@
 	}
 } */
 .shop .leftSection .shop-title {
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  color: var(--main-color-alt3);
 }
 .shop .leftSection .text {
   font-size: 21px;

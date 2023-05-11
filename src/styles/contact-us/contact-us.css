@@ -74,6 +74,22 @@
   }
 }
 
+.contact-us .lamar-container form {
+  width: 600px;
+  max-width: 90%;
+}
+
+.contact-us .lamar-container .form-group.flex {
+  display: flex;
+  gap: 15px;
+}
+.contact-us .lamar-container .form-group {
+  padding: 10px;
+}
+.contact-us .lamar-container .form-group button{
+  width: 100%;
+}
+
 .contact-us .lamar-container .email {
   display: flex;
   margin: 5px;

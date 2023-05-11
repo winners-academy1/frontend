@@ -96,7 +96,7 @@ function Footer() {
             <div className='line'>
               <i className='fas fa-map-marker-alt fa-fw'></i>
               <a>
-                <div className='info'>World Wide - Online</div>
+                <div className='info'>Worldwide - Online</div>
               </a>
               {/* <a href='https://www.google.com/maps/place/9390+Av.+De+Chateaubriand,+Montr%C3%A9al,+QC+H2M+1Y1,+Canada/@45.5518999,-73.650547,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc918c471200d33:0x970dd2eb53689bc5!8m2!3d45.5518999!4d-73.6483583'>
                 <div className='info'>9390 Av. De Chateaubriand, Montreal,QC, H2M 1Y1</div>
