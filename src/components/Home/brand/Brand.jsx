@@ -29,7 +29,18 @@ function Brand() {
               <li>✅ 1-1 evaluation before taking the mock test.</li>
               <li>✅ Free mock test with full analysis.</li>
             </ul>
-            <button onClick={()=>navigate("ContactUs")} className="contact-btn">Contact Us</button>
+            <button 
+				onClick={()=>{
+					navigate("ContactUs");
+					window.scrollTo({
+						left: 0,
+						top: 0,
+						behavior: 'smooth',
+					  });
+				}}
+				className="contact-btn">
+				Contact Us
+			</button>
           </div>
           <div className="card course-card right">
             <h3 className="course-title">كورس باللغة العربية</h3>
@@ -42,8 +53,19 @@ function Brand() {
               <li>تقييم شخصي لكل طالب 1-1 ✅</li>
               <li>امتحانات تجريبة مجانية مطابقة للامتحان الحقيقي ✅</li>
             </ul>
-            <button onClick={()=>navigate("ContactUs")} className="contact-btn">اتصل بنا</button>
-          </div>
+			<button 
+				onClick={()=>{
+					navigate("ContactUs");
+					window.scrollTo({
+						left: 0,
+						top: 0,
+						behavior: 'smooth',
+					  });
+				}}
+				className="contact-btn">
+				اتصل بنا
+			</button>
+		  </div>
         </div>
       </section>
     </>

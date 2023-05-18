@@ -3,12 +3,10 @@
   /* background-image: url(../../images/shop/shop3.jpg); */
   /* background-image: url(https://firebasestorage.googleapis.com/v0/b/lamar-fashion.appspot.com/o/home-shop%2Fshop5.jpeg?alt=media&token=8705dc05-216b-403f-b64b-c80df640cd4e); */
   padding-top: 50px;
-  padding-bottom: 50px;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: scroll;
   background-size: cover;
-  /* height: 80vh; */
   position: relative;
   display: flex;
   justify-content: center;
