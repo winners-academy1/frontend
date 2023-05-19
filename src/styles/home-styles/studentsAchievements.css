@@ -17,16 +17,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height:100%;
 }
 
 .students-achievements .lamar-container .mainTitle {
   color: var(--background-color);
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
-.students-achievements .lamar-container .container{
+/* .students-achievements .lamar-container .container{
   height:200px;
   width:200px;
   margin:175px auto;
-  /* perspective: 1000px; */
   perspective: 500px;
   position:relative;
 }
@@ -36,7 +38,6 @@
   display:flex;
   justify-content: center;
   transform-style: preserve-3d;
-  /* animation:animate 10s linear infinite; */
   animation:animate 15s linear infinite;
 }
 @keyframes animate {
@@ -84,9 +85,98 @@
   transform:rotateY(360deg) translateZ(270px);
 }
 .students-achievements .lamar-container .container .slides > img:hover{
-  /* transition:all .2s ease-in; */
-  /* cursor:pointer; */
-  /* box-shadow:0px 0px 10px white; */
-  /* bottom:20px; */
-  /* -webkit-box-reflect:below 25px linear-gradient(0deg, white 0%, transparent 20%); */
+  transition:all .2s ease-in;
+  cursor:pointer;
+  box-shadow:0px 0px 10px white;
+  bottom:20px;
+  -webkit-box-reflect:below 25px linear-gradient(0deg, white 0%, transparent 20%);
+} */
+
+.students-achievements .lamar-container .carousel-box {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  perspective: 100rem;
+}
+.students-achievements .lamar-container .carousel__cards {
+  position: relative;
+  width: 22rem;
+  height: 35rem;
+  margin-bottom: 40px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25rem);
+  transition: transform 0.3s ease-in;
+}
+.students-achievements .lamar-container .carousel__img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.students-achievements .lamar-container .carousel__card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 0.2rem;
+  font-size: 3em;
+  font-weight: 700;
+  transition: all 0.3s ease-in;
+}
+.students-achievements .lamar-container .carousel__card img:hover {
+  transform: scale(1.1);
+  transition:all .2s ease-in;
+  cursor:pointer;
+  box-shadow:0px 0px 10px white;
+  bottom:20px;
+  -webkit-box-reflect:below 25px linear-gradient(0deg, white 0%, transparent 20%);
+
+}
+.students-achievements .lamar-container .carousel__card:nth-child(1) {
+  transform: rotateY(0deg) translateZ(28rem);
+}
+.students-achievements .lamar-container .carousel__card:nth-child(2) {
+  transform: rotateY(45deg) translateZ(28rem);
+}
+.students-achievements .lamar-container .carousel__card:nth-child(3) {
+  transform: rotateY(90deg) translateZ(28rem);
+}
+.students-achievements .lamar-container .carousel__card:nth-child(4) {
+  transform: rotateY(135deg) translateZ(28rem);
+}
+.students-achievements .lamar-container .carousel__card:nth-child(5) {
+  transform: rotateY(180deg) translateZ(28rem);
+}
+.students-achievements .lamar-container .carousel__card:nth-child(6) {
+  transform: rotateY(225deg) translateZ(28rem);
+}
+.students-achievements .lamar-container .carousel__card:nth-child(7) {
+  transform: rotateY(270deg) translateZ(28rem);
+}
+.students-achievements .lamar-container .carousel__card:nth-child(8) {
+  transform: rotateY(315deg) translateZ(28rem);
+}
+.students-achievements .lamar-container .carousel__control {
+  z-index: 2;
+}
+
+.students-achievements .lamar-container .carousel__btn {
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+  background: var(--background-color);
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: var(--text-color);
+  cursor: pointer;
+  margin: 0 2rem;
+  margin-top: 20px;
+  z-index: 10;
+}
+.students-achievements .lamar-container .carousel__btn:hover {
+  transform: scale(1.04);
+  background: #000000;
 }
