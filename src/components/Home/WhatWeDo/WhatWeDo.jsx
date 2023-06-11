@@ -1,8 +1,9 @@
 import React from "react";
 import "../../../styles/home-styles/shop.css";
 import { t } from "i18next";
-import pte from "../../../images/shop/pte2.png";
-function Shop() {
+import pte from "../../../images/shop/PTE3.png";
+// import pte from "../../../images/shop/pte4.png";
+function WhatWeDo() {
 	return (
 		<>
 			<section className="shop" id="whatwedo">
@@ -10,7 +11,7 @@ function Shop() {
 					<section className="leftSection">
 						<h2 className="shop-title">{t("whatwedo.label")}?</h2>
 						<p className="text">{t("whatwedoDesc.label")}</p>
-						{/* <button className="button shopBtn">Shop Now</button> */}
+						{/* <button className="button shopBtn">WhatWeDo Now</button> */}
 					</section>
 					<section className="rightSection">
 						<img className="image" src={pte} alt="image1" />
@@ -21,4 +22,4 @@ function Shop() {
 	);
 }
 
-export default Shop;
+export default WhatWeDo;

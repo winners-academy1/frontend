@@ -3,7 +3,7 @@ import { React, useState, useEffect } from "react";
 import "../../styles/header-styles/Header.css";
 import { useTranslation } from "react-i18next";
 // import logo from "../../images/header/lamar-logo-small.png";
-import logo from "../../images/header/winners-logo2.png";
+import logo from "../../images/header/winners-logo.png";
 import { BsCartFill, BsFillHeartFill, BsPersonCircle } from "react-icons/bs";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 function Header() {
@@ -22,7 +22,7 @@ function Header() {
 	function navigateHandler() {
 		if (location.pathname !== "/") {
 			navigate("/");
-		}
+		} 
 	}
 	//   function scrollHandler() {
 	//     setY(window.scrollY);
@@ -70,10 +70,18 @@ function Header() {
 											: "drop-ul-phone"
 									}
 								>
-									<li>
+									<li onClick={()=>{window.scrollTo({
+											left: 0,
+											top: 0,
+											behavior: "smooth",
+										});}}>
 										<Link to="/AboutUs">{t("aboutus.label")}</Link>
 									</li>
-									<li>
+									<li onClick={()=>{window.scrollTo({
+											left: 0,
+											top: 0,
+											behavior: "smooth",
+										});}}>
 										<Link to="/ContactUs">{t("contactus.label")}</Link>
 									</li>
 								</ul>
@@ -118,10 +126,18 @@ function Header() {
 								</a>
 							</Link>
 							<ul className={y > 0 ? "drop-ul-home-scroll" : "drop-ul-home"}>
-								<li>
+								<li onClick={()=>{window.scrollTo({
+											left: 0,
+											top: 0,
+											behavior: "smooth",
+										});}}>
 									<Link to="/AboutUs">{t("aboutus.label")}</Link>
 								</li>
-								<li>
+								<li onClick={()=>{window.scrollTo({
+											left: 0,
+											top: 0,
+											behavior: "smooth",
+										});}}>
 									<Link to="/ContactUs">{t("contactus.label")}</Link>
 								</li>
 							</ul>
@@ -176,7 +192,7 @@ function Header() {
             </div> */}
 						<div></div>
 						<ul className="right-nav">
-							<li>
+							{/* <li>
 								<a>
 									<select
 										onChange={(e) => {
@@ -196,7 +212,7 @@ function Header() {
 										</option>
 									</select>
 								</a>
-							</li>
+							</li> */}
 							<li>
 								<a
 									href="http://wa.me/+962786305843"

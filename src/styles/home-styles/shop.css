@@ -11,6 +11,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 .shop .lamar-container {
   /* height: 55vh; */
@@ -19,9 +21,10 @@
   align-items: center;
   /* gap: 20px; */
   padding: 20px;
-  background-color: var(--background-color);
+  background-color: var(--dark-color);
   border-radius: 10px;
-  box-shadow: 0 2px 12px var(--background-color);
+  box-shadow: 0 2px 12px gray;
+  gap: 20px;
 }
 
 .shop .rightSection .image {
@@ -75,7 +78,7 @@
 } */
 
 .shop .leftSection {
-  width: 50%;
+  width: 70%;
   position: relative;
   padding-left: 30px;
   text-align: justify;
@@ -111,13 +114,11 @@
 	}
 } */
 .shop .leftSection .shop-title {
-  /* color: var(--text-color); */
   color: var(--main-color-alt3);
 }
 .shop .leftSection .text {
   font-size: 21px;
-  /* font-weight: 550; */
-  color: var(--text-color);
+  color: var(--background-color);
 }
 /* @media (max-width: 529px) {
 	.shop .lamar-container .leftSection .shop-title {

@@ -15,7 +15,7 @@
   --main-padding-bottom: 80px;
   --main-color-alt2: #e4e1e8;
   --main-color-alt3: #8bc801;
-  /* --text-color: #ccc; */
+  --dark-color: #002c38;
   --text-color: #fff;
   --background-color: #037fa2;
 }
@@ -57,19 +57,31 @@ ul {
   transition: var(--main-transition);
 }
 
+@keyframes zz {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-5px);
+  }
+}
+
 .go-up {
   position: fixed;
   right: 40px;
   bottom: 40px;
   width: 40px;
   height: 40px;
-  background-image: linear-gradient(45deg, whitesmoke, var(--main-color-alt3));
+  /* background-image: linear-gradient(45deg, whitesmoke, var(--main-color-alt3)); */
+  background-image: linear-gradient(45deg, var(--text-color), var(--main-color-alt3));
   border-radius: 25% 50%;
   cursor: pointer;
   transition: 1s;
-  border: 1px solid linear-gradient(45deg, whitesmoke, var(--main-color-alt3));
+  /* border: 1px solid linear-gradient(45deg, whitesmoke, var(--main-color-alt3)); */
+  border: 1px solid linear-gradient(45deg, var(--text-color), var(--main-color-alt3));
   z-index: 2;
   cursor: pointer;
+  animation: zz 1s linear infinite;
 }
 @media (max-width: 375px) {
   .go-up {
@@ -80,14 +92,16 @@ ul {
 }
 .go-up i {
   font-size: 30px;
-  color: var(--main-color-alt3);
+  color: var(--dark-color);
   cursor: pointer;
 }
 .go-up:hover {
-  background-image: #ccc;
+  background-image: linear-gradient(45deg,  var(--dark-color), var(--dark-color));
+  border: 1px solid linear-gradient(45deg,  var(--dark-color), var(--dark-color));
 }
+
 .go-up:hover i {
-  color: var(--main-color-alt);
+  color: var(--main-color-alt3);
 }
 /*  start main title  */
 

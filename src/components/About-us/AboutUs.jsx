@@ -17,7 +17,7 @@ function AboutUs() {
 				</div>
 				<div className="lamar-container">
 					<h5>
-					At Winners Academy, we provide professional online PTE Academic preparation courses to help students succeed in the exam. Our academy is dedicated to equipping students with the necessary skills and knowledge to excel in the PTE Academic exam. With expert instructors and cutting-edge learning resources, our courses are designed to help students achieve their goals and reach their full potential. Whether you're looking to improve your English language proficiency or prepare for the PTE Academic exam, Winners Academy is the right choice for you. Join us today and experience the difference of high-quality online education.
+					At Winners Academy, we are dedicated to helping students succeed in the PTE Academic exam through our professional online courses. We not only provide comprehensive PTE Academic preparation courses, but we also offer ongoing support to our students. We understand that success in the exam is not just about preparing well, but also about getting feedback, following up, and receiving support throughout the process. With our experienced instructors and advanced learning resources, our courses are carefully crafted to assist students in achieving their goals and reaching their full potential. So, enroll with us today and rest assured that you will receive the best preparation and support for the PTE Academic exam.
 					</h5>
 					{/* <h2>MUNTASER QUMSIEH</h2>
 					<p>{t("summary.label")}</p>

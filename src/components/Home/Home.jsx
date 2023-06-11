@@ -1,17 +1,17 @@
 import { React, useState } from "react";
-import Brand from "./brand/Brand";
+import Courses from "./Courses/Courses";
 import Hero from "./hero/Hero";
 import StudentsAchievements from "./studentsAchievements/StudentsAchievements";
 import Feedback from "./feedback/Feedback";
 
-import Shop from "./shop/Shop";
+import WhatWeDo from "./WhatWeDo/WhatWeDo";
 
 function Home() {
 	return (
 		<>
 			<Hero />
-			<Brand />
-			<Shop />
+			<WhatWeDo />
+			<Courses />
 			<StudentsAchievements />
 			<Feedback />
 		</>

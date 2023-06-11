@@ -5,7 +5,6 @@
   flex-direction: column;
   background-color: var(--text-color);
   color: var(--main-color-alt3);
-  border-bottom: 2px solid var(--main-color-alt3);
 }
 @media (max-width: 530px) {
   .contact-us {
@@ -47,6 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .contact-us .lamar-container h2 {
   text-transform: uppercase;
@@ -88,6 +88,14 @@
 }
 .contact-us .lamar-container .form-group button{
   width: 100%;
+  background-color: var(--dark-color);
+  color: var(--main-color-alt3);
+  border: none;
+  font-weight: 600;
+}
+.contact-us .lamar-container .form-group button:hover {
+  background-color: var(--main-color-alt3);
+  color: var(--dark-color);
 }
 
 .contact-us .lamar-container .email {
@@ -107,5 +115,88 @@
   margin-left: 10px;
   cursor: pointer;
   text-decoration: none;
+  color: var(--text-color);
+}
+
+/* switch button */
+.contact-us .lamar-container .switch-button {
+  background: var(--dark-color);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 240px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color:var(--text-color);
+  position: relative;
+  padding-right: 120px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.contact-us .lamar-container .switch-button:before {
+  content: "Whatsapp";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  pointer-events: none;
+}
+.contact-us .lamar-container .switch-button-checkbox {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+}
+.contact-us .lamar-container .switch-button-checkbox:checked + .switch-button-label:before {
+  transform: translateX(120px);
+  transition: transform 300ms linear;
+}
+.contact-us .lamar-container .switch-button-checkbox + .switch-button-label {
+  position: relative;
+  padding: 15px 0;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}
+.contact-us .lamar-container .switch-button-checkbox + .switch-button-label:before {
+  content: "";
+  background: var(--main-color-alt3);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  transform: translateX(0);
+  transition: transform 300ms;
+}
+.contact-us .lamar-container .switch-button-checkbox + .switch-button-label .switch-button-label-span {
+  position: relative;
+}
+/* toggle switch ends */
+
+.contact-us .lamar-container .whatsapp_contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  min-height: 230px;
+  margin-top: 40px;
+}
+.contact-us .lamar-container .whatsapp_contact a{
   color: var(--main-color-alt3);
+}
+.contact-us .lamar-container .whatsapp_contact .fa-whatsapp.large_icon {
+  font-size: 50px;
 }

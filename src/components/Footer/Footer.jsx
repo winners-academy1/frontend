@@ -11,7 +11,7 @@ function Footer() {
       <div className='footer'>
         <div className='lamar-container'>
           <div className='box'>
-            <h3>Winners Academy</h3>
+            <h3 style={{marginBottom: "10px"}}>Winners Academy</h3>
             <p>Follow us on:</p>
             <ul className='social'>
               <li>
@@ -24,11 +24,11 @@ function Footer() {
                   <i class='fab fa-instagram'></i>
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href='mailto:winnersacademy.pte@gmail.com' className='twitter' target='_blank'>
                   <i className='far fa-envelope icon'></i>
                 </a>
-              </li>
+              </li> */}
             </ul>
             {/* <p className='text'>{t('welcome.label')}</p> */}
           </div>

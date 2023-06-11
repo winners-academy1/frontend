@@ -1,14 +1,19 @@
 .feedback {
-  background-color: var(--background-color);
   position: relative;
-  /* padding-top: 10px;
-  padding-bottom: 10px; */
   height: 540px;
   color: var(--text-color);
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 150px;
 }
+
+.feedback .lamar-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 @media (max-width: 490px) {
   .feedback {
     height: 430px;
@@ -33,5 +38,22 @@
   height: 100%;
 }
 .feedback .slide-container img {
-  /* transform: scale(0.5); */
+  border-radius: 4px;
+  box-shadow: 0 2px 12px gray;
+  transition: 0.6s ease-in-out;
+}
+.feedback .slide-container img:hover {
+  transform: scale(1.5);
+}
+
+.feedback .mainTitle {
+  color: var(--dark-color);
+  margin-bottom: 20px;
+}
+.feedback .carousel {
+  width: 100%;
+}
+.feedback .carousel svg {
+  width: 25px;
+  fill: var(--dark-color);
 }

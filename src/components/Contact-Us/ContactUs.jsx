@@ -6,19 +6,21 @@ import '../../styles/contact-us/contact-us.css';
 
 function ContactUs() {
   const { t, i18n } = useTranslation();
-  const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
+  const [formData, setFormData] = useState({subject: 'New User Interested', name: '', mobileNumber: '', course: '' });
   const [formError, setFormError] = useState(false);
+  const [isWhatsappChecked, setIsWhatsappChecked] = useState(false);
+
   useEffect(()=>{
     emailjs.init('lfKA0gW1tKysD8byq');
-  }, [])
+  }, []);
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    if (formData.name === '' || formData.email === '' || formData.subject === '' || formData.message === '') {
+    if (formData.name === '' || formData.mobileNumber === '' || formData.course === '') {
       setFormError(true);
       return;
     }
     setFormError(false);
-
+    
     emailjs.send('service_ixcurmm', 'template_w05ktuf', formData)
       .then((result) => {
         console.log(result.text);
@@ -26,38 +28,59 @@ function ContactUs() {
         console.log(error.text);
       });
 
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setFormData({subject: 'New User Interested', name: '', mobileNumber: '', course: '' });
   };
 
   const handleInputChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
 
+  const handleWhatsappChange = (event) => {
+    setIsWhatsappChecked(event.target.checked);
+  };
+
   return (
     <>
       <section className='contact-us'>
         <div className='lamar-container'>
-          <form onSubmit={handleFormSubmit}>
-            <h2>Contact Us</h2>
-
-            {/* <div className='form-group'>
-              <label htmlFor='name'>Name</label>
-            </div> */}
-
+          <h2>Contact Us</h2>
+          <div className="switch-button">
+            <input className="switch-button-checkbox" type="checkbox"  onChange={handleWhatsappChange}
+        checked={isWhatsappChecked}></input>
+            <label className="switch-button-label" htmlFor=""><span className="switch-button-label-span">Email</span></label>
+          </div>
+          {isWhatsappChecked && 
+            <div className='whatsapp_contact'>
+              <i className='fab fa-whatsapp fa-fw icon large_icon'></i>
+              <div className='info'>
+                <a href='http://wa.me/+962786305843' target='_blank' rel='noreferrer'>
+                  +962786305843
+                </a>
+              </div>
+            </div>
+          }
+          {!isWhatsappChecked && <form onSubmit={handleFormSubmit}>
             <div className='form-group flex'>
-              {/* <label htmlFor='email'>Email address</label> */}
               <input type='text' className='form-control' id='name' name='name' value={formData.name} onChange={handleInputChange} placeholder='Name' required />
-              <input type='email' className='form-control' id='email' name='email' value={formData.email} onChange={handleInputChange} placeholder='Email Address' required />
             </div>
 
             <div className='form-group'>
-              {/* <label htmlFor='subject'>Subject</label> */}
-              <input type='text' className='form-control' id='subject' name='subject' value={formData.subject} onChange={handleInputChange} placeholder='Subject' required />
+              <input type='tel' className='form-control' id='mobileNumber' name='mobileNumber' value={formData.mobileNumber} onChange={handleInputChange} placeholder='Mobile Number' required />
             </div>
 
             <div className='form-group'>
-              {/* <label htmlFor='message'>Message</label> */}
-              <textarea className='form-control' id='message' name='message' rows='5' value={formData.message} onChange={handleInputChange} placeholder='Message' required></textarea>
+              <select
+                className='form-control'
+                id='course'
+                name='course'
+                value={formData.course}
+                onChange={handleInputChange}
+                required
+              >
+                <option value=''>Select Course</option>
+                <option value='PTE Academic Course - Explained in English'>PTE Academic Course - Explained in English</option>
+                <option value='كورس PTE شرح باللغة العربية'>كورس PTE شرح باللغة العربية</option>
+              </select>
             </div>
 
             {formError && (
@@ -67,10 +90,10 @@ function ContactUs() {
             )}
             <div className='form-group'>
               <button type='submit' className='btn btn-primary'>
-                Send Message
+                Send
               </button>
             </div>
-          </form>
+          </form>}
         </div>
       </section>
     </>

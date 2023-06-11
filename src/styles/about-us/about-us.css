@@ -7,7 +7,6 @@
 	gap: 20px;
 	background-color: var(--text-color);
 	color: var(--main-color-alt3);
-	border-bottom: 2px solid var(--main-color-alt3);
 }
 @media (max-width: 530px) {
 	.about-us {
@@ -42,6 +41,9 @@
 	font-size: 20px;
 	cursor: auto;
 	font-weight: 600;
+}
+.about-us .lamar-container h5 {
+	color: var(--dark-color);
 }
 .about-us .lamar-container > ul {
 	list-style: disc;

@@ -1,6 +1,7 @@
 .footer {
   background-color: #fff;
   padding: 70px 0 0;
+  border-top: 1px solid var(--dark-color);
 }
 @media (max-width: 767px) {
   .footer {
@@ -27,7 +28,7 @@
   }
 }
 .footer .box h3 {
-  color: var(--main-color-alt3);
+  color: var(--dark-color);
   font-size: 30px;
   margin: 0;
 }
@@ -44,32 +45,61 @@
   cursor: pointer;
 }
 .footer .box .social li a {
-  background-color: #ccc;
-  color: var(--main-color-alt3);
+  background-color: #313131;
+  color: #fff;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 50px;
   height: 50px;
   font-size: 20px;
-  transition: 0.5s;
+  transition: .5s;
   cursor: pointer;
+  border-radius: 7px;
 }
 .footer .box .social li a i {
   cursor: pointer;
 }
-.footer .box .social .facebook:hover {
+
+@keyframes Gradient {
+  0% {
+    background-position: 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0 50%;
+  }
+}
+.footer .box .social .facebook {
   background-color: #1877f2;
+}
+.footer .box .social .facebook:hover {
+  box-shadow: 0 5px 8px rgba(26,35,126,.5);
+  background: #3949ab;
+  background: linear-gradient(90deg,#3949ab 0,#2196f3);
+  background-size: 400%;
+  -webkit-animation: Gradient 1s ease infinite;
+  animation: Gradient 1s ease infinite;
 }
 .footer .box .social .twitter:hover {
   background-color: #1da1f2;
 }
-.footer .box .social .instagram:hover {
+.footer .box .social .instagram {
   background: linear-gradient(15deg, #ffb13d, #dd277b, #4d5ed4);
+}
+.footer .box .social .instagram:hover {
+  box-shadow: 0 5px 8px rgba(63,81,181,.5);
+  background: #ffc107;
+  background: linear-gradient(90deg,#ffc107 0,#f50057 50%,#3f51b5);
+  background-size: 400%;
+  -webkit-animation: Gradient 1s ease infinite;
+  animation: Gradient 1s ease infinite;
 }
 .footer .box .text {
   line-height: 2;
-  color: var(--main-color-alt3);
+  color: var(--dark-color);
 }
 .footer .box .links li {
   padding: 15px 0;
@@ -77,28 +107,27 @@
   cursor: pointer;
 }
 .footer .box .links li:not(:last-child) {
-  /* border-bottom: 1px solid var(--main-color-alt3); */
 }
 .footer .box .links li:hover {
   padding-left: 10px;
 }
 .footer .box .links li:hover a {
-  color: var(--main-color-alt3);
+  color: var(--dark-color);
 }
 .footer .box .links li a {
-  color: var(--main-color-alt3);
-  transition: var(--main-color-alt3);
+  color: var(--dark-color);
+  transition: var(--dark-color);
   cursor: pointer;
 }
 .footer .box .links li a i {
   font-size: 14px;
   margin-right: 3px;
-  color: var(--main-color-alt3);
+  color: var(--dark-color);
 }
 .footer .box .line {
   display: flex;
   align-items: center;
-  color: var(--main-color-alt3);
+  color: var(--dark-color);
   margin-bottom: 30px;
 }
 @media (max-width: 767px) {
@@ -120,22 +149,22 @@
 .footer .box .line .info {
   line-height: 1.7;
   flex: 1;
-  color: var(--main-color-alt3);
+  color: var(--dark-color);
 }
 .footer .box .line .info span {
   display: block;
 }
 .footer .box .line .info a {
-  color: var(--main-color-alt3);
+  color: var(--dark-color);
 }
 
 .footer .box p {
-  color: var(--main-color-alt3);
+  color: var(--dark-color);
   margin-bottom: 5px;
 }
 .footer .footer-gallery img {
   width: 78px;
-  border: 3px solid var(--main-color-alt3);
+  border: 3px solid var(--dark-color);
   margin: 2px;
 }
 
@@ -146,7 +175,7 @@
   display: grid;
   grid-template-columns: 49% 49%;
   gap: 10px;
-  border-top: 1px solid var(--main-color-alt3);
+  border-top: 1px solid var(--dark-color);
   margin-top: 10px;
 }
 @media (max-width: 530px) {
@@ -159,13 +188,13 @@
 .footer .footer-pay .lamar-container .copyright {
   padding: 25px 0;
   text-align: left;
-  color: var(--main-color-alt3);
+  color: var(--dark-color);
 }
 @media (max-width: 530px) {
   .footer .footer-pay .lamar-container .copyright {
     padding: 25px 0;
     text-align: center;
-    color: var(--main-color-alt3);
+    color: var(--dark-color);
   }
 }
 .footer .footer-pay .lamar-container .info-pay {
