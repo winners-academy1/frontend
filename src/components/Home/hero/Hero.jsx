@@ -1,6 +1,5 @@
 import {React, useState, useEffect} from 'react';
 import '../../../styles/home-styles/hero.css';
-import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import hero_large_displays from "../../../images/hero/hero_large_displays.jpg";
 import hero_laptop from "../../../images/hero/hero_laptop.jpg";
@@ -15,7 +14,7 @@ function Hero() {
 
       if (screenWidth > 1200) {
         setImageSource(hero_large_displays);
-      } else if (screenWidth > 900) {
+      } else if (screenWidth > 1100) {
         setImageSource(hero_laptop);
       } else if (screenWidth > 530) {
         setImageSource(hero_tablet);
@@ -39,17 +38,10 @@ function Hero() {
   return (
     <>
       <div className='hero'>
-        {/* <div className='hero_img'></div> */}
         <img
-          style={{ width: '100%', height: '100%' }}
           src={imageSource}
           alt="winners_academy"
-        />        {/* <Carousel className='carousel' fade controls={false} indicators={false} pause={false}>
-          <Carousel.Item className='item1'></Carousel.Item>
-
-          <Carousel.Item className='item2'></Carousel.Item>
-          <Carousel.Item className='item3'></Carousel.Item>
-        </Carousel> */}
+        />
       </div>
     </>
   );
