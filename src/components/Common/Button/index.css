@@ -3,11 +3,25 @@
     right: 0%;
     bottom: 95px;
 }
-  
+@media (max-width: 1212px) {
+    .button-component {
+        bottom: 90px;
+    }
+}
+@media (max-width: 1094px) {
+    .button-component {
+        bottom: 61px;
+    }
+}
+@media (max-width: 350px) {
+    .button-component {
+        bottom: 58px;
+    }
+}
 .button-component  button {
     position: relative;
-    background: var(--main-color-alt3);
-    color: var(--main-color-alt3);
+    background: var(--text-color);
+    color: var(--text-color);
     text-decoration: none;
     text-transform: uppercase;
     border: none;
@@ -18,15 +32,29 @@
     transition: 0.2s;
     min-width: 215px;
 }
-  
+
 .button-component  button:hover {
     letter-spacing: 0.2rem;
     padding: 1.1rem 3.1rem;
-    background: var(--main-color-alt3);
-    color: var(--main-color-alt3);
+    background: var(--text-color);
+    color: var(--text-color);
     animation: box 3s infinite;
 }
-  
+@media (max-width: 1094px) {
+    .button-component  button {
+        letter-spacing: 1px;
+        font-size: 12px;
+        padding: 2px;
+        min-width: unset;
+        width: 150px;
+        height: 38px;
+    }
+    
+    .button-component  button:hover {
+        letter-spacing: 4px;
+        padding: 5px;
+    }
+} 
 .button-component  button::before {
     content: "";
     position: absolute;
@@ -47,17 +75,17 @@
 .button-component button i::before {
     content: "";
     position: absolute;
-    width: 15px;
-    height: 5px;
+    width: 25px;
+    height: 7px;
     left: 80%;
     top: -2px;
-    border: 2px solid var(--main-color-alt3);
+    border: 2px solid var(--text-color);
     background: var(--dark-color);
     transition: 0.2s;
 }
   
 .button-component  button:hover i::before {
-    width: 15px;
+    width: 25px;
     left: 20%;
     animation: move 3s infinite;
 }
@@ -65,21 +93,44 @@
 .button-component  button i::after {
     content: "";
     position: absolute;
-    width: 15px;
-    height: 5px;
+    width: 25px;
+    height: 7px;
     left: 20%;
     bottom: -2px;
-    border: 2px solid var(--main-color-alt3);
+    border: 2px solid var(--text-color);
     background: var(--dark-color);
     transition: 0.2s;
 }
   
 .button-component  button:hover i::after {
-    width: 15px;
+    width: 25px;
     left: 80%;
     animation: move 3s infinite;
 }
-  
+
+@media (max-width: 1212px) {
+
+}
+
+@media (max-width: 1094px) {
+    .button-component button i::before {
+        width: 15px;
+        height: 5px;
+    }
+      
+    .button-component  button:hover i::before {
+        width: 15px;
+    }
+      
+    .button-component  button i::after {
+        width: 15px;
+        height: 5px;
+    }
+      
+    .button-component  button:hover i::after {
+        width: 15px;
+    }
+}
 @keyframes move {
     0% {
         transform: translateX(0);
@@ -97,7 +148,7 @@
         box-shadow: #27272c;
     }
     50% {
-        box-shadow: 0 0 25px var(--main-color-alt3);
+        box-shadow: 0 0 25px var(--text-color);
     }
     100% {
         box-shadow: #27272c;

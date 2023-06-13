@@ -16,9 +16,8 @@
 }
 /* @media (min-width: 769px) { */
 .header.header-scroll {
-  background-color: var(--text-color);
   background-color: var(--dark-color);
-  box-shadow: 0px 2px 2px var(--main-color-alt3);
+  box-shadow: 0px 2px 2px var(--text-color);
   height: 5rem;
 }
 
@@ -44,7 +43,7 @@
 .header .lamar-container .image.image-scroll {
   grid-area: 1 / 1;
   height: 5rem;
-  width: 90px;
+  width: 115px;
   margin: auto;
   display: flex;
 }
@@ -55,20 +54,20 @@
   width: 5rem;
   align-items: center;
   position: relative;
-  top: 4px;
+  top: 20px;
 }
 @media (max-width: 450px) {
   .header .lamar-container .image.image-scroll a div {
     width: 5rem;
     position: relative;
-    top: 8px;
+    top: 3px;
   }
 }
 .header .lamar-container .image.image-scroll a div h4 {
   margin: auto;
-  color: var(--main-color-alt3);
+  color: var(--text-color);
   font-weight: 600;
-  line-height: 0.9;
+  line-height: 1.2;
 }
 
 @media (max-width: 450px) {
@@ -91,7 +90,7 @@
   height: 5rem;
 }
 .header .lamar-container .main-nav.main-nav-scroll > li > a > a:hover {
-  background-color: var(--main-color-alt3);
+  background-color: var(--text-color);
   color: var(--dark-color);
   font-weight: 600;
 }
@@ -104,8 +103,8 @@
 }
 @media (min-width: 531px) and (max-width: 768px) {
   .header.header-scroll {
-    background-color: #fff;
-    box-shadow: 0px 2px 2px var(--dark-color);
+    background-color: var(--dark-color);
+    box-shadow: 0px 2px 2px var(--text-color);
     top: 0;
     height: 5rem;
   }
@@ -125,8 +124,8 @@
   }
 
   .header.header-scroll {
-    background-color: #fff;
-    box-shadow: 0px 2px 2px var(--dark-color);
+    background-color: var(--dark-color);
+    box-shadow: 0px 2px 2px var(--text-color);
     top: 0;
     height: 5rem;
   }
@@ -141,7 +140,7 @@
 
 .header .vertical-nav-container {
   position: absolute;
-  background-color: rgba(245, 245, 245, 0.86);
+  background-color: #002c38e6;
   height: 100vh;
   width: 50%;
   right: 0;
@@ -198,7 +197,7 @@
   align-items: center;
   height: 35px;
   margin-right: 15px;
-  color: var(--dark-color);
+  color: var(--text-color);
 }
 .header .vertical-nav-container .main-nav-phone .fa-angle-up {
   float: right;
@@ -211,19 +210,19 @@
   justify-content: center;
   align-items: center;
   height: 35px;
-  color: var(--dark-color);
+  color: var(--text-color);
 }
 .header .vertical-nav-container .main-nav-phone > li > a {
   padding: 10px;
   width: 100%;
   height: 30px;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
   text-decoration: none;
-  color: var(--dark-color);
+  color: var(--text-color);
 }
 .header .vertical-nav-container .main-nav-phone > li > a > a {
-  color: var(--dark-color);
+  color: var(--text-color);
 }
 .header .vertical-nav-container .main-nav-phone .drop-ul-phone {
   display: none;
@@ -258,10 +257,10 @@
   width: 18%;
 }
 .header .vertical-nav-container .main-nav-phone .drop-ul-phone li a {
-  color: var(--dark-color);
-  font-size: 17px;
+  color: var(--text-color);
+  font-size: 14px;
   transition: 0.3s;
-  font-weight: 600;
+  font-weight: 500;
 }
 .header .vertical-nav-container .main-nav-phone .drop-ul-phone li:hover a {
   font-weight: bold;
@@ -320,7 +319,7 @@
   position: absolute;
   height: 4px;
   width: 25px;
-  background-color: var(--dark-color);
+  background-color: var(--text-color);
   border-radius: 10px;
   transition: 0.5s;
 }
@@ -364,7 +363,6 @@
     gap: 5px;
     align-items: center;
     height: 30px;
-    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.2);
     border-radius: 4px;
     margin: auto;
     overflow: hidden;
@@ -443,8 +441,8 @@
   transition: 1s linear;
 }
 .header .lamar-container .image .small-logo {
-  width: 55px;
-  height: 55px;
+  width: 100px;
+  height: 100px;
   transition: 1s linear;
   margin-right: 10px;
   border-radius: 50%;
@@ -487,7 +485,7 @@
   justify-content: center;
   align-items: center;
   height: 5rem;
-  color: var(--main-color-alt3);
+  color: var(--text-color);
   width: 100%;
   overflow: hidden;
   font-size: 18px;
@@ -498,7 +496,7 @@
 }
 .header .lamar-container .main-nav > li > a > a:hover {
   padding-top: 5px;
-  color: var(--main-color-alt3);
+  color: var(--text-color);
 }
 
 .header .lamar-container .main-nav > li > a > a > i {
@@ -543,14 +541,14 @@
   position: absolute;
   top: 100%;
   left: 0px;
-  background: var(--main-color-alt3);
+  background: var(--text-color);
   height: auto;
   width: 100%;
 }
 .header .lamar-container .main-nav .drop-ul-home-scroll li {
   width: 100%;
   height: 30px;
-  background-color: var(--main-color-alt3);
+  background-color: var(--text-color);
   box-shadow: 0 2px 5px var(--dark-color);
   color: var(--dark-color);
   transition: 0.5s;
@@ -575,7 +573,7 @@
   background-color: var(--dark-color);
 }
 .header .lamar-container .main-nav li > ul > li:hover a {
-  color: var(--main-color-alt3);
+  color: var(--text-color);
 
 }
 /* end drop down  */
@@ -604,7 +602,7 @@
 }
 .header .lamar-container .rightContainer .right-nav {
   display: flex;
-  gap: 15px;
+  gap: 8px;
 }
 @media (min-width: 350px) {
   .header .lamar-container .rightContainer .right-nav {
@@ -803,7 +801,7 @@
 .right-nav .fab {
   font-size: 24px;
   cursor: pointer;
-  color: var(--main-color-alt3);
+  color: var(--text-color);
 }
 @media (max-width: 324px) {
   .right-nav .fab {

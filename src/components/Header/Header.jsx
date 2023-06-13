@@ -3,7 +3,7 @@ import { React, useState, useEffect } from "react";
 import "../../styles/header-styles/Header.css";
 import { useTranslation } from "react-i18next";
 // import logo from "../../images/header/lamar-logo-small.png";
-import logo from "../../images/header/winners-logo.png";
+import logo from "../../images/header/winners-logo-xs.png";
 import { BsCartFill, BsFillHeartFill, BsPersonCircle } from "react-icons/bs";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 function Header() {

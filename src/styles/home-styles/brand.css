@@ -2,6 +2,11 @@
   padding-top: var(--main-padding-top);
   position: relative;
 }
+@media (max-width: 1094px) {
+  .brand {
+    margin-bottom: 50px;
+  }
+}
 @media (max-width: 530px) {
   .brand {
     padding-top: 40px;
@@ -68,7 +73,6 @@
 }
 
 .brand .lamar-container {
-  padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,9 +90,7 @@
 
 .brand .lamar-container > div {
   position: relative;
-  box-shadow: 0 2px 12px var(--text-color);
   color: var(--main-color-alt3);
-  background-color: var(--text-color);
   height: 100%;
   transition: transform 0.5s, box-shadow 0.5s;
   cursor: pointer;
@@ -98,7 +100,7 @@
 .brand .lamar-container .card {
   display: flex;
   flex-direction: column;
-  width: 475px;
+  width: 450px;
   height: 550px !important;
   word-wrap: break-word;
   background-clip: border-box;
@@ -107,6 +109,19 @@
   text-align: center;
   justify-content: space-between;
 }
+@media (max-width: 1212px) {
+  .brand .lamar-container .card {
+    width: 400px;
+    height: 500px !important;
+  }
+}
+@media (max-width: 1094px) {
+  .brand .lamar-container .card {
+    width: 275px;
+    height: 270px !important;
+  }
+}
+
 .brand .lamar-container .course-card {
   border: none;
   border-radius: 5px;

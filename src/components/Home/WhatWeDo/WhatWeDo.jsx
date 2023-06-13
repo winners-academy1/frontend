@@ -2,7 +2,6 @@ import React from "react";
 import "../../../styles/home-styles/shop.css";
 import { t } from "i18next";
 import pte from "../../../images/shop/PTE3.png";
-// import pte from "../../../images/shop/pte4.png";
 function WhatWeDo() {
 	return (
 		<>
