@@ -7,15 +7,14 @@
     background-color: #000000b0;
     overflow: hidden;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .view-image-component img {
-    height: 90%;
-    width: 45%;
+    max-height: 90%;
     min-height: 500px;
     min-width: 320px;
-    position: relative;
-    right: -27.5%;
-    top: 5%;
     border-radius: 4px;
     cursor: auto;
 }
