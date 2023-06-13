@@ -45,6 +45,12 @@
   border-radius: 20px;
 }
 
+@media (max-width: 500px) {
+  .students-achievements .lamar-container .mainTitle::before {
+    max-width: 105%
+  }
+}
+
 
 .students-achievements .lamar-container .carousel-box {
   min-height: 73vh;

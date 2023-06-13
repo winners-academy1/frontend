@@ -3,12 +3,14 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import emailjs from 'emailjs-com';
 import '../../styles/contact-us/contact-us.css';
+import { Modal, Button } from 'react-bootstrap';
 
 function ContactUs() {
   const { t, i18n } = useTranslation();
   const [formData, setFormData] = useState({subject: 'New User Interested', name: '', mobileNumber: '', course: '' });
   const [formError, setFormError] = useState(false);
   const [isWhatsappChecked, setIsWhatsappChecked] = useState(false);
+  const [showModal, setShowModal] = useState(true);
 
   useEffect(()=>{
     emailjs.init(process.env.REACT_APP_EMAIL_JS_PUBLIC_KEY);
@@ -24,6 +26,7 @@ function ContactUs() {
     emailjs.send(process.env.REACT_APP_EMAIL_JS_SERVICE_ID, process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID, formData)
       .then((result) => {
         console.log(result.text);
+        setShowModal(true);
       }, (error) => {
         console.log(error.text);
       });
@@ -37,6 +40,9 @@ function ContactUs() {
 
   const handleWhatsappChange = (event) => {
     setIsWhatsappChecked(event.target.checked);
+  };
+  const handleCloseModal = () => {
+    setShowModal(false);
   };
 
   return (
@@ -78,8 +84,8 @@ function ContactUs() {
                 required
               >
                 <option value=''>Select Course</option>
-                <option value='PTE Academic Course - Fully Explained in English'>PTE Academic Course - Fully Explained in English</option>
-                <option value='PTE Academic Course - For Arabic Speakers'>PTE Academic Course - For Arabic Speakers</option>
+                <option value='PTE Academic Course Fully Explained in English'>PTE Academic Course Fully Explained in English</option>
+                <option value='PTE Academic Course For Arabic Speakers'>PTE Academic Course For Arabic Speakers</option>
               </select>
             </div>
 
@@ -94,6 +100,19 @@ function ContactUs() {
               </button>
             </div>
           </form>}
+          <Modal show={showModal} onHide={handleCloseModal}>
+            <Modal.Header closeButton>
+              <Modal.Title>Winners Academy</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <p>Thank you for contacting us! We'll be in touch soon.</p>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={handleCloseModal}>
+                Close
+              </Button>
+            </Modal.Footer>
+          </Modal>
         </div>
       </section>
     </>

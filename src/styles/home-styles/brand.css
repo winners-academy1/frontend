@@ -34,6 +34,12 @@
   border-radius: 20px;
 }
 
+@media (max-width: 500px) {
+  .brand .mainTitle::before {
+    width: 103%;
+  }
+}
+
 .clinic {
   display: flex;
   text-align: center;

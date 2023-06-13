@@ -201,3 +201,11 @@
 .contact-us .lamar-container .whatsapp_contact .fa-whatsapp.large_icon {
   font-size: 50px;
 }
+
+/* override bootstrap modal style*/
+
+.modal {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
