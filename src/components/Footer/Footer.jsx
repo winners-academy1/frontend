@@ -25,7 +25,7 @@ function Footer() {
                 </a>
               </li>
               {/* <li>
-                <a href='mailto:winnersacademy.pte@gmail.com' className='twitter' target='_blank'>
+                <a href='mailto:info@winnersacademy.net' className='twitter' target='_blank'>
                   <i className='far fa-envelope icon'></i>
                 </a>
               </li> */}
@@ -104,8 +104,8 @@ function Footer() {
             </div>
             <div className='line'>
               <i className='far fa-envelope icon'></i>
-              <a href='mailto:winnersacademy.pte@gmail.com' target='_blank' className='info'>
-                winnersacademy.pte@gmail.com
+              <a href='mailto:info@winnersacademy.net' target='_blank' className='info'>
+                info@winnersacademy.net
               </a>
             </div>
             <div className='line'>

@@ -11,7 +11,7 @@ function ContactUs() {
   const [isWhatsappChecked, setIsWhatsappChecked] = useState(false);
 
   useEffect(()=>{
-    emailjs.init('lfKA0gW1tKysD8byq');
+    emailjs.init(process.env.REACT_APP_EMAIL_JS_PUBLIC_KEY);
   }, []);
   const handleFormSubmit = (event) => {
     event.preventDefault();
@@ -21,7 +21,7 @@ function ContactUs() {
     }
     setFormError(false);
     
-    emailjs.send('service_ixcurmm', 'template_w05ktuf', formData)
+    emailjs.send(process.env.REACT_APP_EMAIL_JS_SERVICE_ID, process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID, formData)
       .then((result) => {
         console.log(result.text);
       }, (error) => {
@@ -78,8 +78,8 @@ function ContactUs() {
                 required
               >
                 <option value=''>Select Course</option>
-                <option value='PTE Academic Course - Explained in English'>PTE Academic Course - Explained in English</option>
-                <option value='كورس PTE شرح باللغة العربية'>كورس PTE شرح باللغة العربية</option>
+                <option value='PTE Academic Course - Fully Explained in English'>PTE Academic Course - Fully Explained in English</option>
+                <option value='PTE Academic Course - For Arabic Speakers'>PTE Academic Course - For Arabic Speakers</option>
               </select>
             </div>
 

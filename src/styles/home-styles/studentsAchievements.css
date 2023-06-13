@@ -29,8 +29,20 @@
 
 .students-achievements .lamar-container .mainTitle {
   color: var(--dark-color);
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   margin-top: 50px;
+  position: relative;
+}
+.students-achievements .lamar-container .mainTitle::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 130%;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--dark-color);
+  border-radius: 20px;
 }
 
 

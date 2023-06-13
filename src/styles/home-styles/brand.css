@@ -14,11 +14,24 @@
 }
 .brand .title-section {
   margin: 0 auto 0;
+  width: fit-content;
 }
 
 .brand .mainTitle {
   color: var(--dark-color);
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.brand .mainTitle::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 130%;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--dark-color);
+  border-radius: 20px;
 }
 
 .clinic {
