@@ -818,3 +818,18 @@
     font-size: 14px;
   }
 }
+
+.header .close-vertical {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(238, 10, 10, 0.86);
+  left: 0;
+  top: 0;
+}
+@media (min-width: 769px) {
+  .header .close-vertical {
+    display: none;
+  }
+}

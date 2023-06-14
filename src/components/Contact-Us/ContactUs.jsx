@@ -10,7 +10,7 @@ function ContactUs() {
   const [formData, setFormData] = useState({subject: 'New User Interested', name: '', mobileNumber: '', course: '' });
   const [formError, setFormError] = useState(false);
   const [isWhatsappChecked, setIsWhatsappChecked] = useState(false);
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(()=>{
     emailjs.init(process.env.REACT_APP_EMAIL_JS_PUBLIC_KEY);

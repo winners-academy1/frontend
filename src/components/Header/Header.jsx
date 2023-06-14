@@ -41,65 +41,73 @@ function Header() {
 		<>
 			<section className={y > 0 ? "header header-scroll" : "header"}>
 				{showVerticalNav && (
-					<div className="vertical-nav-container">
-						<ul className="main-nav-phone">
-							<li>
-								<Link
-									to="/"
-									onClick={() => {
-										window.scrollTo({
-											left: 0,
-											top: 0,
-											behavior: "smooth",
-										});
-									}}
-								>
-									<a>{t("home.label")}</a>
-								</Link>
-								<i
-									className={dropDown ? "fas fa-angle-up" : "fas fa-angle-down"}
-									onClick={() => {
-										setShowDropHome(!showDropHome);
-										setDropDown(!dropDown);
-									}}
-								></i>
-								<ul
-									className={
-										showDropHome
-											? "drop-ul-phone drop-ul-phone-scroll"
-											: "drop-ul-phone"
-									}
-								>
-									<li onClick={()=>{window.scrollTo({
-											left: 0,
-											top: 0,
-											behavior: "smooth",
-										});}}>
-										<Link to="/AboutUs">{t("aboutus.label")}</Link>
-									</li>
-									<li onClick={()=>{window.scrollTo({
-											left: 0,
-											top: 0,
-											behavior: "smooth",
-										});}}>
-										<Link to="/ContactUs">{t("contactus.label")}</Link>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="#Courses" onClick={navigateHandler}>
-									<a>{t("courses.label")}</a>
-								</a>
-							</li>
-							<li>
-								<a>
-									<a href="#whatwedo" onClick={navigateHandler}>
-										{t("whatwedo.label")}
+					<>
+						<div
+						className="close-vertical"
+						onClick={() => {
+							setshowVerticalNav(false);
+						}}
+						></div>
+						<div className="vertical-nav-container">
+							<ul className="main-nav-phone">
+								<li>
+									<Link
+										to="/"
+										onClick={() => {
+											window.scrollTo({
+												left: 0,
+												top: 0,
+												behavior: "smooth",
+											});
+										}}
+									>
+										<a>{t("home.label")}</a>
+									</Link>
+									<i
+										className={dropDown ? "fas fa-angle-up" : "fas fa-angle-down"}
+										onClick={() => {
+											setShowDropHome(!showDropHome);
+											setDropDown(!dropDown);
+										}}
+									></i>
+									<ul
+										className={
+											showDropHome
+												? "drop-ul-phone drop-ul-phone-scroll"
+												: "drop-ul-phone"
+										}
+									>
+										<li onClick={()=>{window.scrollTo({
+												left: 0,
+												top: 0,
+												behavior: "smooth",
+											});}}>
+											<Link to="/AboutUs">{t("aboutus.label")}</Link>
+										</li>
+										<li onClick={()=>{window.scrollTo({
+												left: 0,
+												top: 0,
+												behavior: "smooth",
+											});}}>
+											<Link to="/ContactUs">{t("contactus.label")}</Link>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#Courses" onClick={navigateHandler}>
+										<a>{t("courses.label")}</a>
 									</a>
-								</a>
-							</li>
-						</ul>
-					</div>
+								</li>
+								<li>
+									<a>
+										<a href="#whatwedo" onClick={navigateHandler}>
+											{t("whatwedo.label")}
+										</a>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</>
 				)}
 				<div
 					className={
