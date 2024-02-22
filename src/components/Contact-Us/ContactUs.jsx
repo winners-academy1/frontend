@@ -86,6 +86,7 @@ function ContactUs() {
                 <option value=''>Select Course</option>
                 <option value='PTE Academic Course Fully Explained in English'>PTE Academic Course Fully Explained in English</option>
                 <option value='PTE Academic Course For Arabic Speakers'>PTE Academic Course For Arabic Speakers</option>
+                <option value='PTE Core Course For Arabic Speakers'>PTE Core Course For Arabic Speakers</option>
               </select>
             </div>
 

@@ -1,10 +1,10 @@
 import {React, useState, useEffect} from 'react';
 import '../../../styles/home-styles/hero.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import hero_large_displays from "../../../images/hero/hero_large_displays.jpg";
-import hero_laptop from "../../../images/hero/hero_laptop.jpg";
-import hero_tablet from "../../../images/hero/hero_tablet.jpg";
-import hero_mobile from "../../../images/hero/hero_mobile.jpg";
+import hero_large_displays from "../../../images/hero/hero_large_displays.png";
+import hero_laptop from "../../../images/hero/hero_laptop.png";
+import hero_tablet from "../../../images/hero/hero_tablet.png";
+import hero_mobile from "../../../images/hero/hero_mobile.png";
 function Hero() {
   const [imageSource, setImageSource] = useState('');
 
