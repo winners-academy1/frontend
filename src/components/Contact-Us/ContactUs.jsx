@@ -51,6 +51,7 @@ function ContactUs() {
   };
 
   const handlePhoneInputChange = (phone) => {
+    setInvalidPhoneNumber(false)
     setFormData({ ...formData, mobileNumber: phone });
   };
 
