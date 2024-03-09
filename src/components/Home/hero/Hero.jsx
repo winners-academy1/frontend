@@ -5,7 +5,7 @@ import hero_large_displays from "../../../images/hero/hero_large_displays.png";
 import hero_laptop from "../../../images/hero/hero_laptop.png";
 import hero_tablet from "../../../images/hero/hero_tablet.png";
 import hero_mobile from "../../../images/hero/hero_mobile.png";
-function Hero() {
+function Hero({ setIsLoading }) {
   const [imageSource, setImageSource] = useState('');
 
   useEffect(() => {
@@ -41,6 +41,10 @@ function Hero() {
         <img
           src={imageSource}
           alt="winners_academy"
+          onLoad={() => {
+            console.log('image loaded');
+            setIsLoading(false);
+          }}
         />
       </div>
     </>

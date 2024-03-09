@@ -1,0 +1,185 @@
+body {
+ /* background-color:  var(--background-color); */
+}
+.loading-circular {
+    position: absolute;
+    top: 50%;
+    margin-top: -2em;
+    height: 4em;
+    left: 50%;
+    margin-left: -6em;
+    width: 12em;
+  }
+  .loading-circular .text-loading {
+    color: var(--dark-color);
+    /* color: #FFF; */
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  .circular-group {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+  }
+  
+  [class^=circular_] {
+    position: absolute;
+    background-color: black;
+    /* background-color: rgb(33, 32, 32); */
+    width: 9px;
+    height: 9px;
+    border-radius: 6px;
+    -o-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    animation-name: bounce_circular;
+    -o-animation-name: bounce_circular;
+    -ms-animation-name: bounce_circular;
+    -webkit-animation-name: bounce_circular;
+    -moz-animation-name: bounce_circular;
+    animation-duration: 0.578s;
+    -o-animation-duration: 0.578s;
+    -ms-animation-duration: 0.578s;
+    -webkit-animation-duration: 0.578s;
+    -moz-animation-duration: 0.578s;
+    animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-direction: normal;
+    -o-animation-direction: normal;
+    -ms-animation-direction: normal;
+    -webkit-animation-direction: normal;
+    -moz-animation-direction: normal;
+  }
+  
+  .circular_1 {
+    left: 0;
+    top: 16px;
+    animation-delay: 0.218s;
+    -o-animation-delay: 0.218s;
+    -ms-animation-delay: 0.218s;
+    -webkit-animation-delay: 0.218s;
+    -moz-animation-delay: 0.218s;
+  }
+  
+  .circular_2 {
+    left: 4px;
+    top: 4px;
+    animation-delay: 0.284s;
+    -o-animation-delay: 0.284s;
+    -ms-animation-delay: 0.284s;
+    -webkit-animation-delay: 0.284s;
+    -moz-animation-delay: 0.284s;
+  }
+  
+  .circular_3 {
+    top: 0;
+    left: 16px;
+    animation-delay: 0.36s;
+    -o-animation-delay: 0.36s;
+    -ms-animation-delay: 0.36s;
+    -webkit-animation-delay: 0.36s;
+    -moz-animation-delay: 0.36s;
+  }
+  
+  .circular_4 {
+    right: 4px;
+    top: 4px;
+    animation-delay: 0.436s;
+    -o-animation-delay: 0.436s;
+    -ms-animation-delay: 0.436s;
+    -webkit-animation-delay: 0.436s;
+    -moz-animation-delay: 0.436s;
+  }
+  
+  .circular_5 {
+    right: 0;
+    top: 16px;
+    animation-delay: 0.502s;
+    -o-animation-delay: 0.502s;
+    -ms-animation-delay: 0.502s;
+    -webkit-animation-delay: 0.502s;
+    -moz-animation-delay: 0.502s;
+  }
+  
+  .circular_6 {
+    right: 4px;
+    bottom: 4px;
+    animation-delay: 0.578s;
+    -o-animation-delay: 0.578s;
+    -ms-animation-delay: 0.578s;
+    -webkit-animation-delay: 0.578s;
+    -moz-animation-delay: 0.578s;
+  }
+  
+  .circular_7 {
+    left: 16px;
+    bottom: 0;
+    animation-delay: 0.644s;
+    -o-animation-delay: 0.644s;
+    -ms-animation-delay: 0.644s;
+    -webkit-animation-delay: 0.644s;
+    -moz-animation-delay: 0.644s;
+  }
+  
+  .circular_8 {
+    left: 4px;
+    bottom: 4px;
+    animation-delay: 0.72s;
+    -o-animation-delay: 0.72s;
+    -ms-animation-delay: 0.72s;
+    -webkit-animation-delay: 0.72s;
+    -moz-animation-delay: 0.72s;
+  }
+  
+  @keyframes bounce_circular {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.3);
+    }
+  }
+  @-o-keyframes bounce_circular {
+    0% {
+      -o-transform: scale(1);
+    }
+    100% {
+      -o-transform: scale(0.3);
+    }
+  }
+  @-ms-keyframes bounce_circular {
+    0% {
+      -ms-transform: scale(1);
+    }
+    100% {
+      -ms-transform: scale(0.3);
+    }
+  }
+  @-webkit-keyframes bounce_circular {
+    0% {
+      -webkit-transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0.3);
+    }
+  }
+  @-moz-keyframes bounce_circular {
+    0% {
+      -moz-transform: scale(1);
+    }
+    100% {
+      -moz-transform: scale(0.3);
+    }
+  }
+
+
+
+
+  

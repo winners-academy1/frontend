@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import emailjs from 'emailjs-com';
 import '../../styles/contact-us/contact-us.css';
 import { Modal, Button } from 'react-bootstrap';
+import PhoneInput from 'react-phone-number-input';
+import 'react-phone-number-input/style.css';
 
 function ContactUs() {
   const { t, i18n } = useTranslation();
@@ -15,8 +17,15 @@ function ContactUs() {
   useEffect(()=>{
     emailjs.init(process.env.REACT_APP_EMAIL_JS_PUBLIC_KEY);
   }, []);
+
+  useEffect(()=>{
+    const inputElement = document.querySelector('.PhoneInputInput');
+    inputElement.classList.add("form-control");
+  });
+
   const handleFormSubmit = (event) => {
     event.preventDefault();
+    console.log('formData', formData);
     if (formData.name === '' || formData.mobileNumber === '' || formData.course === '') {
       setFormError(true);
       return;
@@ -32,6 +41,25 @@ function ContactUs() {
       });
 
     setFormData({subject: 'New User Interested', name: '', mobileNumber: '', course: '' });
+  };
+
+  const handlePhoneInputChange = (phone) => {
+    console.log('phone', phone);
+    const isValid = validatePhoneNumber(phone);
+    if (isValid) {
+      setFormData({ ...formData, mobileNumber: phone });
+    } else {
+      setFormData({ ...formData, mobileNumber: "" });
+    }
+  };
+
+  const validatePhoneNumber = (phoneNumber) => {
+    const phoneRegex = /^\+(?:[0-9] ?){6,14}[0-9]$/;
+    if (phoneRegex.test(phoneNumber)) {
+        return true;
+    } else {
+        return false;
+    }
   };
 
   const handleInputChange = (event) => {
@@ -71,7 +99,15 @@ function ContactUs() {
             </div>
 
             <div className='form-group'>
-              <input type='tel' className='form-control' id='mobileNumber' name='mobileNumber' value={formData.mobileNumber} onChange={handleInputChange} placeholder='Mobile Number' required />
+              {/* <input type='tel' className='form-control' id='mobileNumber' name='mobileNumber' value={formData.mobileNumber} onChange={handleInputChange} placeholder='Mobile Number' required /> */}
+              <PhoneInput
+                placeholder="Enter phone number"
+                value={formData.mobileNumber}
+                onChange={handlePhoneInputChange}
+                defaultCountry="JO"
+                style={{width: "100%"}}
+                required
+              />
             </div>
 
             <div className='form-group'>

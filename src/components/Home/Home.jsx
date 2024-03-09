@@ -6,10 +6,10 @@ import Feedback from "./feedback/Feedback";
 
 import WhatWeDo from "./WhatWeDo/WhatWeDo";
 
-function Home() {
+function Home({ setIsLoading }) {
 	return (
 		<>
-			<Hero />
+			<Hero setIsLoading={setIsLoading}/>
 			<WhatWeDo />
 			<Courses />
 			<StudentsAchievements />
