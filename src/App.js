@@ -11,7 +11,7 @@ import ContactUs from './components/Contact-Us/ContactUs';
 import LoadingState from './components/Loading-State/LoadingState';
 function App() {
   const [y, setY] = useState(window.scrollY);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(window.location.pathname == "/" ? true : false);
 
   window.onscroll = function () {
     setY(window.scrollY);

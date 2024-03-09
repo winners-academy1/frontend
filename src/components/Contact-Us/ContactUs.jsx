@@ -11,6 +11,7 @@ function ContactUs() {
   const { t, i18n } = useTranslation();
   const [formData, setFormData] = useState({subject: 'New User Interested', name: '', mobileNumber: '', course: '' });
   const [formError, setFormError] = useState(false);
+  const [invalidPhoneNumber, setInvalidPhoneNumber] = useState(false);
   const [isWhatsappChecked, setIsWhatsappChecked] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
@@ -30,6 +31,12 @@ function ContactUs() {
       setFormError(true);
       return;
     }
+
+    const isValid = validatePhoneNumber(formData.mobileNumber);
+    if (!isValid) {
+      setInvalidPhoneNumber(true);
+      return;
+    }
     setFormError(false);
     
     emailjs.send(process.env.REACT_APP_EMAIL_JS_SERVICE_ID, process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID, formData)
@@ -44,13 +51,7 @@ function ContactUs() {
   };
 
   const handlePhoneInputChange = (phone) => {
-    console.log('phone', phone);
-    const isValid = validatePhoneNumber(phone);
-    if (isValid) {
-      setFormData({ ...formData, mobileNumber: phone });
-    } else {
-      setFormData({ ...formData, mobileNumber: "" });
-    }
+    setFormData({ ...formData, mobileNumber: phone });
   };
 
   const validatePhoneNumber = (phoneNumber) => {
@@ -109,6 +110,11 @@ function ContactUs() {
                 required
               />
             </div>
+            {invalidPhoneNumber && (
+              <div className='alert alert-danger' role='alert'>
+                Please enter valid phone number.
+              </div>
+            )}
 
             <div className='form-group'>
               <select
