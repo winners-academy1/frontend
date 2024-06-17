@@ -21,42 +21,45 @@ function Courses() {
           <div className="card course-card left">
             <img src={ENGLISH} alt="english_course"/>
             <Button onClick={()=>{
-              navigate("ContactUs");
+              navigate("PricingPlansAcademic");
               window.scrollTo({
                 left: 0,
                 top: 0,
                 behavior: 'smooth',
-                });
-              }}
-              text="Contact Us"
+              });
+            }}
+            className="button-text"
+              text="Register Now"
             >
             </Button>
           </div>
           <div className="card course-card left">
             <img src={ARABIC_CORE} alt="arabic_core"/>
             <Button onClick={()=>{
-              navigate("ContactUs");
+              navigate("PricingPlansCore");
               window.scrollTo({
                 left: 0,
                 top: 0,
                 behavior: 'smooth',
                 });
               }}
-              text="اتصل بنا"
+              text="سجل الآن"
+              className="button-text arabic"
             >
             </Button>
           </div>
           <div className="card course-card right">
             <img src={ARABIC} alt="arabic_course"/>
             <Button onClick={()=>{
-              navigate("ContactUs");
+              navigate("PricingPlansAcademic");
               window.scrollTo({
                 left: 0,
                 top: 0,
                 behavior: 'smooth',
                 });
               }}
-              text="اتصل بنا"
+              text="سجل الآن"
+              className="button-text arabic"
             >
             </Button>
           </div>

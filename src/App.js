@@ -9,6 +9,8 @@ import DeliveryPolicy from './components/Policy/DeliveryPolicy';
 import PrivacyPolicy from './components/Policy/PrivacyPolicy';
 import ContactUs from './components/Contact-Us/ContactUs';
 import LoadingState from './components/Loading-State/LoadingState';
+import PricingPlansAcademic from './components/PricingPlans/PricingPlansAcademic';
+import PricingPlansCore from './components/PricingPlans/PricingPlansCore';
 function App() {
   const [y, setY] = useState(window.scrollY);
   const [isLoading, setIsLoading] = useState(window.location.pathname == "/" ? true : false);
@@ -50,6 +52,8 @@ function App() {
               <Route exact path='/ContactUs' element={<ContactUs />} />
               <Route exact path='/DeliveryPolicy' element={<DeliveryPolicy />} />
               <Route exact path='/PrivacyPolicy' element={<PrivacyPolicy />} />
+              <Route exact path='/PricingPlansAcademic' element={<PricingPlansAcademic />} />
+              <Route exact path='/PricingPlansCore' element={<PricingPlansCore />} />
             </Routes>
             <Footer />
           </Suspense>
