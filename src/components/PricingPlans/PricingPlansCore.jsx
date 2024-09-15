@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/pricingPlans/pricing-plans-core.css';
+import { useLocation } from 'react-router-dom';
 const RecordedIcon = ({ width = 35, height = 34, fill = "#E4FFE0", className = '' }) => (
     <svg
         width={width}
@@ -40,6 +41,11 @@ const LiveIcon = () => (
     </svg>
 );
 const PricingPlansCore = () => {
+    const location = useLocation();
+    
+    const queryParams = new URLSearchParams(location.search);
+    const course = queryParams.get('course');
+  
     // Content for column 1 from element #5 to #14
     const col1Content = [
         "Four One-to-One Interactive Sessions", // 5
@@ -60,6 +66,7 @@ const PricingPlansCore = () => {
         <div className='pricing-plans-core-container'>
             <div className='column one'>
                 <span className="merged">
+                        <span className='course-title'>{course == "arabic" ? "PTE Core Course For Arabic Speakers" : "PTE Core Course Fully Explained in English"}</span>
                         Choose <p>your plan</p>
                 </span> {/* Merged element spanning 4 rows */}
                 {col1Content.map((content, index) => (
@@ -67,46 +74,54 @@ const PricingPlansCore = () => {
                 ))}
                 <span></span> {/* Element #15 left empty */}
             </div>
-            <div className='column two'>
-                {Array.from({ length: 15 }).map((_, index) => {
-                    switch (index) {
-                        case 0:
-                            return (
-                                <span key={index} className='label'>For <span>1 Student</span></span>
-                            )
-                            break;
-                        case 1:
-                            return (
-                                <span key={index} className='icon'>
-                                    <RecordedIcon/>
-                                </span>
-                            )
-                            break;
-                        case 2:
-                            return (
-                                <span key={index} className='price'>225$</span>
-                            )
-                            break;
-                        case 3:
-                            return (
-                                <span key={index} className='type'>Recorded <span className='circle-solid'></span></span>
-                            )
-                            break;
-                        case 14:
-                            return (
-                                <span key={index} className='button-custom' onClick={()=> openStripeCheckoutPage('https://buy.stripe.com/fZeaFe8cpd7kbTi7sD')}>Get Started</span>
-                            )
-                            break;
-                    
-                        default:
-                            return (
-                                <span key={index} className='check-mark'>
-                                   <CheckMarkIcon/>
-                                </span>
-                            )
-                    }
-                })}
-            </div>
+            {
+                course == "arabic" &&
+                <div className='column two'>
+                    {Array.from({ length: 15 }).map((_, index) => {
+                        switch (index) {
+                            case 0:
+                                return (
+                                    <span key={index} className='label'>For <span>1 Student</span></span>
+                                )
+                                break;
+                            case 1:
+                                return (
+                                    <span key={index} className='icon'>
+                                        <RecordedIcon/>
+                                    </span>
+                                )
+                                break;
+                            case 2:
+                                return (
+                                    <span key={index} className='price'>225$</span>
+                                )
+                                break;
+                            case 3:
+                                return (
+                                    <span key={index} className='type'>Recorded <span className='circle-solid'></span></span>
+                                )
+                                break;
+                            case 14:
+                                return (
+                                    <span key={index} className='button-custom' onClick={()=> openStripeCheckoutPage('https://buy.stripe.com/fZeaFe8cpd7kbTi7sD')}>Get Started</span>
+                                )
+                                break;
+                        
+                            default:
+                                return (
+                                    <span key={index} className='check-mark'>
+                                        {
+                                            course == "arabic" && index == 4 ?
+                                            "X"
+                                            : 
+                                            <CheckMarkIcon/>
+                                        }
+                                    </span>
+                                )
+                        }
+                    })}
+                </div>
+            }
             <div className='column'>
             {Array.from({ length: 15 }).map((_, index) => {
                     switch (index) {
@@ -141,7 +156,12 @@ const PricingPlansCore = () => {
                         default:
                             return (
                                 <span key={index} className='check-mark'>
-                                   <CheckMarkIcon color='black'/>
+                                    {
+                                        course == "arabic" && index == 5 ?
+                                        "X"
+                                        : 
+                                        <CheckMarkIcon color='black'/>
+                                    }
                                 </span>
                             )
                     }
@@ -181,7 +201,12 @@ const PricingPlansCore = () => {
                         default:
                             return (
                                 <span key={index} className='check-mark'>
-                                   <CheckMarkIcon color='black'/>
+                                    {
+                                        course == "arabic" && index == 5 ?
+                                        "X"
+                                        : 
+                                        <CheckMarkIcon color='black'/>
+                                    }
                                 </span>
                             )
                     }
@@ -221,7 +246,12 @@ const PricingPlansCore = () => {
                         default:
                             return (
                                 <span key={index} className='check-mark'>
-                                   <CheckMarkIcon color='black'/>
+                                    {
+                                        course == "arabic" && index == 5 ?
+                                        "X"
+                                        : 
+                                        <CheckMarkIcon color='black'/>
+                                    }
                                 </span>
                             )
                     }
@@ -261,7 +291,12 @@ const PricingPlansCore = () => {
                         default:
                             return (
                                 <span key={index} className='check-mark'>
-                                   <CheckMarkIcon color='black'/>
+                                    {
+                                        course == "arabic" && index == 5 ?
+                                        "X"
+                                        : 
+                                        <CheckMarkIcon color='black'/>
+                                    }
                                 </span>
                             )
                     }

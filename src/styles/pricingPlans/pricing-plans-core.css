@@ -44,9 +44,18 @@
         flex-direction: column;
         justify-content: center;
         font-size: 5vh;
+        font-weight: 500;
 
         p {
             font-weight: 600;
+            /* margin-bottom: 0; */
+        }
+
+        .course-title {
+            color: #6cb758;
+            /* color: #b0aaaa; */
+            /* color: #8080807a; */
+            font-size: 16px;
         }
     }
 
