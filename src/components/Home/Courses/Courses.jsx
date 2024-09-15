@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import ARABIC from "../../../images/courses/ARABIC.png";
 import ENGLISH from "../../../images/courses/ENGLISH.png";
 import ARABIC_CORE from "../../../images/courses/ARABIC_CORE.png";
+import ENGLISH_CORE from "../../../images/courses/ENGLISH_CORE.png";
 import Button from "../../Common/Button";
 
 function Courses() {
@@ -34,9 +35,24 @@ function Courses() {
             </Button>
           </div>
           <div className="card course-card left">
-            <img src={ARABIC_CORE} alt="arabic_core"/>
+            <img src={ENGLISH_CORE} alt="english_core" style={{position: "relative", top: "-10px"}}/>
             <Button onClick={()=>{
               navigate("PricingPlansCore");
+              window.scrollTo({
+                left: 0,
+                top: 0,
+                behavior: 'smooth',
+                });
+              }}
+              text="Register Now"
+              className="button-text english"
+            >
+            </Button>
+          </div>
+          <div className="card course-card right">
+            <img src={ARABIC} alt="arabic_course"/>
+            <Button onClick={()=>{
+              navigate("PricingPlansAcademic");
               window.scrollTo({
                 left: 0,
                 top: 0,
@@ -48,10 +64,10 @@ function Courses() {
             >
             </Button>
           </div>
-          <div className="card course-card right">
-            <img src={ARABIC} alt="arabic_course"/>
+          <div className="card course-card left">
+            <img src={ARABIC_CORE} alt="arabic_core"/>
             <Button onClick={()=>{
-              navigate("PricingPlansAcademic");
+              navigate("PricingPlansCore");
               window.scrollTo({
                 left: 0,
                 top: 0,

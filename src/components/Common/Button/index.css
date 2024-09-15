@@ -1,7 +1,7 @@
 .button-component {
     position: relative;
     right: 0%;
-    bottom: 95px;
+    bottom: 127px;
 }
 @media (max-width: 1212px) {
     .button-component {

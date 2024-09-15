@@ -1,0 +1,135 @@
+.pricing-plans-core-container {
+    position: relative;
+    top: 80px;
+    margin-bottom: 80px;
+    padding: 15px 30px;
+    display: grid;
+    grid-template-columns: 2fr repeat(5, 1fr); /* Set column 1 width to be twice the width of other columns */
+    gap: 10px; /* Adjust gap between columns if needed */
+
+    .column {
+        display: grid;
+        grid-template-rows: repeat(15, 1fr); /* Ensure 15 equal rows inside each column */
+        height: 100%; /* Ensure columns take full height */
+        align-items: stretch; /* Make elements stretch to align */
+        background-color: #f4f4f4;
+        padding: 5px;
+    }
+    .column.one {
+        margin-right: 20px;
+        background-color: unset;
+    }
+    .column.one span {
+        text-align: start;
+    }
+    .column.two {
+        background-color: #6cb758;
+        color: white;
+    }
+    .column:not(.one) {
+        border-radius: 8px;
+    }
+
+    .column span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.6vh; /* Dynamic font size based on viewport height */
+        font-weight: 600;
+    }
+    .column .merged {
+        grid-row: span 4; /* Merged element takes up 4 rows */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 5vh;
+
+        p {
+            font-weight: 600;
+        }
+    }
+
+    .column span.label span {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .column span.price {
+        border: 1px solid white;
+        border-radius: 30px;
+        font-size: 2.5vh;
+        font-weight: 600;
+        height: 35px;
+        margin-top: 5px;
+        width: 80%;
+        flex-direction: row;
+        align-items: center;
+        justify-self: center;
+    }
+    .column:not(.two) span.price {
+        border: 1px solid #6cb758;
+        color: #6cb758;
+    }
+
+    .column span.icon {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 5px;
+    }
+    .column span.type {
+        font-size: 16px;
+        font-weight: 600;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        /* height: 35px; */
+    }
+    .column span.type .circle-solid{
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: white;
+    }
+    .column:not(.two) span.type .circle-solid{
+        background-color: red;
+    }
+    .column span.check-mark {
+        flex-direction: row;
+        align-items: center;
+    }
+    .column span.button-custom {
+        border-radius: 30px;
+        font-weight: 600;
+        color: #6cb758;
+        background-color: white;
+        width: 80%;
+        flex-direction: row;
+        align-items: center;
+        justify-self: center;
+        cursor: pointer;
+        height: 35px;
+        transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .column span.button-custom:hover {
+        background-color: #6cb758; /* Change background to green */
+        color: white; /* Invert text color */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    }
+    .column:not(.two) span.button-custom {
+        background-color: #6cb758;
+        color: white;
+    }
+    .column:not(.two) span.button-custom:hover {
+        color: #6cb758; /* Change background to green */
+        background-color: white; /* Invert text color */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    }
+}
+
+
+/* @media (min-width: 1200px) {
+    .pricing-plans-core-container {
+        height: 90.5vh;
+    }
+} */
