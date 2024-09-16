@@ -47,7 +47,7 @@ const PricingPlansCore = () => {
     const course = queryParams.get('course');
   
     // Content for column 1 from element #5 to #14
-    const col1Content = [
+    let col1Content = [
         "Four One-to-One Interactive Sessions", // 5
         "Four Recorded Sessions (Speaking, Writing, Reading, Listening)", // 6
         "Flexible Scheduling; Study at Your Own Pace", // 7
@@ -59,6 +59,9 @@ const PricingPlansCore = () => {
         "Interactive WhatsApp Groups", // 13
         "24/7 Support" // 14
     ];
+    if (course === "english") {
+        col1Content = col1Content.filter(item => item !== "Four Recorded Sessions (Speaking, Writing, Reading, Listening)");
+    }
     const openStripeCheckoutPage = (url) => {
         window.location.href = url;
     };
@@ -124,183 +127,195 @@ const PricingPlansCore = () => {
             }
             <div className='column'>
             {Array.from({ length: 15 }).map((_, index) => {
-                    switch (index) {
-                        case 0:
-                            return (
-                                <span key={index} className='label'>For <span>1 Student</span></span>
-                            )
-                            break;
-                        case 1:
-                            return (
-                                <span key={index} className='icon'>
-                                   <LiveIcon/> 
-                                </span>
-                            )
-                            break;
-                        case 2:
-                            return (
-                                <span key={index} className='price'>275$</span>
-                            )
-                            break;
-                        case 3:
-                            return (
-                                <span key={index} className='type'>Live <span className='circle-solid'></span></span>
-                            )
-                            break;
-                        case 14:
-                            return (
-                                <span key={index} className='button-custom' onClick={()=> openStripeCheckoutPage('https://buy.stripe.com/4gw14E78lgjw7D27sz')}>Get Started</span>
-                            )
-                            break;
-                    
-                        default:
-                            return (
-                                <span key={index} className='check-mark'>
-                                    {
-                                        course == "arabic" && index == 5 ?
-                                        "X"
-                                        : 
-                                        <CheckMarkIcon color='black'/>
-                                    }
-                                </span>
-                            )
-                    }
-                })}
+                if (course === "english" && index == 5) {
+                    return;
+                }
+                switch (index) {
+                    case 0:
+                        return (
+                            <span key={index} className='label'>For <span>1 Student</span></span>
+                        )
+                        break;
+                    case 1:
+                        return (
+                            <span key={index} className='icon'>
+                                <LiveIcon/> 
+                            </span>
+                        )
+                        break;
+                    case 2:
+                        return (
+                            <span key={index} className='price'>275$</span>
+                        )
+                        break;
+                    case 3:
+                        return (
+                            <span key={index} className='type'>Live <span className='circle-solid'></span></span>
+                        )
+                        break;
+                    case 14:
+                        return (
+                            <span key={index} className='button-custom' onClick={()=> openStripeCheckoutPage('https://buy.stripe.com/4gw14E78lgjw7D27sz')}>Get Started</span>
+                        )
+                        break;
+                
+                    default:
+                        return (
+                            <span key={index} className='check-mark'>
+                                {
+                                    course == "arabic" && index == 5 ?
+                                    "X"
+                                    : 
+                                    <CheckMarkIcon color='black'/>
+                                }
+                            </span>
+                        )
+                }
+            })}
             </div>
             <div className='column'>
             {Array.from({ length: 15 }).map((_, index) => {
-                    switch (index) {
-                        case 0:
-                            return (
-                                <span key={index} className='label'>For <span>2 Students</span></span>
-                            )
-                            break;
-                        case 1:
-                            return (
-                                <span key={index} className='icon'>
-                                   <LiveIcon/> 
-                                </span>
-                            )
-                            break;
-                        case 2:
-                            return (
-                                <span key={index} className='price'>470$</span>
-                            )
-                            break;
-                        case 3:
-                            return (
-                                <span key={index} className='type'>Live <span className='circle-solid'></span></span>
-                            )
-                            break;
-                        case 14:
-                            return (
-                                <span key={index} className='button-custom' onClick={()=> openStripeCheckoutPage('https://buy.stripe.com/28obJi78l3wK6yYeV2')}>Get Started</span>
-                            )
-                            break;
-                    
-                        default:
-                            return (
-                                <span key={index} className='check-mark'>
-                                    {
-                                        course == "arabic" && index == 5 ?
-                                        "X"
-                                        : 
-                                        <CheckMarkIcon color='black'/>
-                                    }
-                                </span>
-                            )
-                    }
-                })}
+                if (course === "english" && index == 5) {
+                    return;
+                }
+                switch (index) {
+                    case 0:
+                        return (
+                            <span key={index} className='label'>For <span>2 Students</span></span>
+                        )
+                        break;
+                    case 1:
+                        return (
+                            <span key={index} className='icon'>
+                                <LiveIcon/> 
+                            </span>
+                        )
+                        break;
+                    case 2:
+                        return (
+                            <span key={index} className='price'>470$</span>
+                        )
+                        break;
+                    case 3:
+                        return (
+                            <span key={index} className='type'>Live <span className='circle-solid'></span></span>
+                        )
+                        break;
+                    case 14:
+                        return (
+                            <span key={index} className='button-custom' onClick={()=> openStripeCheckoutPage('https://buy.stripe.com/28obJi78l3wK6yYeV2')}>Get Started</span>
+                        )
+                        break;
+                
+                    default:
+                        return (
+                            <span key={index} className='check-mark'>
+                                {
+                                    course == "arabic" && index == 5 ?
+                                    "X"
+                                    : 
+                                    <CheckMarkIcon color='black'/>
+                                }
+                            </span>
+                        )
+                }
+            })}
             </div>
             <div className='column'>
             {Array.from({ length: 15 }).map((_, index) => {
-                    switch (index) {
-                        case 0:
-                            return (
-                                <span key={index} className='label'>For <span>3 Students</span></span>
-                            )
-                            break;
-                        case 1:
-                            return (
-                                <span key={index} className='icon'>
-                                   <LiveIcon/> 
-                                </span>
-                            )
-                            break;
-                        case 2:
-                            return (
-                                <span key={index} className='price'>660$</span>
-                            )
-                            break;
-                        case 3:
-                            return (
-                                <span key={index} className='type'>Live <span className='circle-solid'></span></span>
-                            )
-                            break;
-                        case 14:
-                            return (
-                                <span key={index} className='button-custom' onClick={()=> openStripeCheckoutPage('https://buy.stripe.com/28obJi3W97N0aPeeV3')}>Get Started</span>
-                            )
-                            break;
-                    
-                        default:
-                            return (
-                                <span key={index} className='check-mark'>
-                                    {
-                                        course == "arabic" && index == 5 ?
-                                        "X"
-                                        : 
-                                        <CheckMarkIcon color='black'/>
-                                    }
-                                </span>
-                            )
-                    }
-                })}
+                if (course === "english" && index == 5) {
+                    return;
+                }
+                switch (index) {
+                    case 0:
+                        return (
+                            <span key={index} className='label'>For <span>3 Students</span></span>
+                        )
+                        break;
+                    case 1:
+                        return (
+                            <span key={index} className='icon'>
+                                <LiveIcon/> 
+                            </span>
+                        )
+                        break;
+                    case 2:
+                        return (
+                            <span key={index} className='price'>660$</span>
+                        )
+                        break;
+                    case 3:
+                        return (
+                            <span key={index} className='type'>Live <span className='circle-solid'></span></span>
+                        )
+                        break;
+                    case 14:
+                        return (
+                            <span key={index} className='button-custom' onClick={()=> openStripeCheckoutPage('https://buy.stripe.com/28obJi3W97N0aPeeV3')}>Get Started</span>
+                        )
+                        break;
+                
+                    default:
+                        return (
+                            <span key={index} className='check-mark'>
+                                {
+                                    course == "arabic" && index == 5 ?
+                                    "X"
+                                    : 
+                                    <CheckMarkIcon color='black'/>
+                                }
+                            </span>
+                        )
+                }
+            })}
             </div>
             <div className='column'>
             {Array.from({ length: 15 }).map((_, index) => {
-                    switch (index) {
-                        case 0:
-                            return (
-                                <span key={index} className='label'>For <span>4 Students</span></span>
-                            )
-                            break;
-                        case 1:
-                            return (
-                                <span key={index} className='icon'>
-                                   <LiveIcon/> 
-                                </span>
-                            )
-                            break;
-                        case 2:
-                            return (
-                                <span key={index} className='price'>820$</span>
-                            )
-                            break;
-                        case 3:
-                            return (
-                                <span key={index} className='type'>Live <span className='circle-solid'></span></span>
-                            )
-                            break;
-                        case 14:
-                            return (
-                                <span key={index} className='button-custom' onClick={()=> openStripeCheckoutPage('https://buy.stripe.com/9AQ8x6eAN0ky1eEfZ8')}>Get Started</span>
-                            )
-                            break;
-                    
-                        default:
-                            return (
-                                <span key={index} className='check-mark'>
-                                    {
-                                        course == "arabic" && index == 5 ?
-                                        "X"
-                                        : 
-                                        <CheckMarkIcon color='black'/>
-                                    }
-                                </span>
-                            )
-                    }
-                })}
+                if (course === "english" && index == 5) {
+                    return;
+                }
+                switch (index) {
+                    case 0:
+                        return (
+                            <span key={index} className='label'>For <span>4 Students</span></span>
+                        )
+                        break;
+                    case 1:
+                        return (
+                            <span key={index} className='icon'>
+                                <LiveIcon/> 
+                            </span>
+                        )
+                        break;
+                    case 2:
+                        return (
+                            <span key={index} className='price'>820$</span>
+                        )
+                        break;
+                    case 3:
+                        return (
+                            <span key={index} className='type'>Live <span className='circle-solid'></span></span>
+                        )
+                        break;
+                    case 14:
+                        return (
+                            <span key={index} className='button-custom' onClick={()=> openStripeCheckoutPage('https://buy.stripe.com/9AQ8x6eAN0ky1eEfZ8')}>Get Started</span>
+                        )
+                        break;
+                
+                    default:
+                        return (
+                            <span key={index} className='check-mark'>
+                                {
+                                    course == "arabic" && index == 5 ?
+                                    "X"
+                                    : 
+                                    <CheckMarkIcon color='black'/>
+                                }
+                            </span>
+                        )
+                }
+            })}
             </div>
         </div>
     );
