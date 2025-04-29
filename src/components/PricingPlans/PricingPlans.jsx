@@ -40,39 +40,148 @@ const LiveIcon = () => (
         <path d="M10.2115 6.93469C10.2452 5.22966 10.8191 3.70671 11.9668 2.39897C12.3719 1.93547 12.9964 1.86925 13.4352 2.23343C13.8909 2.59762 13.9416 3.2101 13.5196 3.67361C11.8318 5.54418 11.8149 8.39142 13.5365 10.2785C13.9416 10.7255 13.8909 11.338 13.4521 11.7022C13.0133 12.0829 12.3888 12.0167 11.9837 11.5532C10.8191 10.2454 10.2452 8.70594 10.2115 6.93469Z" fill="#B6AEAE"/>
     </svg>
 );
-const PricingPlansCore = () => {
+const PricingPlans = () => {
     const location = useLocation();
     
     const queryParams = new URLSearchParams(location.search);
     const course = queryParams.get('course');
-  
-    // Content for column 1 from element #5 to #14
-    let col1Content = [
-        "Four One-to-One Interactive Sessions", // 5
-        "Four Recorded Sessions (Speaking, Writing, Reading, Listening)", // 6
-        "Flexible Scheduling; Study at Your Own Pace", // 7
-        "Four Recorded Sessions (Pre-Writing, Pre-Reading, Pronunciation, Review)", // 8
-        "Golden Materials: Previous Real Exam Questions", // 9
-        "Customized Study Plans", // 10
-        "Daily Feedback", // 11
-        "Free Mock Tests with Full Analysis", // 12
-        "Interactive WhatsApp Groups", // 13
-        "24/7 Support" // 14
-    ];
+    const type = queryParams.get('type');
+    const courseName = type == "core" ? "Core" : "Academic";
+    const courseMainTitle = course == "arabic" ? `PTE ${courseName} Course For Arabic Speakers` : `PTE ${courseName} Course Fully Explained in English`;
+
+    const labels = {
+        1: "Five One-to-One Interactive Sessions", // 5
+        2: "Four Recorded Sessions (Speaking, Writing, Reading, Listening)", // 6
+        3: "Flexible Scheduling; Study at Your Own Pace", // 7
+        4: "Three Recorded Sessions (Pre-Writing, Pre-Reading, Pronunciation)", // 8
+        5: "Golden Materials: Previous Real Exam Questions", // 9
+        6: "Customized Study Plans", // 10
+        7: "Daily Feedback", // 11
+        8: "Free Mock Tests with Full Analysis", // 12
+        9: "Interactive WhatsApp Groups", // 13
+        10: "24/7 Support" // 14
+    };
+    
     if (course === "english") {
-        col1Content = col1Content.filter(item => item !== "Four Recorded Sessions (Speaking, Writing, Reading, Listening)");
+        delete labels[2];
     }
+    let rowsLength = 15;
+    if (type === "academic") {
+        delete labels[5];
+        // rowsLength = 13;
+    }
+
+    if (type == "core" && course == "arabic") {
+        labels[1] = "Four One-to-One Interactive Sessions";
+        labels[4] = "Four Recorded Sessions (Pre-Writing, Pre-Reading, Pronunciation, Review)";
+    }
+
+    if (type == "academic" && course == "arabic") {
+        labels[2] = "Five Interactive Sessions";
+    }
+
+
+
+    const arabicPrices = {
+        academic: {
+            oneStudent: {
+                price: "550$",
+                checkoutUrl: "https://buy.stripe.com/3cs5kUcsFc3g4qQ7sH",
+            },
+            oneStudentGroup: {
+                price: "225$",
+                checkoutUrl: "https://buy.stripe.com/aEUaFe3W92sG9LabII",
+            },
+            twoStudentsGroup: {
+                price: "410$",
+                checkoutUrl: "https://buy.stripe.com/4gw14EfER7N02iIfYZ",
+            },
+            threeStudentsGroup: {
+                price: "570$",
+                checkoutUrl: "https://buy.stripe.com/28ofZygIVffs9LaeUW",
+            },
+            fourStudentsGroup: {
+                price: "760$",
+                checkoutUrl: "https://buy.stripe.com/bIY8x6boBffsbTi003",
+            },
+        },
+        core: {
+            oneStudent: {
+                price: "225$",
+                checkoutUrl: "https://buy.stripe.com/fZeaFe8cpd7kbTi7sD",
+            },
+            oneStudentGroup: {
+                price: "300$",
+                checkoutUrl: "https://buy.stripe.com/6oEeVu9gt4AOcXmfZe",
+            },
+            twoStudentsGroup: {
+                price: "500$",
+                checkoutUrl: "https://buy.stripe.com/9AQdRq78l0kyaPebIZ",
+            },
+            threeStudentsGroup: {
+                price: "650$",
+                checkoutUrl: "https://buy.stripe.com/14keVu9gt3wK4qQeVc",
+            },
+            fourStudentsGroup: {
+                price: "800$",
+                checkoutUrl: "https://buy.stripe.com/8wM9BadwJ3wK7D25kD",
+            },
+        }
+    };
+    const englishPrices = {
+        academic: {
+            oneStudentGroup: {
+                price: "300$",
+                checkoutUrl: "https://buy.stripe.com/9AQ3cM1O16IW0aA6oI",
+            },
+            twoStudentsGroup: {
+                price: "500$",
+                checkoutUrl: "https://buy.stripe.com/4gwfZyeANd7k3mM14p",
+            },
+            threeStudentsGroup: {
+                price: "650$",
+                checkoutUrl: "https://buy.stripe.com/28o00AeAN1oCg9y28u",
+            },
+            fourStudentsGroup: {
+                price: "800$",
+                checkoutUrl: "https://buy.stripe.com/7sIcNmboB4AOf5u9AX",
+            },
+        },
+        core: {
+            oneStudentGroup: {
+                price: "300$",
+                checkoutUrl: "https://buy.stripe.com/6oEeVu9gt4AOcXmfZe",
+            },
+            twoStudentsGroup: {
+                price: "500$",
+                checkoutUrl: "https://buy.stripe.com/9AQdRq78l0kyaPebIZ",
+            },
+            threeStudentsGroup: {
+                price: "650$",
+                checkoutUrl: "https://buy.stripe.com/14keVu9gt3wK4qQeVc",
+            },
+            fourStudentsGroup: {
+                price: "800$",
+                checkoutUrl: "https://buy.stripe.com/8wM9BadwJ3wK7D25kD",
+            },
+        }
+    };
+
+    const currentCourseLanguage = course == "arabic" ? arabicPrices : englishPrices;
+    const currentCourse = type == "core" ? currentCourseLanguage.core : currentCourseLanguage.academic;
+
     const openStripeCheckoutPage = (url) => {
         window.location.href = url;
     };
+
     return (
         <div className='pricing-plans-core-container'>
             <div className='column one'>
                 <span className="merged">
-                        <span className='course-title'>{course == "arabic" ? "PTE Core Course For Arabic Speakers" : "PTE Core Course Fully Explained in English"}</span>
+                        <span className='course-title'>{courseMainTitle}</span>
                         Choose <p>your plan</p>
-                </span> {/* Merged element spanning 4 rows */}
-                {col1Content.map((content, index) => (
+                </span>
+                {Object.values(labels).map((content, index) => (
                     <span key={index + 5}>{content}</span> // Content from 5th to 14th element
                 ))}
                 <span></span> {/* Element #15 left empty */}
@@ -80,7 +189,7 @@ const PricingPlansCore = () => {
             {
                 course == "arabic" &&
                 <div className='column two'>
-                    {Array.from({ length: 15 }).map((_, index) => {
+                    {Array.from({ length: rowsLength }).map((_, index) => {
                         switch (index) {
                             case 0:
                                 return (
@@ -90,23 +199,45 @@ const PricingPlansCore = () => {
                             case 1:
                                 return (
                                     <span key={index} className='icon'>
-                                        <RecordedIcon/>
+                                        {
+                                            type == "core" ? <RecordedIcon/> : <LiveIcon/>  
+                                        }
                                     </span>
                                 )
                                 break;
                             case 2:
                                 return (
-                                    <span key={index} className='price'>225$</span>
+                                    <span key={index} className='price'>{currentCourse.oneStudent.price}</span>
                                 )
                                 break;
                             case 3:
                                 return (
-                                    <span key={index} className='type'>Recorded <span className='circle-solid'></span></span>
+                                    type == "core" ?
+                                    (<span key={index} className='type'>Recorded<span className='circle-solid'></span></span>) :
+                                    (<span key={index} className='type'>Live<span className='circle-solid red'></span></span>) 
                                 )
                                 break;
+                            case 13:
+                                if (type == "academic") {
+                                    return (
+                                        <span></span>
+                                    )
+                                    break;
+                                } else {
+                                    return (
+                                        <span key={index} className='check-mark'>
+                                            {
+                                                course == "arabic" && index == 4 && type == "core" ?
+                                                "X"
+                                                : type == "academic" && course == "arabic" && index == 5 ? "X":
+                                                <CheckMarkIcon/>
+                                            }
+                                        </span>
+                                    )
+                                }
                             case 14:
                                 return (
-                                    <span key={index} className='button-custom' onClick={()=> openStripeCheckoutPage('https://buy.stripe.com/fZeaFe8cpd7kbTi7sD')}>Get Started</span>
+                                    <span key={index} className='button-custom' onClick={()=> openStripeCheckoutPage(currentCourse.oneStudent.checkoutUrl)}>Get Started</span>
                                 )
                                 break;
                         
@@ -114,10 +245,10 @@ const PricingPlansCore = () => {
                                 return (
                                     <span key={index} className='check-mark'>
                                         {
-                                            course == "arabic" && index == 4 ?
+                                            course == "arabic" && index == 4 && type == "core" ?
                                             "X"
-                                            : 
-                                            <CheckMarkIcon/>
+                                            : type == "academic" && course == "arabic" && index == 5 ? "X":
+                                                <CheckMarkIcon/>
                                         }
                                     </span>
                                 )
@@ -126,7 +257,7 @@ const PricingPlansCore = () => {
                 </div>
             }
             <div className='column'>
-            {Array.from({ length: 15 }).map((_, index) => {
+            {Array.from({ length: rowsLength }).map((_, index) => {
                 if (course === "english" && index == 5) {
                     return;
                 }
@@ -145,36 +276,54 @@ const PricingPlansCore = () => {
                         break;
                     case 2:
                         return (
-                            <span key={index} className='price'>275$</span>
+                            <span key={index} className='price'>{currentCourse.oneStudentGroup.price}</span>
                         )
                         break;
                     case 3:
                         return (
-                            <span key={index} className='type'>Live <span className='circle-solid'></span></span>
+                            <span key={index} className='type'>Live <span className='circle-solid red'></span></span>
                         )
                         break;
+                    case 13:
+                        if (type == "academic") {
+                            return (
+                                <span></span>
+                            )
+                            break;
+                        } else {
+                            return (
+                                <span key={index} className='check-mark'>
+                                    {
+                                        course == "arabic" && ((type == "core" && index == 5) || (type =="academic" && index == 4)) ?
+                                        "X"
+                                        : 
+                                        <CheckMarkIcon color='black'/>
+                                    }
+                                </span>
+                            )
+                        }
                     case 14:
                         return (
-                            <span key={index} className='button-custom' onClick={()=> openStripeCheckoutPage('https://buy.stripe.com/4gw14E78lgjw7D27sz')}>Get Started</span>
+                            <span key={index} className='button-custom' onClick={()=> openStripeCheckoutPage(currentCourse.oneStudentGroup.checkoutUrl)}>Get Started</span>
                         )
                         break;
                 
                     default:
                         return (
                             <span key={index} className='check-mark'>
-                                {
-                                    course == "arabic" && index == 5 ?
-                                    "X"
-                                    : 
-                                    <CheckMarkIcon color='black'/>
-                                }
+                                    {
+                                        course == "arabic" && ((type == "core" && index == 5) || (type =="academic" && index == 4)) ?
+                                        "X"
+                                        : 
+                                        <CheckMarkIcon color='black'/>
+                                    }
                             </span>
                         )
                 }
             })}
             </div>
             <div className='column'>
-            {Array.from({ length: 15 }).map((_, index) => {
+            {Array.from({ length: rowsLength }).map((_, index) => {
                 if (course === "english" && index == 5) {
                     return;
                 }
@@ -193,25 +342,43 @@ const PricingPlansCore = () => {
                         break;
                     case 2:
                         return (
-                            <span key={index} className='price'>470$</span>
+                            <span key={index} className='price'>{currentCourse.twoStudentsGroup.price}</span>
                         )
                         break;
                     case 3:
                         return (
-                            <span key={index} className='type'>Live <span className='circle-solid'></span></span>
+                            <span key={index} className='type'>Live <span className='circle-solid red'></span></span>
                         )
                         break;
+                    case 13:
+                        if (type == "academic") {
+                            return (
+                                <span></span>
+                            )
+                            break;
+                        } else {
+                            return (
+                                <span key={index} className='check-mark'>
+                                     {
+                                        course == "arabic" && ((type == "core" && index == 5) || (type =="academic" && index == 4)) ?
+                                        "X"
+                                        : 
+                                        <CheckMarkIcon color='black'/>
+                                    }
+                                </span>
+                            )
+                        }
                     case 14:
                         return (
-                            <span key={index} className='button-custom' onClick={()=> openStripeCheckoutPage('https://buy.stripe.com/28obJi78l3wK6yYeV2')}>Get Started</span>
+                            <span key={index} className='button-custom' onClick={()=> openStripeCheckoutPage(currentCourse.twoStudentsGroup.checkoutUrl)}>Get Started</span>
                         )
                         break;
                 
                     default:
                         return (
                             <span key={index} className='check-mark'>
-                                {
-                                    course == "arabic" && index == 5 ?
+                                 {
+                                    course == "arabic" && ((type == "core" && index == 5) || (type =="academic" && index == 4)) ?
                                     "X"
                                     : 
                                     <CheckMarkIcon color='black'/>
@@ -222,7 +389,7 @@ const PricingPlansCore = () => {
             })}
             </div>
             <div className='column'>
-            {Array.from({ length: 15 }).map((_, index) => {
+            {Array.from({ length: rowsLength }).map((_, index) => {
                 if (course === "english" && index == 5) {
                     return;
                 }
@@ -241,25 +408,43 @@ const PricingPlansCore = () => {
                         break;
                     case 2:
                         return (
-                            <span key={index} className='price'>660$</span>
+                            <span key={index} className='price'>{currentCourse.threeStudentsGroup.price}</span>
                         )
                         break;
                     case 3:
                         return (
-                            <span key={index} className='type'>Live <span className='circle-solid'></span></span>
+                            <span key={index} className='type'>Live <span className='circle-solid red'></span></span>
                         )
                         break;
+                    case 13:
+                        if (type == "academic") {
+                            return (
+                                <span></span>
+                            )
+                            break;
+                        } else {
+                            return (
+                                <span key={index} className='check-mark'>
+                                     {
+                                        course == "arabic" && ((type == "core" && index == 5) || (type =="academic" && index == 4)) ?
+                                        "X"
+                                        : 
+                                        <CheckMarkIcon color='black'/>
+                                    }
+                                </span>
+                            )
+                        }
                     case 14:
                         return (
-                            <span key={index} className='button-custom' onClick={()=> openStripeCheckoutPage('https://buy.stripe.com/28obJi3W97N0aPeeV3')}>Get Started</span>
+                            <span key={index} className='button-custom' onClick={()=> openStripeCheckoutPage(currentCourse.threeStudentsGroup.checkoutUrl)}>Get Started</span>
                         )
                         break;
                 
                     default:
                         return (
                             <span key={index} className='check-mark'>
-                                {
-                                    course == "arabic" && index == 5 ?
+                                 {
+                                    course == "arabic" && ((type == "core" && index == 5) || (type =="academic" && index == 4)) ?
                                     "X"
                                     : 
                                     <CheckMarkIcon color='black'/>
@@ -270,7 +455,7 @@ const PricingPlansCore = () => {
             })}
             </div>
             <div className='column'>
-            {Array.from({ length: 15 }).map((_, index) => {
+            {Array.from({ length: rowsLength }).map((_, index) => {
                 if (course === "english" && index == 5) {
                     return;
                 }
@@ -289,25 +474,43 @@ const PricingPlansCore = () => {
                         break;
                     case 2:
                         return (
-                            <span key={index} className='price'>820$</span>
+                            <span key={index} className='price'>{currentCourse.fourStudentsGroup.price}</span>
                         )
                         break;
                     case 3:
                         return (
-                            <span key={index} className='type'>Live <span className='circle-solid'></span></span>
+                            <span key={index} className='type'>Live <span className='circle-solid red'></span></span>
                         )
                         break;
+                    case 13:
+                        if (type == "academic") {
+                            return (
+                                <span></span>
+                            )
+                            break;
+                        } else {
+                            return (
+                                <span key={index} className='check-mark'>
+                                     {
+                                        course == "arabic" && ((type == "core" && index == 5) || (type =="academic" && index == 4)) ?
+                                        "X"
+                                        : 
+                                        <CheckMarkIcon color='black'/>
+                                    }
+                                </span>
+                            )
+                        }
                     case 14:
                         return (
-                            <span key={index} className='button-custom' onClick={()=> openStripeCheckoutPage('https://buy.stripe.com/9AQ8x6eAN0ky1eEfZ8')}>Get Started</span>
+                            <span key={index} className='button-custom' onClick={()=> openStripeCheckoutPage(currentCourse.fourStudentsGroup.checkoutUrl)}>Get Started</span>
                         )
                         break;
                 
                     default:
                         return (
                             <span key={index} className='check-mark'>
-                                {
-                                    course == "arabic" && index == 5 ?
+                                 {
+                                    course == "arabic" && ((type == "core" && index == 5) || (type =="academic" && index == 4)) ?
                                     "X"
                                     : 
                                     <CheckMarkIcon color='black'/>
@@ -321,4 +524,4 @@ const PricingPlansCore = () => {
     );
 };
 
-export default PricingPlansCore;
+export default PricingPlans;

@@ -100,7 +100,7 @@
         border-radius: 50%;
         background-color: white;
     }
-    .column:not(.two) span.type .circle-solid{
+    .column span.type .circle-solid.red{
         background-color: red;
     }
     .column span.check-mark {

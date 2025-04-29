@@ -22,7 +22,7 @@ function Courses() {
           <div className="card course-card left">
             <img src={ENGLISH} alt="english_course"/>
             <Button onClick={()=>{
-              navigate("PricingPlansAcademic");
+              navigate("PricingPlans?type=academic&course=english");
               window.scrollTo({
                 left: 0,
                 top: 0,
@@ -37,7 +37,7 @@ function Courses() {
           <div className="card course-card left">
             <img src={ENGLISH_CORE} alt="english_core" style={{position: "relative", top: "-10px"}}/>
             <Button onClick={()=>{
-              navigate("PricingPlansCore?course=english");
+              navigate("PricingPlans?type=core&course=english");
               window.scrollTo({
                 left: 0,
                 top: 0,
@@ -52,7 +52,7 @@ function Courses() {
           <div className="card course-card right">
             <img src={ARABIC} alt="arabic_course"/>
             <Button onClick={()=>{
-              navigate("PricingPlansAcademic");
+              navigate("PricingPlans?type=academic&course=arabic");
               window.scrollTo({
                 left: 0,
                 top: 0,
@@ -67,7 +67,7 @@ function Courses() {
           <div className="card course-card left">
             <img src={ARABIC_CORE} alt="arabic_core"/>
             <Button onClick={()=>{
-              navigate("PricingPlansCore?course=arabic");
+              navigate("PricingPlans?type=core&course=arabic");
               window.scrollTo({
                 left: 0,
                 top: 0,
