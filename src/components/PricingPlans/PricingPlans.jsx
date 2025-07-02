@@ -188,7 +188,7 @@ const PricingPlans = () => {
             </div>
             {
                 course == "arabic" &&
-                <div className='column two'>
+                <div className='column'>
                     {Array.from({ length: rowsLength }).map((_, index) => {
                         switch (index) {
                             case 0:
@@ -230,7 +230,7 @@ const PricingPlans = () => {
                                                 course == "arabic" && index == 4 && type == "core" ?
                                                 "X"
                                                 : type == "academic" && course == "arabic" && index == 5 ? "X":
-                                                <CheckMarkIcon/>
+                                                <CheckMarkIcon color='black'/>
                                             }
                                         </span>
                                     )
@@ -248,7 +248,7 @@ const PricingPlans = () => {
                                             course == "arabic" && index == 4 && type == "core" ?
                                             "X"
                                             : type == "academic" && course == "arabic" && index == 5 ? "X":
-                                                <CheckMarkIcon/>
+                                                <CheckMarkIcon color='black'/>
                                         }
                                     </span>
                                 )
@@ -256,7 +256,7 @@ const PricingPlans = () => {
                     })}
                 </div>
             }
-            <div className='column'>
+            <div className='column two'>
             {Array.from({ length: rowsLength }).map((_, index) => {
                 if (course === "english" && index == 5) {
                     return;
@@ -297,7 +297,7 @@ const PricingPlans = () => {
                                         course == "arabic" && ((type == "core" && index == 5) || (type =="academic" && index == 4)) ?
                                         "X"
                                         : 
-                                        <CheckMarkIcon color='black'/>
+                                        <CheckMarkIcon color='white'/>
                                     }
                                 </span>
                             )
@@ -315,7 +315,7 @@ const PricingPlans = () => {
                                         course == "arabic" && ((type == "core" && index == 5) || (type =="academic" && index == 4)) ?
                                         "X"
                                         : 
-                                        <CheckMarkIcon color='black'/>
+                                        <CheckMarkIcon color='white'/>
                                     }
                             </span>
                         )
