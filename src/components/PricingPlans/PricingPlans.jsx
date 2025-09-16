@@ -89,20 +89,20 @@ const PricingPlans = () => {
                 checkoutUrl: "https://buy.stripe.com/3cs5kUcsFc3g4qQ7sH",
             },
             oneStudentGroup: {
-                price: "225$",
-                checkoutUrl: "https://buy.stripe.com/aEUaFe3W92sG9LabII",
+                price: "250$",
+                checkoutUrl: "https://buy.stripe.com/6oU00l3Vr0DS7Y42Bv0VO0q",
             },
             twoStudentsGroup: {
-                price: "410$",
-                checkoutUrl: "https://buy.stripe.com/4gw14EfER7N02iIfYZ",
+                price: "450$",
+                checkoutUrl: "https://buy.stripe.com/28E3cx1NjeuI7Y4b810VO0r",
             },
             threeStudentsGroup: {
-                price: "570$",
-                checkoutUrl: "https://buy.stripe.com/28ofZygIVffs9LaeUW",
+                price: "630$",
+                checkoutUrl: "https://buy.stripe.com/cNi6oJ8bH4U8bag4JD0VO0s",
             },
             fourStudentsGroup: {
-                price: "760$",
-                checkoutUrl: "https://buy.stripe.com/bIY8x6boBffsbTi003",
+                price: "840$",
+                checkoutUrl: "https://buy.stripe.com/8x2fZjdw186k0vC3Fz0VO0t",
             },
         },
         core: {
@@ -131,8 +131,8 @@ const PricingPlans = () => {
     const englishPrices = {
         academic: {
             oneStudentGroup: {
-                price: "300$",
-                checkoutUrl: "https://buy.stripe.com/9AQ3cM1O16IW0aA6oI",
+                price: "350$",
+                checkoutUrl: "https://buy.stripe.com/5kQ14pdw1gCQ5PWfoh0VO0p",
             },
             twoStudentsGroup: {
                 price: "500$",
