@@ -105,6 +105,21 @@ function Header() {
 										</a>
 									</a>
 								</li>
+								<li>
+									<Link
+										to="/Instructors"
+										onClick={() => {
+											window.scrollTo({
+												left: 0,
+												top: 0,
+												behavior: "smooth",
+											});
+											setshowVerticalNav(false);
+										}}
+									>
+										<a>Instructors</a>
+									</Link>
+								</li>
 							</ul>
 						</div>
 					</>
@@ -148,7 +163,7 @@ function Header() {
 										});}}>
 									<Link to="/ContactUs">{t("contactus.label")}</Link>
 								</li>
-							</ul>
+</ul>
 						</li>
 						<li>
 							<a href="#Courses" onClick={navigateHandler}>
@@ -161,6 +176,20 @@ function Header() {
 									{t("whatwedo.label")}
 								</a>
 							</a>
+						</li>
+						<li>
+							<Link
+								to="/Instructors"
+								onClick={() => {
+									window.scrollTo({
+										left: 0,
+										top: 0,
+										behavior: "smooth",
+									});
+								}}
+							>
+								<a>Instructors</a>
+							</Link>
 						</li>
 					</ul>
 

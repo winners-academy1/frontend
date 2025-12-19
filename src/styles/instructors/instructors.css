@@ -1,0 +1,487 @@
+/* Instructors Page Styles */
+.instructors-page {
+	padding: 140px 0 0;
+	width: 100%;
+	min-height: 100vh;
+	background-color: var(--text-color);
+	color: var(--main-color-alt3);
+}
+
+@media (max-width: 530px) {
+	.instructors-page {
+		padding: 120px 0 0;
+	}
+}
+
+/* Breadcrumb Path */
+.instructors-page .lamar-container {
+	padding-bottom: 10px;
+}
+
+.instructors-page .path {
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.instructors-page .path i {
+	font-size: 22px;
+	margin-right: 10px;
+	color: var(--main-color-alt3);
+}
+
+.instructors-page .path span {
+	font-size: 20px;
+	cursor: auto;
+	font-weight: 600;
+}
+
+.instructors-page .path a {
+	color: var(--main-color-alt3);
+	transition: color 0.3s ease;
+}
+
+.instructors-page .path a:hover {
+	color: var(--dark-color);
+}
+
+/* Hero Section */
+.instructors-hero {
+	background: linear-gradient(135deg, var(--dark-color) 0%, #1a1a2e 100%);
+	padding: 60px 0;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.instructors-hero h1 {
+	color: var(--text-color);
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.instructors-hero p {
+	color: rgba(255, 255, 255, 0.85);
+	font-size: 1.15rem;
+	max-width: 700px;
+	margin: 0 auto;
+	line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+	.instructors-hero h1 {
+		font-size: 1.8rem;
+	}
+
+	.instructors-hero p {
+		font-size: 1rem;
+		padding: 0 15px;
+	}
+}
+
+/* Instructors List Container */
+.instructors-list {
+	padding: 20px 0 60px;
+}
+
+.instructors-list .lamar-container {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+/* Individual Instructor Card */
+.instructor-card {
+	background: #ffffff;
+	border-radius: 16px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instructor-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.instructor-card.reversed {
+	direction: rtl;
+}
+
+.instructor-card.reversed > * {
+	direction: ltr;
+}
+
+@media (max-width: 992px) {
+	.instructor-card {
+		grid-template-columns: 1fr;
+	}
+
+	.instructor-card.reversed {
+		direction: ltr;
+	}
+}
+
+/* Instructor Info Section */
+.instructor-info {
+	padding: 35px 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+@media (max-width: 576px) {
+	.instructor-info {
+		padding: 25px 20px;
+	}
+}
+
+/* Instructor Header */
+.instructor-header {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.instructor-emoji {
+	font-size: 3rem;
+	line-height: 1;
+}
+
+.instructor-title h2 {
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: var(--dark-color);
+	margin: 0 0 5px;
+}
+
+.instructor-title .position {
+	font-size: 1rem;
+	color: #666;
+	margin: 0;
+	font-weight: 500;
+}
+
+/* Stats Section */
+.instructor-stats {
+	display: flex;
+	gap: 25px;
+	flex-wrap: wrap;
+}
+
+.stat-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	background: #f8f9fa;
+	padding: 15px 20px;
+	border-radius: 10px;
+	flex: 1;
+	min-width: 200px;
+}
+
+.stat-item i {
+	font-size: 1.3rem;
+	color: var(--dark-color);
+	margin-top: 3px;
+}
+
+.stat-item div {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+
+.stat-label {
+	font-size: 0.85rem;
+	color: #888;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.stat-value {
+	font-size: 0.95rem;
+	color: var(--dark-color);
+	font-weight: 600;
+}
+
+/* Profile Section */
+.instructor-profile h3,
+.teaching-style h3 {
+	font-size: 1.2rem;
+	color: var(--dark-color);
+	margin: 0 0 12px;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.instructor-profile p {
+	color: #555;
+	line-height: 1.75;
+	margin: 0 0 12px;
+	font-size: 1rem;
+}
+
+.instructor-profile p:last-child {
+	margin-bottom: 0;
+}
+
+/* Teaching Style */
+.teaching-style {
+	background: linear-gradient(135deg, #f0f4f8 0%, #e8eef5 100%);
+	padding: 20px;
+	border-radius: 10px;
+	border-left: 4px solid var(--dark-color);
+}
+
+.teaching-style h3 i {
+	color: var(--dark-color);
+}
+
+.teaching-style p {
+	color: #444;
+	font-style: italic;
+	font-size: 1.05rem;
+	margin: 0;
+}
+
+/* Certificates Section */
+.instructor-certificates {
+	background: linear-gradient(135deg, #f5f7fa 0%, #eef1f5 100%);
+	padding: 35px 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.instructor-certificates h3 {
+	font-size: 1.3rem;
+	color: var(--dark-color);
+	margin: 0 0 25px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.certificates-grid {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.certificate-item {
+	flex: 1;
+	min-width: 180px;
+	max-width: 220px;
+}
+
+.certificate-item h4 {
+	font-size: 0.95rem;
+	color: #666;
+	margin: 0 0 10px;
+	text-align: center;
+	font-weight: 600;
+}
+
+/* Score Report Card */
+.score-report-card {
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+	cursor: pointer;
+	box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.score-report-card:hover {
+	transform: scale(1.03);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.score-report-card img {
+	width: 100%;
+	height: auto;
+	display: block;
+	aspect-ratio: 3/4;
+	object-fit: cover;
+}
+
+.score-report-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.6);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.score-report-card:hover .score-report-overlay {
+	opacity: 1;
+}
+
+.score-report-overlay i {
+	font-size: 2rem;
+	color: white;
+}
+
+.score-report-overlay span {
+	color: white;
+	font-size: 0.9rem;
+	font-weight: 500;
+}
+
+/* Lightbox Styles */
+.lightbox-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.9);
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.lightbox-content {
+	position: relative;
+	max-width: 90vw;
+	max-height: 90vh;
+}
+
+.lightbox-content img {
+	max-width: 100%;
+	max-height: 85vh;
+	border-radius: 8px;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.lightbox-close {
+	position: absolute;
+	top: -45px;
+	right: 0;
+	background: transparent;
+	border: none;
+	color: white;
+	font-size: 1.8rem;
+	cursor: pointer;
+	padding: 10px;
+	transition: transform 0.3s ease;
+}
+
+.lightbox-close:hover {
+	transform: scale(1.1);
+}
+
+/* CTA Section */
+.instructors-cta {
+	background: linear-gradient(135deg, var(--dark-color) 0%, #1a1a2e 100%);
+	padding: 70px 0;
+	text-align: center;
+}
+
+.instructors-cta h2 {
+	color: var(--text-color);
+	font-size: 2rem;
+	font-weight: 700;
+	margin: 0 0 15px;
+}
+
+.instructors-cta p {
+	color: rgba(255, 255, 255, 0.85);
+	font-size: 1.1rem;
+	margin: 0 0 30px;
+}
+
+.cta-buttons {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.cta-btn {
+	padding: 14px 35px;
+	border-radius: 8px;
+	font-size: 1rem;
+	font-weight: 600;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	display: inline-block;
+}
+
+.cta-btn.primary {
+	background: var(--text-color);
+	color: var(--dark-color);
+}
+
+.cta-btn.primary:hover {
+	background: #f0f0f0;
+	transform: translateY(-2px);
+}
+
+.cta-btn.secondary {
+	background: transparent;
+	color: var(--text-color);
+	border: 2px solid var(--text-color);
+}
+
+.cta-btn.secondary:hover {
+	background: var(--text-color);
+	color: var(--dark-color);
+	transform: translateY(-2px);
+}
+
+@media (max-width: 576px) {
+	.instructors-cta h2 {
+		font-size: 1.5rem;
+	}
+
+	.cta-btn {
+		padding: 12px 28px;
+		font-size: 0.95rem;
+	}
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+	.instructor-stats {
+		flex-direction: column;
+	}
+
+	.stat-item {
+		min-width: unset;
+	}
+
+	.certificates-grid {
+		gap: 15px;
+	}
+
+	.certificate-item {
+		min-width: 140px;
+	}
+}

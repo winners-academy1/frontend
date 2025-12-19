@@ -11,6 +11,7 @@ import ContactUs from './components/Contact-Us/ContactUs';
 import LoadingState from './components/Loading-State/LoadingState';
 import PricingPlansAcademic from './components/PricingPlans/PricingPlansAcademic';
 import PricingPlans from './components/PricingPlans/PricingPlans';
+import Instructors from './components/Instructors/Instructors';
 function App() {
   const [y, setY] = useState(window.scrollY);
   const [isLoading, setIsLoading] = useState(window.location.pathname == "/" ? true : false);
@@ -50,6 +51,7 @@ function App() {
               <Route exact path='/' element={<Home setIsLoading={setIsLoading} />} />
               <Route exact path='/AboutUs' element={<AboutUs />} />
               <Route exact path='/ContactUs' element={<ContactUs />} />
+              <Route exact path='/Instructors' element={<Instructors />} />
               <Route exact path='/DeliveryPolicy' element={<DeliveryPolicy />} />
               <Route exact path='/PrivacyPolicy' element={<PrivacyPolicy />} />
               <Route exact path='/PricingPlansAcademic' element={<PricingPlansAcademic />} />
