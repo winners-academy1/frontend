@@ -77,7 +77,7 @@ const PricingPlans = () => {
     }
 
     if (type == "academic" && course == "arabic") {
-        labels[2] = "Five Interactive Sessions";
+        labels[2] = "Six interactive sessions";
     }
 
 
